@@ -1,15 +1,21 @@
+import { Footer } from "./components/footer";
+import { Franchise } from "./components/franchise";
 import { Header } from "./components/header";
 import { Hero } from "./components/hero";
 import { Services } from "./components/services";
-import { WhoWeAre } from "./components/who-we-are";
+import { WhereAreWe } from "./components/where-are-we";
+import { WhoAreWe } from "./components/who-are-we";
 
 export function App() {
   return (
-    <div className="w-full bg-zinc-800 h-full flex flex-col items-center text-zinc-700 font-nunito scroll-smooth">
+    <div className="w-full h-full flex flex-col items-center text-zinc-700 font-nunito scroll-smooth bg-gradient-to-r from-white to-zinc-100">
       <Header />
       <Hero />
       <Services />
-      <WhoWeAre />
+      <WhereAreWe />
+      <Franchise />
+      <WhoAreWe />
+      <Footer />
     </div>
   );
 }

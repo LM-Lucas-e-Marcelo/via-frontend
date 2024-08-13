@@ -4,11 +4,11 @@ import { services } from "../../constants/services";
 export const Services = () => {
   return (
     <div
-      className=" bg-gradient-to-r from-white to-zinc-100 w-full max-w-[1440px] flex flex-col items-center p-10"
+      className="w-full max-w-[1440px] flex flex-col items-center p-10 mt-36"
       id="services"
     >
       <p>Serviços VIA</p>
-      <strong className="text-3xl">
+      <strong className="text-xl sm:text-2xl">
         Vistorias veiculares para sua segurança
       </strong>
       <div className="flex flex-wrap gap-4 justify-center">
