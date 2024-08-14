@@ -8,7 +8,7 @@ export const Services = () => {
       id="services"
     >
       <p>Serviços VIA</p>
-      <strong className="text-xl sm:text-2xl">
+      <strong className="text-xl sm:text-2xl text-center">
         Vistorias veiculares para sua segurança
       </strong>
       <div className="flex flex-wrap gap-4 justify-center">

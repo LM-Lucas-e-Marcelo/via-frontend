@@ -33,7 +33,7 @@ export const Header = () => {
   return (
     <div className={container()}>
       <header className={header()}>
-        <a href="#">
+        <a href="/">
           <img width={100} src={logo} alt="VIIA" />
         </a>
         <nav>
@@ -59,11 +59,17 @@ export const Header = () => {
                 >
                   Biguaçu
                 </a>
-                <a className={dropdownItem()} href="contact">
-                  Barreiros
+                <a
+                  className={dropdownItem()}
+                  href={`https://wa.me/48991763476`}
+                >
+                  Cocal do Sul
                 </a>
-                <a className={dropdownItem()} href="contact">
-                  Governador
+                <a
+                  className={dropdownItem()}
+                  href={`https://wa.me/47992565690`}
+                >
+                  Ilhota
                 </a>
               </div>
             </li>
