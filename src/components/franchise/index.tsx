@@ -9,7 +9,7 @@ export const Franchise = () => {
     >
       <p>Área para Franqueados - Via Vistoria</p>
       <strong className="text-2xl sm:text-3xl">Suporte Personalizado</strong>
-      <p className="text-center">
+      <p className="text-center mt-1">
         Na Via Vistoria, oferecemos um suporte completo e contínuo para nossos
         franqueados, desde o treinamento inicial até a gestão diária da unidade.
         <br />
