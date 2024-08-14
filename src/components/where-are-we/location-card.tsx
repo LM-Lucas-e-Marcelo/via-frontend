@@ -36,11 +36,12 @@ export const LocationCard = ({
         <strong className="text-xl">{cityAndNeigh}</strong>
 
         <a className={infoItem()} target="_blank" href={mapUrl}>
-          <GrLocation size={24} className="text-red-600" /> {street}
+          <GrLocation size={24} className="text-red-600 flex-shrink-0" />{" "}
+          {street}
         </a>
 
         <a className={infoItem()} target="_blank" href={`Tel:${phoneNumber}`}>
-          <FiPhone size={24} className="text-blue-950" />
+          <FiPhone size={24} className="text-blue-950 flex-shrink-0" />
           {phoneNumber}
         </a>
 
@@ -49,7 +50,7 @@ export const LocationCard = ({
           target="_blank"
           href={`https://wa.me/${whatsappNumber}`}
         >
-          <FaWhatsapp size={24} className="text-green-500" />
+          <FaWhatsapp size={24} className="text-green-500 flex-shrink-0" />
           {whatsappNumber}
         </a>
       </div>

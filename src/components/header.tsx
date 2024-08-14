@@ -53,7 +53,10 @@ export const Header = () => {
             >
               <a href="contact">Contato</a>
               <div className={dropdown({ isOpen: showDropdown })}>
-                <a className={dropdownItem()} href="contact">
+                <a
+                  className={dropdownItem()}
+                  href={`https://wa.me/48991494123`}
+                >
                   Biguaçu
                 </a>
                 <a className={dropdownItem()} href="contact">

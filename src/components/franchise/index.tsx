@@ -12,6 +12,7 @@ export const Franchise = () => {
       <p className="text-center">
         Na Via Vistoria, oferecemos um suporte completo e contínuo para nossos
         franqueados, desde o treinamento inicial até a gestão diária da unidade.
+        <br />
         Explore abaixo as áreas em que nosso suporte se destaca:
       </p>
       <div className="flex flex-wrap gap-4 justify-center mt-6">
