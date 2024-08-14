@@ -4,7 +4,7 @@ import { services } from "../../constants/services";
 export const Services = () => {
   return (
     <div
-      className="w-full max-w-[1440px] flex flex-col items-center p-10 pt-0 mt-36 text-center"
+      className="w-full max-w-[1440px] flex flex-col items-center p-10 pt-0 mt-36"
       id="services"
     >
       <p>Serviços VIA</p>
