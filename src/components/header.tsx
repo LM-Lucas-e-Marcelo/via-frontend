@@ -18,7 +18,7 @@ const headerStyles = tv({
   variants: {
     isOpen: {
       true: {
-        dropdown: " h-[125px]",
+        dropdown: " h-[123px]",
       },
     },
   },
@@ -34,7 +34,7 @@ export const Header = () => {
     <div className={container()}>
       <header className={header()}>
         <a href="/">
-          <img width={100} src={logo} alt="VIIA" />
+          <img width={100} src={logo} alt="VIA" />
         </a>
         <nav>
           <ul className={list()}>
@@ -51,7 +51,7 @@ export const Header = () => {
               onMouseEnter={() => setShowDropdown(true)}
               onMouseLeave={() => setShowDropdown(false)}
             >
-              <a href="contact">Contato</a>
+              <a>Contato</a>
               <div className={dropdown({ isOpen: showDropdown })}>
                 <a
                   className={dropdownItem()}
