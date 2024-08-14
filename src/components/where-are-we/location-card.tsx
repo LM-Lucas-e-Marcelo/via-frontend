@@ -31,7 +31,7 @@ export const LocationCard = ({
 }: LocationCardProps) => {
   return (
     <div className={card()}>
-      <img src={image} className={img()} />
+      <img src={image} className={img()} alt="store picture" />
       <div className={infos()}>
         <strong className="text-xl">{cityAndNeigh}</strong>
 
