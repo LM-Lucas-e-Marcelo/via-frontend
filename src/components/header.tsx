@@ -39,7 +39,7 @@ export const Header = () => {
         <nav>
           <ul className={list()}>
             <li>
-              <a className={navItem()} href="home">
+              <a className={navItem()} href="/">
                 Início
               </a>
             </li>
