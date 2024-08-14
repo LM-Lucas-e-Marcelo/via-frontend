@@ -1,4 +1,4 @@
-import biguacu from "../assets/fachada-biguacu.png";
+import biguacu from "../assets/fachada-biguacu.svg";
 
 export const addresses = [
   {

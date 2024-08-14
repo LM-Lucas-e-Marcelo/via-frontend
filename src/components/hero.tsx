@@ -1,4 +1,4 @@
-import whiteCar from "../assets/white-car.png";
+import whiteCar from "../assets/white-car.svg";
 
 export const Hero = () => {
   return (
