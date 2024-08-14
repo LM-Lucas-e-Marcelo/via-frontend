@@ -4,7 +4,7 @@ import { AiOutlineFacebook, IoLogoInstagram, FiTwitter } from "../assets/icons";
 export const Footer = () => {
   return (
     <div className="flex flex-col w-full">
-      <div className="p-10 border-t border-zinc-400 w-full flex justify-between sm:flex-row flex-col items-center gap-3 sm:items-start sm:gap-0">
+      <div className="p-10 border-t border-zinc-400 w-full flex justify-around sm:flex-row flex-col items-center gap-3 sm:items-start sm:gap-0">
         <section className="flex flex-col items-center gap-3">
           <img src={logo} />
           <p className="max-w-[400px] text-center">

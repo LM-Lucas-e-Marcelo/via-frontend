@@ -6,7 +6,7 @@ export {
   PiCurrencyCircleDollar,
 } from "react-icons/pi";
 export { MdOutlineLocalCarWash } from "react-icons/md";
-export { LiaCarCrashSolid } from "react-icons/lia";
+export { LiaCarCrashSolid, LiaChalkboardTeacherSolid } from "react-icons/lia";
 export { FaWhatsapp } from "react-icons/fa";
 export { GrLocation, GrChatOption } from "react-icons/gr";
 export { HiOutlineChatBubbleLeftRight } from "react-icons/hi2";

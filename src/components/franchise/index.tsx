@@ -7,12 +7,12 @@ export const Franchise = () => {
       className="w-full max-w-[1440px] flex flex-col items-center p-10"
       id="franchise"
     >
-      <p>Franquia</p>
-      <strong className="text-2xl sm:text-3xl">Suporte Oferecido</strong>
+      <p>Área para Franqueados - Via Vistoria</p>
+      <strong className="text-2xl sm:text-3xl">Suporte Personalizado</strong>
       <p className="text-center">
-        Aqui na Via, o franqueado recebe treinamento inicial e todo o suporte
-        para gestão do negócio no dia a dia. <br /> Confira abaixo mais sobre o
-        suporte oferecido pela franqueadora para toda a rede
+        Na Via Vistoria, oferecemos um suporte completo e contínuo para nossos
+        franqueados, desde o treinamento inicial até a gestão diária da unidade.
+        Explore abaixo as áreas em que nosso suporte se destaca:
       </p>
       <div className="flex flex-wrap gap-4 justify-center mt-6">
         {franchises.map((franchise) => {
