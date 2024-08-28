@@ -1,11 +1,26 @@
 import { ServiceCard } from "./service-card";
 import { services } from "../../constants/services";
+import { motion } from "framer-motion";
+
+const container = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      delayChildren: 0.3,
+      staggerChildren: 0.2,
+    },
+  },
+};
 
 export const Services = () => {
   return (
-    <div
+    <motion.div
       className="w-full max-w-[1440px] flex flex-col items-center p-10"
       id="services"
+      variants={container}
+      initial="hidden"
+      animate="visible"
     >
       <strong className="text-primary text-xl">SERVIÇOS VIA VISTORIA</strong>
       <p className="text-xl text-center mb-10">
@@ -25,6 +40,6 @@ export const Services = () => {
           );
         })}
       </div>
-    </div>
+    </motion.div>
   );
 };

@@ -1,4 +1,5 @@
 import { IconType } from "react-icons";
+import { motion } from "framer-motion";
 
 interface ServiceCardProps {
   id: number;
@@ -8,25 +9,30 @@ interface ServiceCardProps {
   img: string;
 }
 
-export const ServiceCard = ({
-  icon: Icon,
-  title,
-  id,
-  img,
-}: ServiceCardProps) => {
+const item = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
+};
+
+export const ServiceCard = ({ icon: Icon, title, id }: ServiceCardProps) => {
   const handleRedirect = (id: number) => {
     window.open(`/services/${id}`, "_self");
   };
   return (
-    <div
+    <motion.div
+      variants={item}
       onClick={() => handleRedirect(id)}
       className="w-[280px] rounded-md h-[300px] flex flex-col items-center justify-center relative overflow-hidden cursor-pointer hover:scale-110 transition-all"
     >
-      <img
+      {/* <img
         src={img}
         alt={title}
-        className="w-[100%] h-[100%] mt-[-80px] object-cover"
-      />
+        className="h-[450px] mt-[-80px] object-cover"
+        loading="lazy"
+      /> */}
       <div className="absolute top-0 bottom-0 left-0 right-0 bg-primary opacity-60 z-0" />
       <span className="w-24 h-24 bg-white rounded-full flex items-center justify-center p-4 text-green-500 z-60 absolute top-[60px]">
         <Icon size={80} />
@@ -35,6 +41,6 @@ export const ServiceCard = ({
       <button className="absolute bottom-0 bg-gradient-to-b from-black to-zinc-600 w-full p-2 text-white text-lg hover:opacity-90">
         + Saiba mais
       </button>
-    </div>
+    </motion.div>
   );
 };

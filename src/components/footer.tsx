@@ -1,16 +1,31 @@
 import logo from "../assets/logo_via.png";
-import { AiOutlineFacebook, IoLogoInstagram, FiTwitter } from "../assets/icons";
+import google from "../assets/footer/google.png";
+import norton from "../assets/footer/norton.png";
+import reclameaqui from "../assets/footer/reclameaqui.png";
 import { services } from "../constants/services";
+import { addresses } from "../constants/addresses";
 
 export const Footer = () => {
   return (
     <div className="flex flex-col w-full ">
       <div className="p-10 border-t border-zinc-400 w-full flex justify-around sm:flex-row flex-col items-center gap-3 sm:items-start sm:gap-0">
         <section className="flex flex-col items-center gap-3">
-          <img src={logo} alt="Via" className="md:w-[200px]" />
-          <p className="max-w-[400px] text-center">
+          <img src={logo} alt="Via" className="w-[200px] ml-[-25px]" />
+          <p className="max-w-[400px] text-center ml-[-25px]">
             A sua via para a confiança!
           </p>
+          <div className="flex flex-col w-full">
+            <strong>Fale conosco</strong>
+            <a href="mailto:via@viavistoria.com.br">via@viavistoria.com.br</a>
+          </div>
+          <div className="flex flex-col gap-1">
+            <strong>Unidades</strong>
+            {addresses.map((addr) => (
+              <a key={addr.cityAndNeigh} href={addr.mapUrl}>
+                {addr.cityAndNeigh}
+              </a>
+            ))}
+          </div>
         </section>
         <section className="flex flex-col gap-3">
           <strong className="text-lg">Serviços</strong>
@@ -26,17 +41,23 @@ export const Footer = () => {
             ))}
           </div>
         </section>
-        <section className="flex flex-col gap-2">
-          <h1 className="text-xl">Nos siga nas redes sociais</h1>
-          <div className="flex gap-3 w-full justify-center sm:justify-normal">
-            <a href="https://www.instagram.com/viavistoriabiguacu/">
-              <IoLogoInstagram size={30} />
+        <section className="flex flex-col gap-2 bg-white p-5 rounded-md mt-[50px]">
+          <h1 className="text-xl">Segurança e Qualidade</h1>
+          <div className="flex gap-3 w-full justify-center sm:justify-normal items-center">
+            <a href="https://www.sslshopper.com/ssl-checker.html#hostname=https://viavistoria.com.br">
+              <img width={80} src={norton} />
             </a>
-            <a href="https://www.instagram.com/viavistoriabiguacu/">
-              <AiOutlineFacebook size={28} />
+            <a
+              href="https://www.instagram.com/viavistoriabiguacu/"
+              className="mt-[-10px]"
+            >
+              <img width={100} src={reclameaqui} />
             </a>
-            <a href="https://www.instagram.com/viavistoriabiguacu/">
-              <FiTwitter size={26} />
+            <a
+              href="https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Fviavistoria.com.br&hl=pt_BR"
+              className="mt-[-10px]"
+            >
+              <img width={100} src={google} />
             </a>
           </div>
         </section>

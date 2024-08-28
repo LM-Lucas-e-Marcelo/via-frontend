@@ -1,4 +1,6 @@
+import { useRef } from "react";
 import { IoIosStar } from "../assets/icons";
+import { motion, useInView } from "framer-motion";
 
 const starsQuantity = 5;
 const starsArray = Array.from({ length: starsQuantity });
@@ -25,15 +27,44 @@ const customers = [
 ];
 
 export function Rating() {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+
+  const container = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: isInView ? 0 : 20,
+      opacity: 1,
+    },
+  };
+
   return (
-    <div className="w-full">
+    <motion.div
+      className="w-full"
+      variants={container}
+      initial="hidden"
+      animate="visible"
+      ref={ref}
+    >
       <div className="flex flex-col gap-3 p-10 max-w-[1440px] m-auto">
         <h1 className="text-2xl font-bold text-center mb-10">
           Veja o que as pessoas estão dizendo sobre nós
         </h1>
         <div className="flex items-center justify-center gap-5 flex-wrap">
           {customers.map((customer) => (
-            <div
+            <motion.div
+              variants={item}
               className="bg-zinc-100 rounded-md p-4 w-[300px] h-[180px]"
               key={customer.name}
             >
@@ -47,10 +78,10 @@ export function Rating() {
                 ))}
               </span>
               <p className="mt-5">{customer.message}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

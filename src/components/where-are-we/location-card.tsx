@@ -1,5 +1,6 @@
 import { tv } from "tailwind-variants";
 import { GrLocation } from "../../assets/icons";
+import { motion } from "framer-motion";
 
 const locationCard = tv({
   slots: {
@@ -28,8 +29,16 @@ export const LocationCard = ({
   whatsappNumber,
   image,
 }: LocationCardProps) => {
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
+
   return (
-    <div className={card()}>
+    <motion.div className={card()} variants={item}>
       <img src={image} className={img()} alt="store picture" />
       <div className={infos()}>
         <strong className="text-xl">{cityAndNeigh}</strong>
@@ -47,6 +56,6 @@ export const LocationCard = ({
           Fale conosco
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 };

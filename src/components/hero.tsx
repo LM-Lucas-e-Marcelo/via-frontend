@@ -1,11 +1,17 @@
 import whiteCar from "../assets/white-car.png";
 import { Button } from "./button";
+import { motion } from "framer-motion";
 
 export const Hero = () => {
   return (
     <div className="w-full bg-[url(/banner-hero.svg)] p-10 pb-0 bg-cover bg-center flex items-center justify-center">
       <div className="w-full max-w-[1440px] min-h-[400px] mt-[74px] flex items-center justify-around flex-col gap-10 md:gap-0 md:flex-row">
-        <div className="flex flex-col gap-2 sm:gap-4 max-w-[600px]">
+        <motion.div
+          className="flex flex-col gap-2 sm:gap-4 max-w-[600px]"
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+        >
           <h1 className="sm:text-3xl text-2xl font-bold uppercase">
             Antes de investir no carro dos seus sonhos, deixe a VIA analisar
             cada detalhe.
@@ -15,8 +21,15 @@ export const Hero = () => {
             tranquilo. A VIA te ajuda a enxergar além do óbvio!
           </h2>
           <Button isSmall>Saiba mais</Button>
-        </div>
-        <img className="w-[350px]" src={whiteCar} alt="a white car" />
+        </motion.div>
+        <motion.img
+          className="w-[350px]"
+          src={whiteCar}
+          alt="a white car"
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+        />
       </div>
     </div>
   );

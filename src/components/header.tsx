@@ -4,13 +4,14 @@ import { BiSupport, FiX, RxHamburgerMenu } from "../assets/icons";
 import { Button } from "./button";
 import { MobileMenu } from "./mobile-menu";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const headerStyles = tv({
   slots: {
     container:
       "w-full flex items-center justify-center fixed bg-white flex-col z-50",
     header:
-      "w-full flex items-center justify-between py-4 max-w-[1440px] gap-20 px-10",
+      "w-full flex items-center justify-between py-4 max-w-[1440px] gap-20 px-10 z-40",
     list: "items-center gap-4 md:flex hidden gap-12",
     navItem: "hover:underline",
     listItem: "relative",
@@ -62,7 +63,11 @@ export const Header = () => {
 
         <MobileMenu isOpen={openMobileMenu} />
       </header>
-      <nav className="bg-gradient-to-b from-black to-zinc-600 w-full px-10 text-white items-center justify-center py-2 hidden md:flex">
+      <motion.nav
+        className="bg-gradient-to-b from-black to-zinc-600 w-full px-10 text-white items-center justify-center py-2 hidden md:flex z-50"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+      >
         <ul className={list()}>
           <li>
             <a className={navItem()} href="/">
@@ -70,7 +75,7 @@ export const Header = () => {
             </a>
           </li>
           <li>
-            <a className={navItem()} href="#whoAreWe">
+            <a className={navItem()} href="/#whoAreWe">
               Quem somos
             </a>
           </li>
@@ -106,7 +111,7 @@ export const Header = () => {
             </a>
           </li>
         </ul>
-      </nav>
+      </motion.nav>
     </div>
   );
 };

@@ -1,7 +1,9 @@
-import { useEffect, useMemo, useState } from "react";
+import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
 import { Input } from "./input";
 import { Select } from "./select";
 import axios from "axios";
+import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 interface IStates {
   states: Array<{
@@ -12,7 +14,32 @@ interface IStates {
 export function FranchiseForm() {
   const [cities, setCities] = useState<string[]>([]);
   const [states, setStates] = useState<IStates>();
-  console.log(states);
+  const formRef = useRef<HTMLFormElement | null>(null);
+
+  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_6hsbwtf",
+        "template_pxnkyr9",
+        formRef.current as never,
+        {
+          publicKey: "Nhq176vpU7AgCBmDs",
+        }
+      )
+      .then(
+        () => {
+          toast("Solicitação enviada com sucesso!", {
+            type: "success",
+          });
+          e.currentTarget?.reset();
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
 
   useEffect(() => {
     axios
@@ -100,10 +127,13 @@ export function FranchiseForm() {
     },
   ];
 
-  console.log(cities);
-
   return (
-    <form className="max-w-[600px] m-auto mt-10" id="franchise-form">
+    <form
+      onSubmit={sendEmail}
+      ref={formRef}
+      className="max-w-[600px] m-auto mt-10"
+      id="franchise-form"
+    >
       <h1 className="text-2xl text-center font-bold text-primary">
         Cadastre-se agora e receba informações sobre a franquia VIA
       </h1>
@@ -112,18 +142,26 @@ export function FranchiseForm() {
         contato com você.
       </p>
       <div className="flex flex-col gap-4">
-        <Input label="Nome*" />
-        <Input label="Email*" />
-        <Input label="Celular*" />
-        <Select label="Estado*" options={stateOptions} />
-        <Select label="Cidade*" options={citiesOptions} />
+        <Input label="Nome*" name="name" />
+        <Input label="Email*" name="email" />
+        <Input label="Celular*" name="phone" />
+        <Select label="Estado*" name="state" options={stateOptions} />
+        <Select label="Cidade*" name="city" options={citiesOptions} />
         <Select
           label="Qual a sua Disponibilidade Financeira?*"
           options={budgetOptions}
+          name="finance"
         />
-        <Select label="Como nos conheceu?*" options={howYouFindUsOptions} />
+        <Select
+          label="Como nos conheceu?*"
+          name="how"
+          options={howYouFindUsOptions}
+        />
       </div>
-      <button className="bg-gradient-to-b from-black to-zinc-600 text-white p-3 w-full rounded-md mt-5">
+      <button
+        type="submit"
+        className="bg-gradient-to-b from-black to-zinc-600 text-white p-3 w-full rounded-md mt-5"
+      >
         Enviar
       </button>
     </form>
