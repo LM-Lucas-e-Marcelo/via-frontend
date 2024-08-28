@@ -25,13 +25,18 @@ export const Franchise = () => {
           transition={{ duration: 1 }}
         >
           <img
-            className="w-[90%] h-[150px] md:h-[auto] md:w-[1100px] m-auto mt-10 rounded-md"
+            className="w-[90%] m-auto mt-10 rounded-md hidden sm:block"
             src="/franchise-banner.png"
+            alt="Já imaginou ter seu próprio negócio?"
+          />
+          <img
+            className="w-[90%] m-auto mt-10 rounded-md sm:hidden block"
+            src="/mobile-franchise-banner.png"
             alt="Já imaginou ter seu próprio negócio?"
           />
           <a
             href="#franchise-form"
-            className="mt-5 bg-gradient-to-b from-wherePrimary to-whereSecondary text-white px-5 md:py-2 md:text-md text-sm p-1 hover:opacity-90 absolute md:bottom-[10%] md:left-[30%] bottom-[7%] left-[15%] z-40"
+            className="mt-5 bg-gradient-to-b from-wherePrimary to-whereSecondary text-white px-5 py-2 hover:opacity-90 absolute md:bottom-[10%] md:left-[28%] bottom-[6%] left-[28%] z-40"
           >
             Seja um franqueado
           </a>

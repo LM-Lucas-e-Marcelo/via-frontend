@@ -28,7 +28,7 @@ export const Services = () => {
         Aqui você tem serviços de qualidade e segurança!
       </p>
       <div className="flex flex-wrap gap-6 justify-center">
-        {services.map(({ id, title, description, icon, img }) => {
+        {services.map(({ id, title, description, icon, thumb }) => {
           return (
             <ServiceCard
               id={id}
@@ -36,7 +36,7 @@ export const Services = () => {
               title={title}
               description={description}
               icon={icon}
-              img={img}
+              img={thumb}
             />
           );
         })}

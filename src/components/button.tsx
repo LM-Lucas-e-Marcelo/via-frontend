@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ComponentProps, ReactNode } from "react";
 import { VariantProps, tv } from "tailwind-variants";
 
 const buttonStyles = tv({
@@ -13,12 +13,16 @@ const buttonStyles = tv({
   },
 });
 
-interface ButtonProps extends VariantProps<typeof buttonStyles> {
+interface ButtonProps
+  extends VariantProps<typeof buttonStyles>,
+    ComponentProps<"button"> {
   children: ReactNode;
 }
 
-export function Button({ children, bold, isSmall }: ButtonProps) {
+export function Button({ children, bold, isSmall, ...rest }: ButtonProps) {
   return (
-    <button className={buttonStyles({ bold, isSmall })}>{children}</button>
+    <button className={buttonStyles({ bold, isSmall })} {...rest}>
+      {children}
+    </button>
   );
 }

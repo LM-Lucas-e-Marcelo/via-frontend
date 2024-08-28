@@ -3,6 +3,9 @@ import { Button } from "./button";
 import { motion } from "framer-motion";
 
 export const Hero = () => {
+  const handleRedirect = () => {
+    window.open("/services/5", "_self");
+  };
   return (
     <div className="w-full bg-[url(/banner-hero.svg)] p-10 pb-0 bg-cover bg-center flex items-center justify-center">
       <div className="w-full max-w-[1440px] min-h-[400px] mt-[74px] flex items-center justify-around flex-col gap-10 md:gap-0 md:flex-row">
@@ -20,7 +23,9 @@ export const Hero = () => {
             Com a nossa análise completa, você faz a escolha certa. A VIA te
             ajuda a enxergar além do óbvio!
           </h2>
-          <Button isSmall>Saiba mais</Button>
+          <Button onClick={handleRedirect} isSmall>
+            Saiba mais
+          </Button>
         </motion.div>
         <motion.img
           className="w-[350px]"

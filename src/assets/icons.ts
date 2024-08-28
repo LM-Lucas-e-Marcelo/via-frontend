@@ -18,3 +18,4 @@ export { AiOutlineFacebook } from "react-icons/ai";
 export { BiSupport } from "react-icons/bi";
 export { FaCheck } from "react-icons/fa";
 export { RxHamburgerMenu } from "react-icons/rx";
+export { CgSpinner } from "react-icons/cg";

@@ -6,7 +6,7 @@ interface ServiceCardProps {
   icon: IconType;
   title: string;
   description: string;
-  img: string;
+  img?: string;
 }
 
 const item = {
@@ -17,7 +17,12 @@ const item = {
   },
 };
 
-export const ServiceCard = ({ icon: Icon, title, id }: ServiceCardProps) => {
+export const ServiceCard = ({
+  icon: Icon,
+  title,
+  id,
+  img,
+}: ServiceCardProps) => {
   const handleRedirect = (id: number) => {
     window.open(`/services/${id}`, "_self");
   };
@@ -28,12 +33,12 @@ export const ServiceCard = ({ icon: Icon, title, id }: ServiceCardProps) => {
       onClick={() => handleRedirect(id)}
       className="w-[280px] rounded-md h-[300px] flex flex-col items-center justify-center relative overflow-hidden cursor-pointer hover:scale-110 transition-all"
     >
-      {/* <img
+      <img
         src={img}
         alt={title}
         className="h-[450px] mt-[-80px] object-cover"
         loading="lazy"
-      /> */}
+      />
       <div className="absolute top-0 bottom-0 left-0 right-0 bg-primary opacity-60 z-0" />
       <span className="w-24 h-24 bg-white rounded-full flex items-center justify-center p-4 text-green-500 z-60 absolute top-[60px]">
         <Icon size={80} />

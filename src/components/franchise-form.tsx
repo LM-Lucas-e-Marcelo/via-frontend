@@ -4,6 +4,7 @@ import { Select } from "./select";
 import axios from "axios";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
+import { CgSpinner } from "../assets/icons";
 
 interface IStates {
   states: Array<{
@@ -12,11 +13,22 @@ interface IStates {
 }
 
 export function FranchiseForm() {
+  const [loading, setLoading] = useState(false);
   const [cities, setCities] = useState<string[]>([]);
   const [states, setStates] = useState<IStates>();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    state: "",
+    city: "",
+    finance: "",
+    how: "",
+  });
   const formRef = useRef<HTMLFormElement | null>(null);
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
+    setLoading(true);
     e.preventDefault();
 
     emailjs
@@ -38,7 +50,19 @@ export function FranchiseForm() {
         (error) => {
           console.log("FAILED...", error.text);
         }
-      );
+      )
+      .finally(() => {
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          state: "",
+          city: "",
+          finance: "",
+          how: "",
+        });
+        setLoading(false);
+      });
   };
 
   useEffect(() => {
@@ -127,6 +151,13 @@ export function FranchiseForm() {
     },
   ];
 
+  const handleChange = (
+    event: FormEvent<HTMLInputElement | HTMLSelectElement>
+  ) => {
+    const { name, value } = event.currentTarget;
+    setFormData((prevState) => ({ ...prevState, [name]: value }));
+  };
+
   return (
     <form
       onSubmit={sendEmail}
@@ -142,27 +173,59 @@ export function FranchiseForm() {
         contato com você.
       </p>
       <div className="flex flex-col gap-4">
-        <Input label="Nome*" name="name" />
-        <Input label="Email*" name="email" />
-        <Input label="Celular*" name="phone" />
-        <Select label="Estado*" name="state" options={stateOptions} />
-        <Select label="Cidade*" name="city" options={citiesOptions} />
+        <Input
+          label="Nome*"
+          name="name"
+          onChange={handleChange}
+          value={formData.name}
+        />
+        <Input
+          label="Email*"
+          name="email"
+          onChange={handleChange}
+          value={formData.email}
+        />
+        <Input
+          label="Celular*"
+          name="phone"
+          onChange={handleChange}
+          value={formData.phone}
+        />
+        <Select
+          label="Estado*"
+          name="state"
+          onChange={handleChange}
+          options={stateOptions}
+          value={formData.state}
+        />
+        <Select
+          label="Cidade*"
+          name="city"
+          onChange={handleChange}
+          options={citiesOptions}
+          value={formData.city}
+        />
         <Select
           label="Qual a sua Disponibilidade Financeira?*"
           options={budgetOptions}
           name="finance"
+          onChange={handleChange}
+          value={formData.finance}
         />
         <Select
           label="Como nos conheceu?*"
           name="how"
           options={howYouFindUsOptions}
+          onChange={handleChange}
+          value={formData.how}
         />
       </div>
       <button
+        disabled={loading}
         type="submit"
-        className="bg-gradient-to-b from-black to-zinc-600 text-white p-3 w-full rounded-md mt-5"
+        className="bg-gradient-to-b from-black to-zinc-600 text-white p-3 w-full rounded-md mt-5 flex items-center gap-2 justify-center"
       >
-        Enviar
+        Enviar {loading && <CgSpinner className="animate-spin" />}
       </button>
     </form>
   );
