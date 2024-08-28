@@ -18,8 +18,7 @@ export function Security() {
             <img
               alt="logo detran"
               src={detranLogo}
-              width={100}
-              className="shrink-0"
+              className="shrink-0 w-[60px] h-[20px] md:w-[100px] md:h-[auto]"
             />
           </span>
         </div>
