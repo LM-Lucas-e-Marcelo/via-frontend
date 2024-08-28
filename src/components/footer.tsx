@@ -41,7 +41,7 @@ export const Footer = () => {
             ))}
           </div>
         </section>
-        <section className="flex flex-col gap-2 bg-white p-5 rounded-md mt-[50px]">
+        <section className="flex flex-col gap-2 p-5 rounded-md mt-[50px]">
           <h1 className="text-xl">Segurança e Qualidade</h1>
           <div className="flex gap-3 w-full justify-center sm:justify-normal items-center">
             <a href="https://www.sslshopper.com/ssl-checker.html#hostname=https://viavistoria.com.br">

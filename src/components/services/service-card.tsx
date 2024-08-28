@@ -10,7 +10,7 @@ interface ServiceCardProps {
 }
 
 const item = {
-  hidden: { y: 20, opacity: 0 },
+  hidden: { y: 50, opacity: 0 },
   visible: {
     y: 0,
     opacity: 1,
@@ -24,6 +24,7 @@ export const ServiceCard = ({ icon: Icon, title, id }: ServiceCardProps) => {
   return (
     <motion.div
       variants={item}
+      animate={{}}
       onClick={() => handleRedirect(id)}
       className="w-[280px] rounded-md h-[300px] flex flex-col items-center justify-center relative overflow-hidden cursor-pointer hover:scale-110 transition-all"
     >
