@@ -21,7 +21,10 @@ export const Footer = () => {
           <div className="flex flex-col gap-1">
             <strong>Unidades</strong>
             {addresses.map((addr) => (
-              <a key={addr.cityAndNeigh} href={addr.mapUrl}>
+              <a
+                key={addr.cityAndNeigh}
+                href={`https://wa.me/${addr.whatsappNumber}`}
+              >
                 {addr.cityAndNeigh}
               </a>
             ))}
