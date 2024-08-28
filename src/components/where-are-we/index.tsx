@@ -1,18 +1,24 @@
-import { addresses } from "../../constants/addresses";
-import { LocationCard } from "./location-card";
+import mapImage from "../../assets/map.png";
 
 export const WhereAreWe = () => {
   return (
-    <div
-      className="w-full max-w-[1440px] flex flex-col items-center p-10"
-      id="whereAreWe"
-    >
-      <p>Unidades</p>
-      <strong className="text-2xl sm:text-3xl">Onde Estamos</strong>
-      <div className="flex flex-wrap gap-4 justify-center mt-6">
-        {addresses.map((address) => {
-          return <LocationCard key={address.street} {...address} />;
-        })}
+    <div className="w-full bg-[url(/where.png)] bg-cover">
+      <div className="max-w-[1440px] m-auto p-10 flex items-center justify-center gap-10 flex-col md:flex-row md:gap-48">
+        <div>
+          <h1 className="text-3xl text-white font-bold md:text-5xl">
+            Sua via para a confiança <br /> tem endereço certo!
+          </h1>
+          <p className="text-white text-xl mt-4 text-wra ">
+            Estamos presentes em diversas cidades de{" "}
+            <strong>Santa Catarina.</strong>
+          </p>
+          <div className="flex items-center justify-center">
+            <button className="mt-5 bg-gradient-to-b from-wherePrimary to-whereSecondary text-white px-5 py-2 hover:opacity-90">
+              Encontre uma unidade perto de você
+            </button>
+          </div>
+        </div>
+        <img src={mapImage} alt="desenho de um mapa" width={300} />
       </div>
     </div>
   );

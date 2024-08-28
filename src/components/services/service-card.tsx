@@ -1,23 +1,28 @@
 import { IconType } from "react-icons";
 
 interface ServiceCardProps {
+  id: number;
   icon: IconType;
   title: string;
   description: string;
 }
 
-export const ServiceCard = ({
-  icon: Icon,
-  title,
-  description,
-}: ServiceCardProps) => {
+export const ServiceCard = ({ icon: Icon, title, id }: ServiceCardProps) => {
+  const handleRedirect = (id: number) => {
+    window.open(`/services/${id}`, "_self");
+  };
   return (
-    <div className="w-[350px] bg-white relative rounded-md py-10 px-4 border border-zinc-400 mt-10 shadow-zinc-300 shadow-md">
-      <span className="w-14 h-14 rounded-full flex items-center justify-center bg-white absolute top-[-28px] left-1/2 -translate-x-1/2 border border-zinc-400">
-        <Icon size={30} />
+    <div
+      onClick={() => handleRedirect(id)}
+      className="w-[280px] bg-gradient-to-r from-secondary to-green-200 rounded-md h-[300px] flex flex-col items-center justify-center relative overflow-hidden cursor-pointer hover:scale-110 transition-all"
+    >
+      <span className="w-24 h-24 bg-white rounded-full flex items-center justify-center p-4 text-green-500">
+        <Icon size={80} />
       </span>
-      <strong className="text-lg mb-4 block">{title}</strong>
-      <p>{description}</p>
+      <p className="text-white text-lg mt-5">{title}</p>
+      <button className="absolute bottom-0 bg-gradient-to-b from-black to-zinc-600 w-full p-2 text-white text-lg hover:opacity-90">
+        + Saiba mais
+      </button>
     </div>
   );
 };

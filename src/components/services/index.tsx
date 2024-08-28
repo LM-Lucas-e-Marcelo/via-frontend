@@ -7,15 +7,16 @@ export const Services = () => {
       className="w-full max-w-[1440px] flex flex-col items-center p-10"
       id="services"
     >
-      <p>Serviços VIA</p>
-      <strong className="text-xl sm:text-2xl text-center">
-        Vistorias veiculares para sua segurança
-      </strong>
-      <div className="flex flex-wrap gap-4 justify-center">
-        {services.map(({ title, description, icon }) => {
+      <strong className="text-primary text-xl">SERVIÇOS VIA VISTORIA</strong>
+      <p className="text-xl text-center mb-10">
+        Aqui você tem serviços de qualidade e segurança!
+      </p>
+      <div className="flex flex-wrap gap-6 justify-center">
+        {services.map(({ id, title, description, icon }) => {
           return (
             <ServiceCard
-              key={title}
+              id={id}
+              key={id}
               title={title}
               description={description}
               icon={icon}

@@ -1,14 +1,15 @@
-import { useState } from "react";
-import logo from "../assets/logo.svg";
+import logo from "../assets/logo_via.png";
 import { tv } from "tailwind-variants";
+import { BiSupport } from "../assets/icons";
+import { Button } from "./button";
 
 const headerStyles = tv({
   slots: {
     container:
-      "w-full flex items-center justify-center fixed border-b border-zinc-100 z-10 bg-white",
+      "w-full flex items-center justify-center fixed z-10 bg-white  flex-col",
     header:
-      "w-full flex items-center justify-between py-4 px-10 max-w-[1440px]",
-    list: "items-center gap-4 md:flex hidden",
+      "w-full flex items-center justify-between py-4 max-w-[1440px] gap-20 px-10",
+    list: "items-center gap-4 md:flex hidden gap-12",
     navItem: "hover:underline",
     listItem: "relative",
     dropdown:
@@ -24,73 +25,65 @@ const headerStyles = tv({
   },
 });
 
-const { container, header, list, listItem, navItem, dropdown, dropdownItem } =
-  headerStyles();
+const { container, header, list, navItem } = headerStyles();
 
 export const Header = () => {
-  const [showDropdown, setShowDropdown] = useState(false);
-
   return (
     <div className={container()}>
       <header className={header()}>
         <a href="/">
-          <img width={100} src={logo} alt="VIA" />
+          <img width={150} src={logo} alt="VIA" />
         </a>
-        <nav>
-          <ul className={list()}>
-            <li>
-              <a className={navItem()} href="/">
-                Início
-              </a>
-            </li>
-            <li className={navItem()}>
-              <a href="#services">Serviços</a>
-            </li>
-            <li
-              className={listItem()}
-              onMouseEnter={() => setShowDropdown(true)}
-              onMouseLeave={() => setShowDropdown(false)}
-            >
-              <a>Contato</a>
-              <div className={dropdown({ isOpen: showDropdown })}>
-                <a
-                  className={dropdownItem()}
-                  href={`https://wa.me/48991494123`}
-                >
-                  Biguaçu
-                </a>
-                <a
-                  className={dropdownItem()}
-                  href={`https://wa.me/48991763476`}
-                >
-                  Cocal do Sul
-                </a>
-                <a
-                  className={dropdownItem()}
-                  href={`https://wa.me/47992565690`}
-                >
-                  Ilhota
-                </a>
-              </div>
-            </li>
-            <li>
-              <a className={navItem()} href="#whereAreWe">
-                Onde estamos
-              </a>
-            </li>
-            <li>
-              <a className={navItem()} href="#franchise">
-                Franquia
-              </a>
-            </li>
-            <li>
-              <a className={navItem()} href="#whoAreWe">
-                Quem somos
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <div className="gap-3 items-center hidden md:flex">
+          <BiSupport size={30} />
+          <Button>Fale conosco</Button>
+        </div>
       </header>
+      <nav className="bg-gradient-to-b from-black to-zinc-600 w-full px-10 text-white items-center justify-center py-2 hidden md:flex">
+        <ul className={list()}>
+          <li>
+            <a className={navItem()} href="/">
+              Início
+            </a>
+          </li>
+          <li className={navItem()}>
+            <a href="/#services">Serviços</a>
+          </li>
+          {/* <li
+            className={listItem()}
+            onMouseEnter={() => setShowDropdown(true)}
+            onMouseLeave={() => setShowDropdown(false)}
+          >
+            <a>Contato</a>
+            <div className={dropdown({ isOpen: showDropdown })}>
+              <a className={dropdownItem()} href={`https://wa.me/48991494123`}>
+                Biguaçu
+              </a>
+              <a className={dropdownItem()} href={`https://wa.me/48991763476`}>
+                Cocal do Sul
+              </a>
+              <a className={dropdownItem()} href={`https://wa.me/47992565690`}>
+                Ilhota
+              </a>
+            </div>
+          </li> */}
+          <li>
+            <a className={navItem()} href="/where-are-we">
+              Onde estamos
+            </a>
+          </li>
+          <li>
+            <a className={navItem()} href="/franchise">
+              Franquia
+            </a>
+          </li>
+          <li>
+            <a className={navItem()} href="#whoAreWe">
+              Quem somos
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 };
