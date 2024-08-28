@@ -39,7 +39,7 @@ export function Services() {
             </p>
           </span>
           <a
-            className="bg-gradient-to-b from-black to-zinc-600 p-2 text-white block w-[200px] text-center mt-5"
+            className="bg-gradient-to-b from-black to-zinc-600 p-2 text-white block w-[200px] text-center mt-5 rounded-md"
             href="/where-are-we"
           >
             Agendar vistoria
