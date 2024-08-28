@@ -29,7 +29,7 @@ export const ViaVistoriaBiguacu = () => {
           />
         </a>
       </div>
-      <footer className="border-t border-zinc-400 flex flex-col items-center justify-center text-center p-10">
+      <footer className="border-t border-zinc-400 flex flex-col items-center justify-center text-center sm:p-10 py-10 px-2">
         <img src={logo} alt="logo via" width={200} className="mb-5" />
         <p>
           ©2024 Via Vistoria. Todos os direitos reservados.
