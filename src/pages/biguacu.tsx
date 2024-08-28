@@ -1,10 +1,11 @@
 import whatsapp from "../assets/biguacu/whatsapp.png";
 import localization from "../assets/biguacu/localization.png";
 import cautelar from "../assets/biguacu/cautelar.png";
+import logo from "../assets/logo_via.png";
 
 export const ViaVistoriaBiguacu = () => {
   return (
-    <div className="w-full bg-gradient-to-b from-black to-zinc-600 h-screen flex flex-col justify-between">
+    <div className="w-full bg-gradient-to-r from-white to-zinc-100 h-screen flex flex-col justify-between">
       <div className="max-w-[1440px] m-auto flex flex-col items-center justify-center gap-6 p-4 sm:p-10">
         <a href="https://wa.me/48991494123">
           <img
@@ -28,7 +29,8 @@ export const ViaVistoriaBiguacu = () => {
           />
         </a>
       </div>
-      <footer className="h-[90px] bg-zinc-900 text-white flex flex-col items-center justify-center text-center p-10">
+      <footer className="border-t border-zinc-400 flex flex-col items-center justify-center text-center p-10">
+        <img src={logo} alt="logo via" width={200} className="mb-5" />
         <p>
           ©2024 Via Vistoria. Todos os direitos reservados.
           <br /> CNPJ: 99.999.999/9999-99
