@@ -1,6 +1,9 @@
 import mapImage from "../../assets/map.png";
 
 export const WhereAreWe = () => {
+  const handleRedirect = () => {
+    window.open("/where-are-we", "_self");
+  };
   return (
     <div className="w-full bg-[url(/where.png)] bg-cover">
       <div className="max-w-[1440px] m-auto p-10 flex items-center justify-center gap-10 flex-col md:flex-row md:gap-48">
@@ -13,12 +16,15 @@ export const WhereAreWe = () => {
             <strong>Santa Catarina.</strong>
           </p>
           <div className="flex items-center justify-center">
-            <button className="mt-5 bg-gradient-to-b from-wherePrimary to-whereSecondary text-white px-5 py-2 hover:opacity-90">
+            <button
+              onClick={handleRedirect}
+              className="mt-5 bg-gradient-to-b from-wherePrimary to-whereSecondary text-white px-5 py-2 hover:opacity-90"
+            >
               Encontre uma unidade perto de você
             </button>
           </div>
         </div>
-        <img src={mapImage} alt="desenho de um mapa" width={300} />
+        <img src={mapImage} alt="desenho de um mapa" width={400} />
       </div>
     </div>
   );

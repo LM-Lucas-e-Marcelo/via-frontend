@@ -1,7 +1,9 @@
 import logo from "../assets/logo_via.png";
 import { tv } from "tailwind-variants";
-import { BiSupport } from "../assets/icons";
+import { BiSupport, FiX, RxHamburgerMenu } from "../assets/icons";
 import { Button } from "./button";
+import { MobileMenu } from "./mobile-menu";
+import { useState } from "react";
 
 const headerStyles = tv({
   slots: {
@@ -28,6 +30,11 @@ const headerStyles = tv({
 const { container, header, list, navItem } = headerStyles();
 
 export const Header = () => {
+  const [openMobileMenu, setOpenMobileMenu] = useState(false);
+
+  const handleToggleMobileMenu = () =>
+    setOpenMobileMenu((prevState) => !prevState);
+
   return (
     <div className={container()}>
       <header className={header()}>
@@ -36,14 +43,35 @@ export const Header = () => {
         </a>
         <div className="gap-3 items-center hidden md:flex">
           <BiSupport size={30} />
-          <Button>Fale conosco</Button>
+          <a href="mailto:via@viavistoria.com.br">
+            <Button>Fale conosco</Button>
+          </a>
         </div>
+        {openMobileMenu ? (
+          <button
+            onClick={handleToggleMobileMenu}
+            className="text-red-500 md:hidden"
+          >
+            <FiX size={30} />
+          </button>
+        ) : (
+          <button onClick={handleToggleMobileMenu} className="md:hidden">
+            <RxHamburgerMenu size={24} />
+          </button>
+        )}
+
+        <MobileMenu isOpen={openMobileMenu} />
       </header>
       <nav className="bg-gradient-to-b from-black to-zinc-600 w-full px-10 text-white items-center justify-center py-2 hidden md:flex">
         <ul className={list()}>
           <li>
             <a className={navItem()} href="/">
               Início
+            </a>
+          </li>
+          <li>
+            <a className={navItem()} href="#whoAreWe">
+              Quem somos
             </a>
           </li>
           <li className={navItem()}>
@@ -75,11 +103,6 @@ export const Header = () => {
           <li>
             <a className={navItem()} href="/franchise">
               Franquia
-            </a>
-          </li>
-          <li>
-            <a className={navItem()} href="#whoAreWe">
-              Quem somos
             </a>
           </li>
         </ul>

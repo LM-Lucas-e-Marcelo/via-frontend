@@ -1,5 +1,6 @@
 import logo from "../assets/logo_via.png";
 import { AiOutlineFacebook, IoLogoInstagram, FiTwitter } from "../assets/icons";
+import { services } from "../constants/services";
 
 export const Footer = () => {
   return (
@@ -8,9 +9,22 @@ export const Footer = () => {
         <section className="flex flex-col items-center gap-3">
           <img src={logo} alt="Via" className="md:w-[200px]" />
           <p className="max-w-[400px] text-center">
-            A Via tem como prioridade proporcionar sempre a melhor experiência
-            aos seus clientes.
+            A sua via para a confiança!
           </p>
+        </section>
+        <section className="flex flex-col gap-3">
+          <strong className="text-lg">Serviços</strong>
+          <div className="flex flex-col gap-2">
+            {services.map((service) => (
+              <a
+                key={service.title}
+                href={`/services/${service.id}`}
+                className="hover:underline"
+              >
+                {service.title}
+              </a>
+            ))}
+          </div>
         </section>
         <section className="flex flex-col gap-2">
           <h1 className="text-xl">Nos siga nas redes sociais</h1>

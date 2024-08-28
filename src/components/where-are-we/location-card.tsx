@@ -1,9 +1,9 @@
 import { tv } from "tailwind-variants";
-import { FaWhatsapp, FiPhone, GrLocation } from "../../assets/icons";
+import { GrLocation } from "../../assets/icons";
 
 const locationCard = tv({
   slots: {
-    card: "flex flex-col overflow-hidden rounded-md w-[350px] gap-2 border border-zinc-400 shadow-zinc-300 shadow-md",
+    card: "flex flex-col overflow-hidden rounded-md w-[350px] gap-2 border border-zinc-400 shadow-zinc-300 shadow-md relative h-[360px]",
     img: "w-full object-contain",
     infos: "flex flex-col gap-4 p-4",
     infoItem: "flex gap-2 items-center",
@@ -24,7 +24,6 @@ const { card, img, infos, infoItem } = locationCard();
 export const LocationCard = ({
   cityAndNeigh,
   mapUrl,
-  phoneNumber,
   street,
   whatsappNumber,
   image,
@@ -40,18 +39,12 @@ export const LocationCard = ({
           {street}
         </a>
 
-        <a className={infoItem()} target="_blank" href={`Tel:${phoneNumber}`}>
-          <FiPhone size={24} className="text-blue-950 flex-shrink-0" />
-          {phoneNumber}
-        </a>
-
         <a
-          className={infoItem()}
+          className=" absolute bottom-0 left-0 right-0 bg-gradient-to-b from-black to-zinc-600 text-white px-5 py-4 hover:opacity-90 flex items-center gap-3 justify-center"
           target="_blank"
           href={`https://wa.me/${whatsappNumber}`}
         >
-          <FaWhatsapp size={24} className="text-green-500 flex-shrink-0" />
-          {whatsappNumber}
+          Fale conosco
         </a>
       </div>
     </div>
