@@ -1,4 +1,4 @@
-import whiteCar from "../assets/white-car.svg";
+import whiteCar from "../assets/white-car.png";
 import { Button } from "./button";
 
 export const Hero = () => {

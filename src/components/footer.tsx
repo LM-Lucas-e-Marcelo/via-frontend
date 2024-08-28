@@ -1,4 +1,4 @@
-import logo from "../assets/logo.svg";
+import logo from "../assets/logo_via.png";
 import { AiOutlineFacebook, IoLogoInstagram, FiTwitter } from "../assets/icons";
 
 export const Footer = () => {
