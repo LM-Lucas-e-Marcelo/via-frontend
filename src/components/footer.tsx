@@ -51,7 +51,7 @@ export const Footer = () => {
               <img width={80} src={norton} alt="logo norton" />
             </a>
             <a
-              href="https://www.instagram.com/viavistoriabiguacu/"
+              href="https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Fviavistoria.com.br&hl=pt_BR"
               className="mt-[-10px]"
             >
               <img width={100} src={reclameaqui} alt="logo reclame aqui" />

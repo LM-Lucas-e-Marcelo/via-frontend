@@ -1,9 +1,0 @@
-User-agent: *
-Disallow: /admin/
-Disallow: /login/
-Disallow: /private/
-Allow: /
-
-# Bloqueia todos os rastreadores de acessar o conteúdo listado.
-User-agent: *
-Disallow: /noindex/
