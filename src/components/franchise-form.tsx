@@ -31,13 +31,23 @@ export function FranchiseForm() {
     setLoading(true);
     e.preventDefault();
 
+    const { name, email, phone } = formData;
+
+    if (!name || !email || !phone) {
+      toast("Por favor preencha todos os campos", {
+        type: "error",
+      });
+      setLoading(false);
+      return;
+    }
+
     emailjs
       .sendForm(
-        "service_6hsbwtf",
-        "template_pxnkyr9",
+        "service_d1570sj",
+        "template_a3qizll",
         formRef.current as never,
         {
-          publicKey: "Nhq176vpU7AgCBmDs",
+          publicKey: "ey3vQi4Yi5tAU7qEL",
         }
       )
       .then(
@@ -184,6 +194,7 @@ export function FranchiseForm() {
           name="email"
           onChange={handleChange}
           value={formData.email}
+          type="email"
         />
         <Input
           label="Celular*"

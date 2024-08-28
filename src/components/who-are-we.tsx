@@ -1,24 +1,31 @@
+import image from "../assets/about-us.png";
+
 export const WhoAreWe = () => {
   return (
     <div
-      className="w-full max-w-[1440px] flex flex-col items-center p-10 gap-3"
+      className="w-full max-w-[1440px] flex items-center p-10 gap-3 justify-around flex-wrap"
       id="whoAreWe"
     >
-      <strong className="text-2xl sm:text-3xl">Quem Somos</strong>
-      <p className="max-w-[1000px]">
-        Contrary to popular belief, Lorem Ipsum is not simply random text. It
-        has roots in a piece of classical Latin literature from 45 BC, making it
-        over 2000 years old. Richard McClintock, a Latin professor at
-        Hampden-Sydney College in Virginia, looked up one of the more obscure
-        Latin words, consectetur, from a Lorem Ipsum passage, and going through
-        the cites of the word in classical literature, discovered the
-        undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
-        of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by
-        Cicero, written in 45 BC. This book is a treatise on the theory of
-        ethics, very popular during the Renaissance. The first line of Lorem
-        Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
-        1.10.32.
-      </p>
+      <div className="sm:max-w-[50%]">
+        <strong className="text-2xl sm:text-3xl mb-5 block text-primary">
+          Quem Somos
+        </strong>
+        <p>
+          Somos a maior rede catarinense de vistoria veicular, com mais de 400
+          mil laudos emitidos ao longo de 10 anos de atuação. Nossa trajetória é
+          marcada pela busca incessante pela excelência na prestação de
+          serviços, garantindo a segurança e a tranquilidade de nossos clientes
+          em cada negociação veicular.
+          <br />
+          <br />
+          Em 2024, demos um importante passo rumo à transformação do nosso
+          negócio ao lançar a Via Vistoria Veicular, uma nova fase que marca o
+          início da nossa operação como franquia. Nosso compromisso é expandir
+          essa segurança a todos os catarinenses, proporcionando um serviço de
+          vistoria veicular confiável e acessível em todo o estado.
+        </p>
+      </div>
+      <img src={image} width={400} alt="sobre nós" />
     </div>
   );
 };
