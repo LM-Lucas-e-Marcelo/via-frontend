@@ -16,3 +16,4 @@ export { IoMegaphoneOutline, IoSettingsOutline } from "react-icons/io5";
 export { IoLogoInstagram, IoIosStar } from "react-icons/io";
 export { AiOutlineFacebook } from "react-icons/ai";
 export { BiSupport } from "react-icons/bi";
+export { FaCheck } from "react-icons/fa";

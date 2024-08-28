@@ -13,7 +13,7 @@ export const Franchise = () => {
         />
         <a
           href="#franchise-form"
-          className="mt-5 bg-gradient-to-b from-wherePrimary to-whereSecondary text-white px-5 py-2 hover:opacity-90 absolute bottom-[7%] left-[15%] z-50"
+          className="mt-5 bg-gradient-to-b from-wherePrimary to-whereSecondary text-white px-5 py-2 hover:opacity-90 absolute md:bottom-[15%] md:left-[25%] bottom-[7%] left-[15%] z-40"
         >
           Seja um franqueado
         </a>

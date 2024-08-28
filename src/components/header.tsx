@@ -6,7 +6,7 @@ import { Button } from "./button";
 const headerStyles = tv({
   slots: {
     container:
-      "w-full flex items-center justify-center fixed z-10 bg-white  flex-col",
+      "w-full flex items-center justify-center fixed bg-white flex-col z-50",
     header:
       "w-full flex items-center justify-between py-4 max-w-[1440px] gap-20 px-10",
     list: "items-center gap-4 md:flex hidden gap-12",
