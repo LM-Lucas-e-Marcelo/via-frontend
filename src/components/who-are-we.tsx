@@ -11,18 +11,19 @@ export const WhoAreWe = () => {
           Quem Somos
         </strong>
         <p>
-          Somos a maior rede catarinense de vistoria veicular, com mais de 400
-          mil laudos emitidos ao longo de 10 anos de atuação. Nossa trajetória é
-          marcada pela busca incessante pela excelência na prestação de
-          serviços, garantindo a segurança e a tranquilidade de nossos clientes
-          em cada negociação veicular.
+          Somos a <strong>maior rede catarinense de vistoria veicular</strong>,
+          com mais de 400 mil laudos emitidos ao longo de 10 anos de atuação.
+          Nossa trajetória é marcada pela busca incessante pela excelência na
+          prestação de serviços, garantindo a segurança e a tranquilidade de
+          nossos clientes em cada negociação veicular.
           <br />
           <br />
           Em 2024, demos um importante passo rumo à transformação do nosso
           negócio ao lançar a Via Vistoria Veicular, uma nova fase que marca o
-          início da nossa operação como franquia. Nosso compromisso é expandir
-          essa segurança a todos os catarinenses, proporcionando um serviço de
-          vistoria veicular confiável e acessível em todo o estado.
+          início da nossa operação como <strong>franquia.</strong> Nosso
+          compromisso é expandir essa segurança a todos os catarinenses,
+          proporcionando um serviço de vistoria veicular confiável e acessível
+          em todo o estado.
         </p>
       </div>
       <img src={image} width={400} alt="sobre nós" />

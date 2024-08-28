@@ -48,19 +48,19 @@ export const Footer = () => {
           <h1 className="text-xl">Segurança e Qualidade</h1>
           <div className="flex gap-3 w-full justify-center sm:justify-normal items-center">
             <a href="https://www.sslshopper.com/ssl-checker.html#hostname=https://viavistoria.com.br">
-              <img width={80} src={norton} />
+              <img width={80} src={norton} alt="logo norton" />
             </a>
             <a
               href="https://www.instagram.com/viavistoriabiguacu/"
               className="mt-[-10px]"
             >
-              <img width={100} src={reclameaqui} />
+              <img width={100} src={reclameaqui} alt="logo reclame aqui" />
             </a>
             <a
               href="https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Fviavistoria.com.br&hl=pt_BR"
               className="mt-[-10px]"
             >
-              <img width={100} src={google} />
+              <img width={100} src={google} alt="logo google" />
             </a>
           </div>
         </section>
