@@ -17,8 +17,8 @@ export const Hero = () => {
             cada detalhe.
           </h1>
           <h2 className="text-lg sm:text-xl">
-            Com a nossa análise completa, você faz a escolha certa e dirige
-            tranquilo. A VIA te ajuda a enxergar além do óbvio!
+            Com a nossa análise completa, você faz a escolha certa. A VIA te
+            ajuda a enxergar além do óbvio!
           </h2>
           <Button isSmall>Saiba mais</Button>
         </motion.div>

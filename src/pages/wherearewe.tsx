@@ -17,7 +17,7 @@ export const WhereAreWe = () => {
   return (
     <div className="mt-[60px] md:mt-[102px] w-full">
       <div
-        className="w-full max-w-[1440px] flex flex-col items-center p-10 min-h-[65vh]"
+        className="w-full max-w-[1440px] flex flex-col items-center p-10 min-h-[65vh] m-auto"
         id="whereAreWe"
       >
         <p>Unidades</p>
