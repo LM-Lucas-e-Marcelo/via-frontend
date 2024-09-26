@@ -34,7 +34,7 @@ export function Security() {
         <motion.img
           src={viaSticky}
           alt="logo via"
-          width={300}
+          width={200}
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: isInView ? 0 : 100 }}
           transition={{ duration: 1 }}

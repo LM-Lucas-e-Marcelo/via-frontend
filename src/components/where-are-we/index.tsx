@@ -30,7 +30,7 @@ export const WhereAreWe = () => {
           <div className="flex items-center justify-center">
             <button
               onClick={handleRedirect}
-              className="mt-5 bg-gradient-to-b from-wherePrimary to-whereSecondary text-white px-5 py-2 hover:opacity-90"
+              className="mt-5 bg-primary text-white px-5 py-2 hover:opacity-90"
             >
               Encontre uma unidade perto de você
             </button>
