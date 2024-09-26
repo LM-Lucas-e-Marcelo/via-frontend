@@ -1,7 +1,6 @@
 import logo from "../assets/logo_via.png";
 import google from "../assets/footer/google.png";
 import norton from "../assets/footer/norton.png";
-import reclameaqui from "../assets/footer/reclameaqui.png";
 import { services } from "../constants/services";
 import { addresses } from "../constants/addresses";
 
