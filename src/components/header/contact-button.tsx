@@ -4,10 +4,10 @@ import { Button } from "../button";
 import { tv } from "tailwind-variants";
 
 const contactButton = tv({
-  base: "bg-gradient-to-b from-black to-zinc-600 fixed z-[999999] flex flex-col w-[150px] right-[40px] top-[45px] rounded-md text-white h-[0] overflow-hidden transition-all",
+  base: "bg-white border-0 border-zinc-200 fixed z-[999999] flex flex-col w-[150px] right-[40px] top-[50px] rounded-md h-[0] overflow-hidden transition-all",
   variants: {
     isOpen: {
-      true: "h-[95px]",
+      true: "h-[85px] border",
     },
   },
 });
@@ -15,7 +15,6 @@ const contactButton = tv({
 export const ContactButton = () => {
   const [showDropdown, setShowDropdown] = useState(false);
 
-  console.log(showDropdown);
   return (
     <div
       className="absolute z-[999999] block right-10 top-[14px]"
@@ -28,7 +27,7 @@ export const ContactButton = () => {
       </div>
       <div className={contactButton({ isOpen: showDropdown })}>
         <a
-          className="p-2 pt-4 text-center hover:underline"
+          className="p-2 text-center hover:underline border-b border-zinc-200"
           href="mailto:via@viavistoria.com.br"
         >
           Email
