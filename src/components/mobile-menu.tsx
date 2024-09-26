@@ -22,7 +22,7 @@ const dropdownMenu = tv({
 export const MobileMenu = ({ isOpen }: VariantProps<typeof mobileMenu>) => {
   const [showDropdown, setShowDropdown] = useState(false);
 
-  const handleToggleDropdown = () => setShowDropdown(prevState => !prevState)
+  const handleToggleDropdown = () => setShowDropdown((prevState) => !prevState);
 
   return (
     <div className={mobileMenu({ isOpen })}>
@@ -87,7 +87,11 @@ export const MobileMenu = ({ isOpen }: VariantProps<typeof mobileMenu>) => {
             </a>
           </li>
           <li>
-            <button type="button" onClick={handleToggleDropdown} className="p-5 text-center border-b border-zinc-200 w-full block">
+            <button
+              type="button"
+              onClick={handleToggleDropdown}
+              className="p-5 text-center border-b border-zinc-200 w-full block"
+            >
               Fale conosco
             </button>
             <div className={dropdownMenu({ isOpen: showDropdown })}>
@@ -95,13 +99,13 @@ export const MobileMenu = ({ isOpen }: VariantProps<typeof mobileMenu>) => {
                 href="mailto:via@viavistoria.com.br"
                 className="p-5 text-center border-b border-zinc-200 w-full block"
               >
-                Email
+                via@viavistoria.com.br
               </a>
               <a
                 href="https://wa.me/00000000000"
                 className="p-5 text-center border-b border-zinc-200 w-full block"
               >
-                Whatsapp
+                {"(00) 0000-0000"}
               </a>
             </div>
           </li>
