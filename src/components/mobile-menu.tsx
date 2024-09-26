@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { VariantProps, tv } from "tailwind-variants";
 
 const mobileMenu = tv({
@@ -9,7 +10,20 @@ const mobileMenu = tv({
   },
 });
 
+const dropdownMenu = tv({
+  base: "h-[0] overflow-hidden transition-all bg-zinc-100",
+  variants: {
+    isOpen: {
+      true: "h-[130px]",
+    },
+  },
+});
+
 export const MobileMenu = ({ isOpen }: VariantProps<typeof mobileMenu>) => {
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  const handleToggleDropdown = () => setShowDropdown(prevState => !prevState)
+
   return (
     <div className={mobileMenu({ isOpen })}>
       <nav>
@@ -73,12 +87,23 @@ export const MobileMenu = ({ isOpen }: VariantProps<typeof mobileMenu>) => {
             </a>
           </li>
           <li>
-            <a
-              href="/franchise"
-              className="p-5 text-center border-b border-zinc-200 w-full block"
-            >
+            <button type="button" onClick={handleToggleDropdown} className="p-5 text-center border-b border-zinc-200 w-full block">
               Fale conosco
-            </a>
+            </button>
+            <div className={dropdownMenu({ isOpen: showDropdown })}>
+              <a
+                href="mailto:via@viavistoria.com.br"
+                className="p-5 text-center border-b border-zinc-200 w-full block"
+              >
+                Email
+              </a>
+              <a
+                href="https://wa.me/00000000000"
+                className="p-5 text-center border-b border-zinc-200 w-full block"
+              >
+                Whatsapp
+              </a>
+            </div>
           </li>
         </ul>
       </nav>

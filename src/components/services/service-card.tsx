@@ -40,7 +40,7 @@ export const ServiceCard = ({
         loading="lazy"
       />
       <div className="absolute top-0 bottom-0 left-0 right-0 bg-primary opacity-60 z-0" />
-      <span className="w-24 h-24 bg-white rounded-full flex items-center justify-center p-4 text-green-500 z-60 absolute top-[60px]">
+      <span className="w-24 h-24 bg-white rounded-full flex items-center justify-center p-4 text-[#2a4c7f] z-60 absolute top-[60px]">
         <Icon size={80} />
       </span>
       <p className="text-white text-lg mt-16 absolute">{title}</p>

@@ -1,20 +1,15 @@
 import {
-  TbArrowsTransferDown,
-  LiaCarCrashSolid,
-  MdOutlineLocalCarWash,
   PiFireTruckLight,
   PiNewspaperClipping,
+  TbArrowsTransferDown
 } from "../assets/icons";
-import cardPurchase from "/card-purchase.webp";
-import miniCardPurchase from "/mini-card-purchase.webp";
 import second from "/second.webp";
 import miniSecond from "/mini-second.webp";
 import change from "/change.webp";
 import miniChange from "/mini-change.webp";
-import category from "/category.webp";
-import miniCategory from "/mini-category.webp";
-import cautelar from "/cautelar.webp";
-import miniCautelar from "/mini-cautelar.webp";
+import miniCardPurchase from '/mini-card-purchase.webp'
+import cardPurchase from '/card-purchase.webp'
+
 
 export const services = [
   {
@@ -48,7 +43,7 @@ export const services = [
     title: "Vistoria Alteraçao Característica",
     description:
       "É necessária quando um proprietário modifica aspectos do veículo, como cor, motorização, suspensão ou outros que mudem suas especificações originais registradas. Essa vistoria garante que as alterações estão em conformidade com as normas de segurança e regulamentações do DETRAN",
-    icon: MdOutlineLocalCarWash,
+    icon: PiFireTruckLight,
     img: change,
     thumb: miniChange,
     documents: [
@@ -58,31 +53,31 @@ export const services = [
       "⁠Laudo do INMETRO",
     ],
   },
-  {
-    id: 4,
-    title: "Vistoria para Troca de Categoria",
-    description:
-      "A vistoria para alteração de categoria é realizada quando um veículo muda de uma categoria para outra como particular para aluguel. Essa vistoria garante que o veículo atende ás normas de segurança e regulamentações do DETRAN específicas para a nova categoria.",
-    icon: PiFireTruckLight,
-    img: category,
-    thumb: miniCategory,
-    documents: [
-      "⁠Certificado de Registro e Licenciamento CRLV ou Certificado de Registro de Veículo CRV",
-      " ⁠Documento de identificação com foto do proprietário ou requerente. CNH/RG",
-      "Autorização do DETRAN",
-    ],
-  },
-  {
-    id: 5,
-    title: "Vistoria Cautelar",
-    description:
-      "A vistoria cautelar é um procedimento detalhado realizado em veículos usados para verificar suas condições físicas e documentais antes de uma compra ou venda. Esse serviço visa identificar eventuais problemas estruturais de segurança ou documentação, fornecendo segurança e transparência para compradores e vendedores.",
-    icon: LiaCarCrashSolid,
-    img: cautelar,
-    thumb: miniCautelar,
-    documents: [
-      "⁠Certificado de Registro e Licenciamento CRLV ou Certificado de Registro de Veículo CRV",
-      "⁠Documento de identificação com foto do proprietário ou requerente. ⁠CNH/RG",
-    ],
-  },
+  // {
+  //   id: 4,
+  //   title: "Vistoria para Troca de Categoria",
+  //   description:
+  //     "A vistoria para alteração de categoria é realizada quando um veículo muda de uma categoria para outra como particular para aluguel. Essa vistoria garante que o veículo atende ás normas de segurança e regulamentações do DETRAN específicas para a nova categoria.",
+  //   icon: PiFireTruckLight,
+  //   img: category,
+  //   thumb: miniCategory,
+  //   documents: [
+  //     "⁠Certificado de Registro e Licenciamento CRLV ou Certificado de Registro de Veículo CRV",
+  //     " ⁠Documento de identificação com foto do proprietário ou requerente. CNH/RG",
+  //     "Autorização do DETRAN",
+  //   ],
+  // },
+  // {
+  //   id: 5,
+  //   title: "Vistoria Cautelar",
+  //   description:
+  //     "A vistoria cautelar é um procedimento detalhado realizado em veículos usados para verificar suas condições físicas e documentais antes de uma compra ou venda. Esse serviço visa identificar eventuais problemas estruturais de segurança ou documentação, fornecendo segurança e transparência para compradores e vendedores.",
+  //   icon: LiaCarCrashSolid,
+  //   img: cautelar,
+  //   thumb: miniCautelar,
+  //   documents: [
+  //     "⁠Certificado de Registro e Licenciamento CRLV ou Certificado de Registro de Veículo CRV",
+  //     "⁠Documento de identificação com foto do proprietário ou requerente. ⁠CNH/RG",
+  //   ],
+  // },
 ];

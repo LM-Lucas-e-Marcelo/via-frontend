@@ -6,6 +6,9 @@ import logo from "../assets/biguacu/logo.png";
 export const ViaVistoriaBiguacu = () => {
   return (
     <div className="w-full bg-gradient-to-b from-black to-zinc-600 h-screen flex flex-col justify-between">
+      <header className="pt-10 pb-0 flex items-center justify-center">
+        <img src={logo} width={300} alt="logo via" />
+      </header>
       <div className="max-w-[1440px] m-auto flex flex-col items-center justify-center gap-6 p-4 sm:p-10">
         <a href="https://wa.me/48991494123">
           <img

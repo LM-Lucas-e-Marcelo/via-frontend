@@ -54,12 +54,6 @@ export const Footer = () => {
               href="https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Fviavistoria.com.br&hl=pt_BR"
               className="mt-[-10px]"
             >
-              <img width={100} src={reclameaqui} alt="logo reclame aqui" />
-            </a>
-            <a
-              href="https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Fviavistoria.com.br&hl=pt_BR"
-              className="mt-[-10px]"
-            >
               <img width={100} src={google} alt="logo google" />
             </a>
           </div>
