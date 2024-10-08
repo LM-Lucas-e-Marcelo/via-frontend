@@ -1,10 +1,10 @@
 import { tv } from "tailwind-variants";
-import { GrLocation } from "../../assets/icons";
+import { FaLocationDot, IoLogoWhatsapp } from "../../assets/icons";
 import { motion } from "framer-motion";
 
 const locationCard = tv({
   slots: {
-    card: "flex flex-col overflow-hidden rounded-md w-[350px] gap-2 border border-zinc-400 shadow-zinc-300 shadow-md relative h-[360px]",
+    card: "flex flex-col overflow-hidden rounded-md w-[350px] gap-2 border border-zinc-400 shadow-zinc-300 shadow-md relative h-[400px]",
     img: "w-full object-contain",
     infos: "flex flex-col gap-4 p-4",
     infoItem: "flex gap-2 items-center",
@@ -28,6 +28,7 @@ export const LocationCard = ({
   street,
   whatsappNumber,
   image,
+  phoneNumber
 }: LocationCardProps) => {
   const item = {
     hidden: { y: 20, opacity: 0 },
@@ -44,8 +45,12 @@ export const LocationCard = ({
         <strong className="text-xl">{cityAndNeigh}</strong>
 
         <a className={infoItem()} target="_blank" href={mapUrl}>
-          <GrLocation size={24} className="text-red-600 flex-shrink-0" />{" "}
+          <FaLocationDot size={24} className="text-primary flex-shrink-0" />{" "}
           {street}
+        </a>
+        <a className={infoItem()} target="_blank" href={`https://wa.me/${whatsappNumber}`}>
+          <IoLogoWhatsapp size={24} className="text-primary flex-shrink-0" />{" "}
+          {phoneNumber}
         </a>
 
         <a

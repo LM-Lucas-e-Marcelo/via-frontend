@@ -39,7 +39,7 @@ export const WhereAreWe = () => {
         <motion.img
           src={mapImage}
           alt="desenho de um mapa"
-          width={400}
+          width={460}
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: isInView ? 0 : 100 }}
           transition={{ duration: 1 }}

@@ -31,6 +31,8 @@ export const Header = () => {
         <a href="/">
           <img width={150} src={logo} alt="VIA" />
         </a>
+      <span className="flex gap-4">
+      <ContactButton />
         {openMobileMenu ? (
           <button
             onClick={handleToggleMobileMenu}
@@ -43,6 +45,7 @@ export const Header = () => {
             <RxHamburgerMenu size={24} />
           </button>
         )}
+      </span>
         <MobileMenu isOpen={openMobileMenu} />
       </header>
 
@@ -77,8 +80,6 @@ export const Header = () => {
           </li>
         </ul>
       </motion.nav>
-      {/* Coloque o botão aqui */}
-      <ContactButton />
     </div>
   );
 };

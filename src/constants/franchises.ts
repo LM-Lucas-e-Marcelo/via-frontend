@@ -6,56 +6,62 @@ import {
   PiCurrencyCircleDollar,
   VscLaw,
   LiaChalkboardTeacherSolid,
-  PiNewspaperClipping,
+  GoChecklist
 } from "../assets/icons";
 
 export const franchises = [
   {
     title: "Marketing",
     description:
-      "Nosso time de marketing interno cria e executa estratégias para fortalecer a presença da marca Via Vistoria nacionalmente e apoiar ações locais das unidades. Com materiais personalizados e campanhas direcionadas, garantimos visibilidade e impacto.",
+      "Com setor de marketing interno, criamos e executamos estratégias para fortalecer a presença da marca Via Vistoria em todo o estado. Além disso contamos com serviço de apoio as mídias sociais, realizando postagens e edição de vídeo das unidades franqueadas.",
     icon: IoMegaphoneOutline,
   },
   {
-    title: "Operações",
+    title: "Suporte operacional",
     description:
-      "O departamento de operações está sempre à disposição para garantir que todos os procedimentos estejam em conformidade com nossos altos padrões de qualidade. Oferecemos suporte contínuo para resolver qualquer questão operacional e manter a excelência nos serviços prestados.",
+      "Nossa equipe de suporte operacional está em tempo integral a disposição das unidades franqueadas para tirar dúvidas, auxiliar em procedimentos e orientar para garantir a conformidade com nossos padrões de qualidade.",
     icon: IoSettingsOutline,
   },
   {
     title: "Consultoria de Negócios",
     description:
-      "Nossa equipe de consultores especializados acompanha de perto o desempenho de cada unidade, oferecendo orientações e estratégias para o crescimento e otimização do negócio. Estamos ao lado dos franqueados, auxiliando na identificação de oportunidades e na implementação de melhorias.",
+      "Acompanhamos de perto o desempenho de cada unidade, oferecendo orientações e estratégias para o crescimento e otimização do negócio. Estamos ao lado dos franqueados, auxiliando na identificação de oportunidades e na implementação de melhorias.",
     icon: HiOutlineChatBubbleLeftRight,
   },
   {
-    title: "Credenciamento",
+    title: "Credenciamento junto ao DETRAN",
     description:
-      "Com o suporte da nossa equipe de credenciamento, agilizamos todo o processo burocrático, garantindo que sua unidade esteja em conformidade com as exigências dos órgãos de trânsito. Assim, você pode focar na gestão do seu negócio, enquanto cuidamos dos detalhes.",
+      "Temos equipe especializada e com ampla experiência em credenciamento para realizar o processo burocrático, garantindo que sua unidade esteja em conformidade com as exigências dos órgãos de trânsito. Você pode focar na gestão do seu negócio, enquanto cuidamos dos detalhes.",
     icon: PiIdentificationCard,
   },
   {
     title: "Gestão Financeira",
     description:
-      "Nosso departamento financeiro oferece suporte na gestão de fluxo de caixa, facilitando a relação com fornecedores e clientes corporativos. Asseguramos que a saúde financeira da sua unidade esteja sempre em dia.",
+      "Realizamos toda a parte financeiro da unidade, contas a pagar, contas a receber, conciliação bancária diária com o sistema da vistoria, fluxo de caixa, envio de contas a receber em aberto semanalmente, emissão de boletos e apresentação de resultado do exercício mensalmente. Com assessoria de BPO Financeiro, o franqueado fica livre para focar no que importa: atender bem seus clientes.",
     icon: PiCurrencyCircleDollar,
   },
   {
-    title: "Assessoria Jurídica",
+    title: "Assessoria Contábil",
     description:
-      "Contamos com um time jurídico que proporciona segurança e tranquilidade aos nossos franqueados. Oferecemos suporte para lidar com questões legais, prevenindo problemas e garantindo que todas as operações sejam realizadas dentro da legalidade.",
+      "Com assessoria BPO Contábil especializada na área, realizamos toda a contabilidade para o franqueado. Emissão de guias de impostos, informes a receita, departamento pessoal, emissão e renovação de alvarás, emissão de notas fiscais e alterações contratuais. Simplificar o dia a dia do franqueado é a nossa especialidade.",
     icon: VscLaw,
   },
   {
     title: "Treinamento e Desenvolvimento",
     description:
-      "O departamento de treinamento da Via Vistoria investe continuamente no desenvolvimento de metodologias atualizadas, garantindo que nossos franqueados e suas equipes estejam sempre capacitados e alinhados com as melhores práticas do mercado.",
+      "A equipe de treinamento da VIA tem ampla experiência no ramo, garantindo um treinamento para formar vistoriadores qualificados e capacitados, sempre alinhado com as melhores práticas de mercado.",
     icon: LiaChalkboardTeacherSolid,
   },
   {
-    title: "Comunicação e Imprensa",
+    title: "Assessoria Jurídica",
     description:
-      "Estamos comprometidos em destacar a marca Via Vistoria em todo o país. Por meio de uma assessoria de imprensa especializada, garantimos presença em diversos canais de mídia, ampliando o reconhecimento e a credibilidade da nossa rede.",
-    icon: PiNewspaperClipping,
+      "Com apoio jurídico contínuo, oferecemos suporte jurídico para auxiliar nas questões legais, prevenindo problemas e garantindo que todas as operações sejam realizadas dentro da legalidade.",
+    icon: VscLaw,
+  },
+  {
+    title: "Auditoria interna",
+    description:
+      "Entendemos que a vistoria veicular é um braço da segurança pública, por esse motivo cumprir as normais legais dos órgãos é muito importante para que possamos realizar com excelência nossa função. A VIA possui auditoria interna, que audita mensalmente parte dos serviços de vistoria veicular realizados por toda a rede, enviando relatórios mensais ao franqueado, com apontamentos sobre o processo de vistoria realizado dentro de cada unidade.",
+    icon: GoChecklist,
   },
 ];

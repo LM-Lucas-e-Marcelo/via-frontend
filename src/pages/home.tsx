@@ -1,3 +1,4 @@
+import { FranchiseSection } from "../components/franchise/franchise-section";
 import { Hero } from "../components/hero";
 import { Rating } from "../components/rating";
 import { Security } from "../components/secutiry";
@@ -12,6 +13,7 @@ export function Home() {
       <Services />
       <Security />
       <WhereAreWe />
+      <FranchiseSection />
       <Rating />
       <WhoAreWe />
     </>
