@@ -6,14 +6,9 @@ export const FranchiseSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref);
 
-  const handleOpenFranchise = () => {
-    window.open("/franchise", "_self");
-  };
-
   return (
     <div
-      onClick={handleOpenFranchise}
-      className="bg-[#052b54] w-[100%] overflow-hidden cursor-pointer h-[300px] md:h-[350px]"
+      className="bg-[#052b54] w-[100%] md:w-[78%] overflow-hidden cursor-pointer h-[300px] md:h-[350px] m-auto md:rounded-md"
     >
       <motion.img
         ref={ref}

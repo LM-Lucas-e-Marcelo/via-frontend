@@ -1,5 +1,6 @@
 import { FranchiseForm } from "../components/franchise-form";
 import { FranchiseCard } from "../components/franchise/franchise-card";
+import { FranchiseSection } from "../components/franchise/franchise-section";
 import { franchises } from "../constants/franchises";
 import { motion } from "framer-motion";
 
@@ -18,6 +19,7 @@ export const Franchise = () => {
   return (
     <div className="w-full">
       <div className="mt-[60px] md:mt-[102px] max-w-[1440px] m-auto">
+        <FranchiseSection />
         <motion.div
           className="w-full max-w-[1440px] m-auto flex flex-col items-center p-10"
           id="franchise"
