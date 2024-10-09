@@ -18,7 +18,7 @@ const container = {
 export const Franchise = () => {
   return (
     <div className="w-full">
-      <div className="mt-[60px] md:mt-[102px] max-w-[1440px] m-auto">
+      <div className="mt-[60px] md:mt-[102px]">
         <FranchiseSection />
         <motion.div
           className="w-full max-w-[1440px] m-auto flex flex-col items-center p-10"
