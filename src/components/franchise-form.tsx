@@ -175,13 +175,10 @@ export function FranchiseForm() {
       className="max-w-[600px] m-auto mt-10"
       id="franchise-form"
     >
-      <h1 className="text-2xl text-center font-bold text-primary">
-        Cadastre-se agora e receba informações sobre a franquia VIA
+      <h1 className="text-2xl text-center font-bold text-primary mb-6">
+        Para mais informações sobre FRANQUIA, preencha os campos abaixo que
+        entraremos em contato com você.
       </h1>
-      <p className="text-center mt-2">
-        Preencha os campos abaixo que a nossa equipe de expansão entrará em
-        contato com você.
-      </p>
       <div className="flex flex-col gap-4">
         <Input
           label="Nome*"

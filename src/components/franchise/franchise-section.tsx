@@ -8,7 +8,7 @@ export const FranchiseSection = () => {
 
   return (
     <div
-      className="bg-[#052b54] w-[100%] md:w-[78%] overflow-hidden cursor-pointer h-[300px] md:h-[350px] m-auto md:rounded-md"
+      className="bg-[#052b54] w-[100%] overflow-hidden cursor-pointer h-[300px] md:h-[350px] -mt-1"
     >
       <motion.img
         ref={ref}

@@ -53,31 +53,4 @@ export const services = [
       "⁠Laudo do INMETRO",
     ],
   },
-  // {
-  //   id: 4,
-  //   title: "Vistoria para Troca de Categoria",
-  //   description:
-  //     "A vistoria para alteração de categoria é realizada quando um veículo muda de uma categoria para outra como particular para aluguel. Essa vistoria garante que o veículo atende ás normas de segurança e regulamentações do DETRAN específicas para a nova categoria.",
-  //   icon: PiFireTruckLight,
-  //   img: category,
-  //   thumb: miniCategory,
-  //   documents: [
-  //     "⁠Certificado de Registro e Licenciamento CRLV ou Certificado de Registro de Veículo CRV",
-  //     " ⁠Documento de identificação com foto do proprietário ou requerente. CNH/RG",
-  //     "Autorização do DETRAN",
-  //   ],
-  // },
-  // {
-  //   id: 5,
-  //   title: "Vistoria Cautelar",
-  //   description:
-  //     "A vistoria cautelar é um procedimento detalhado realizado em veículos usados para verificar suas condições físicas e documentais antes de uma compra ou venda. Esse serviço visa identificar eventuais problemas estruturais de segurança ou documentação, fornecendo segurança e transparência para compradores e vendedores.",
-  //   icon: LiaCarCrashSolid,
-  //   img: cautelar,
-  //   thumb: miniCautelar,
-  //   documents: [
-  //     "⁠Certificado de Registro e Licenciamento CRLV ou Certificado de Registro de Veículo CRV",
-  //     "⁠Documento de identificação com foto do proprietário ou requerente. ⁠CNH/RG",
-  //   ],
-  // },
 ];

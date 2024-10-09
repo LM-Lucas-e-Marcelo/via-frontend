@@ -1,4 +1,5 @@
 import { Hero } from "../components/hero";
+import { PrecautionaryInspection } from "../components/precautionary-inspection";
 import { Rating } from "../components/rating";
 import { Security } from "../components/secutiry";
 import { Services } from "../components/services";
@@ -10,8 +11,9 @@ export function Home() {
     <>
       <Hero />
       <Services />
-      <Security />
+      <PrecautionaryInspection />
       <WhereAreWe />
+      <Security />
       <Rating />
       <WhoAreWe />
     </>

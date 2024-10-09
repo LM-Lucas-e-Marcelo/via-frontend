@@ -27,7 +27,6 @@ export const Franchise = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <p>Área para Franqueados - Via Vistoria</p>
           <strong className="text-2xl sm:text-3xl text-primary">
             PARA O FRANQUEADO
           </strong>

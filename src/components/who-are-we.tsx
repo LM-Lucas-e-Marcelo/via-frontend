@@ -15,7 +15,7 @@ export const WhoAreWe = () => {
           mais de 400 mil laudos emitidos ao longo de 10 anos. Nossa trajetória
           é marcada pela excelência na prestação dos serviços, garantindo
           segurança e tranquilidade aos clientes em cada negociação de veículo.
-          Em 2024 nasceu a Via Vistoria Veicular, um importante passo de
+          <br/> <br/> Em 2024 nasceu a Via Vistoria Veicular, um importante passo de
           transformação do negócio em franqueadora. Nosso compromisso é expandir
           essa segurança a todos os catarinenses, proporcionando um serviço de
           vistoria veicular confiável em todo o estado.
