@@ -1,12 +1,46 @@
 import { useParams } from "react-router-dom";
 import { services } from "../constants/services";
+import { useEffect, useState } from "react";
+import { IconType } from "react-icons";
+import { precautionaryServices } from "../constants/precautionary-services";
+
+interface ISelectedService {
+  id: number;
+  title: string;
+  description: string;
+  icon: IconType;
+  img: string;
+  thumb: string;
+  documents: string[];
+}
 
 export function Services() {
+  const [selectedService, setSelectedService] =
+    useState<ISelectedService | null>();
   const { id } = useParams();
 
-  if (!id) return;
+  useEffect(() => {
+    if (id) {
+      const selectedService = services.find((service) => service.id === +id);
 
-  const selectedService = services.find((service) => service.id === +id);
+      if (selectedService) {
+        setSelectedService(selectedService);
+        return;
+      }
+
+      const selectedPrecautionary = precautionaryServices.find(
+        (precautionary) => precautionary.id === +id
+      );
+
+      if (selectedPrecautionary) {
+        setSelectedService(selectedPrecautionary);
+      }
+    }
+
+    return () => setSelectedService(null);
+  }, [id]);
+
+  if (!selectedService) return;
 
   return (
     <div className="w-full mt-[60px] md:mt-[98px] bg-gradient-to-r from-white to-zinc-100 min-h-[70vh]">

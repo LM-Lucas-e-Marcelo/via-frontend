@@ -17,7 +17,7 @@ const container = {
 export const PrecautionaryInspection = () => {
   return (
     <motion.div
-      className="w-full max-w-[1440px] flex flex-col items-center p-10 bg-zinc-00"
+      className="w-full max-w-[1440px] flex flex-col items-center p-10 bg-zinc-200"
       id="services"
       variants={container}
       initial="hidden"
