@@ -1,15 +1,14 @@
-import logo from "../assets/logo_via.png";
-import google from "../assets/footer/google.png";
-import norton from "../assets/footer/norton.png";
-import { services } from "../constants/services";
-import { addresses } from "../constants/addresses";
-import { precautionaryServices } from "../constants/precautionary-services";
+import logo from "../../assets/logo_via.png";
+import google from "../../assets/footer/google.png";
+import norton from "../../assets/footer/norton.png";
+import { FooterServices } from "./services";
+import { FooterUnits } from "./units";
 
 export const Footer = () => {
   return (
-    <div className="flex flex-col w-full ">
+    <div className="flex flex-col w-full">
       <div className="p-10 border-t border-zinc-400 w-full flex justify-around sm:flex-row flex-col items-center gap-3 sm:items-start sm:gap-0">
-        <section className="flex flex-col items-center gap-3">
+        <section className="flex flex-col items-center gap-3 min-w-[260px]">
           <img src={logo} alt="Via" className="w-[200px] ml-[-25px]" />
           <p className="max-w-[400px] text-center ml-[-25px]">
             A sua via para a confiança!
@@ -23,42 +22,9 @@ export const Footer = () => {
             <strong>Fale conosco</strong>
             <a href="mailto:via@viavistoria.com.br">via@viavistoria.com.br</a>
           </div>
-
-          <div className="flex flex-col gap-1">
-            <strong>Unidades</strong>
-            {addresses.map((addr) => (
-              <a
-                key={addr.cityAndNeigh}
-                href={`https://wa.me/${addr.whatsappNumber}`}
-              >
-                {addr.cityAndNeigh}
-              </a>
-            ))}
-          </div>
+          <FooterUnits />
         </section>
-        <section className="flex flex-col gap-3">
-          <strong className="text-lg">Serviços</strong>
-          <div className="flex flex-col gap-2">
-            {services.map((service) => (
-              <a
-                key={service.title}
-                href={`/services/${service.id}`}
-                className="hover:underline"
-              >
-                {service.title}
-              </a>
-            ))}
-            {precautionaryServices.map((service) => (
-              <a
-                key={service.title}
-                href={`/services/${service.id}`}
-                className="hover:underline"
-              >
-                {service.title}
-              </a>
-            ))}
-          </div>
-        </section>
+        <FooterServices />
         <section className="flex flex-col gap-2 p-5 rounded-md mt-[50px]">
           <h1 className="text-xl">Segurança e Qualidade</h1>
           <div className="flex gap-3 w-full justify-center sm:justify-normal items-center">

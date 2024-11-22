@@ -21,3 +21,4 @@ export { FaCheck } from "react-icons/fa";
 export { RxHamburgerMenu } from "react-icons/rx";
 export { CgSpinner } from "react-icons/cg";
 export { GoChecklist } from "react-icons/go";
+export { IoIosArrowDown } from "react-icons/io";
