@@ -3,6 +3,7 @@ import google from "../assets/footer/google.png";
 import norton from "../assets/footer/norton.png";
 import { services } from "../constants/services";
 import { addresses } from "../constants/addresses";
+import { precautionaryServices } from "../constants/precautionary-services";
 
 export const Footer = () => {
   return (
@@ -14,9 +15,15 @@ export const Footer = () => {
             A sua via para a confiança!
           </p>
           <div className="flex flex-col w-full">
+            <strong>
+              <a href="/work-with-us">Trabalhe conosco</a>
+            </strong>
+          </div>
+          <div className="flex flex-col w-full">
             <strong>Fale conosco</strong>
             <a href="mailto:via@viavistoria.com.br">via@viavistoria.com.br</a>
           </div>
+
           <div className="flex flex-col gap-1">
             <strong>Unidades</strong>
             {addresses.map((addr) => (
@@ -33,6 +40,15 @@ export const Footer = () => {
           <strong className="text-lg">Serviços</strong>
           <div className="flex flex-col gap-2">
             {services.map((service) => (
+              <a
+                key={service.title}
+                href={`/services/${service.id}`}
+                className="hover:underline"
+              >
+                {service.title}
+              </a>
+            ))}
+            {precautionaryServices.map((service) => (
               <a
                 key={service.title}
                 href={`/services/${service.id}`}

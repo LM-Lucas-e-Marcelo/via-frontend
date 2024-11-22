@@ -1,15 +1,14 @@
 import {
   PiFireTruckLight,
   PiNewspaperClipping,
-  TbArrowsTransferDown
+  TbArrowsTransferDown,
 } from "../assets/icons";
 import second from "/second.webp";
 import miniSecond from "/mini-second.webp";
 import change from "/change.webp";
 import miniChange from "/mini-change.webp";
-import miniCardPurchase from '/mini-card-purchase.webp'
-import cardPurchase from '/card-purchase.webp'
-
+import miniCardPurchase from "/mini-card-purchase.webp";
+import cardPurchase from "/card-purchase.webp";
 
 export const services = [
   {

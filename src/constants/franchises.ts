@@ -6,14 +6,14 @@ import {
   PiCurrencyCircleDollar,
   VscLaw,
   LiaChalkboardTeacherSolid,
-  GoChecklist
+  GoChecklist,
 } from "../assets/icons";
 
 export const franchises = [
   {
     title: "Credenciamento junto ao DETRAN",
     description:
-      "Temos equipe especializada e com ampla experiência em credenciamento para realizar o processo burocrático, garantindo que sua unidade esteja em conformidade com as exigências dos órgãos de trânsito. Você pode focar na gestão do seu negócio, enquanto cuidamos dos detalhes.",
+      "Contamos com equipe especializada e ampla experiência em credenciamento para realizar o processo burocrático, garantindo que sua unidade esteja em conformidade com as exigências dos órgãos de trânsito. Você pode focar na gestão do seu negócio, enquanto cuidamos dos detalhes.",
     icon: PiIdentificationCard,
   },
   {

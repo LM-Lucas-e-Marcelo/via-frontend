@@ -31,22 +31,22 @@ export const Header = () => {
         <a href="/">
           <img width={150} src={logo} alt="VIA" />
         </a>
-      <span className="flex gap-4">
-      <ContactButton />
-        {openMobileMenu ? (
-          <button
-            onClick={handleToggleMobileMenu}
-            className="text-red-500 md:hidden"
-          >
-            <FiX size={30} />
-          </button>
-        ) : (
-          <button onClick={handleToggleMobileMenu} className="md:hidden">
-            <RxHamburgerMenu size={24} />
-          </button>
-        )}
-      </span>
-        <MobileMenu isOpen={openMobileMenu} />
+        <span className="flex gap-4">
+          <ContactButton />
+          {openMobileMenu ? (
+            <button
+              onClick={handleToggleMobileMenu}
+              className="text-red-500 md:hidden"
+            >
+              <FiX size={30} />
+            </button>
+          ) : (
+            <button onClick={handleToggleMobileMenu} className="md:hidden">
+              <RxHamburgerMenu size={24} />
+            </button>
+          )}
+        </span>
+        <MobileMenu isOpen={openMobileMenu} onClose={handleToggleMobileMenu} />
       </header>
 
       <motion.nav
@@ -76,6 +76,11 @@ export const Header = () => {
           <li>
             <a className={navItem()} href="/franchise">
               Franquia
+            </a>
+          </li>
+          <li>
+            <a className={navItem()} href="/work-with-us">
+              Trabalhe conosco
             </a>
           </li>
         </ul>

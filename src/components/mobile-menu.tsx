@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { VariantProps, tv } from "tailwind-variants";
 
 const mobileMenu = tv({
@@ -10,26 +9,27 @@ const mobileMenu = tv({
   },
 });
 
-const dropdownMenu = tv({
-  base: "h-[0] overflow-hidden transition-all bg-zinc-100",
-  variants: {
-    isOpen: {
-      true: "h-[130px]",
-    },
-  },
-});
+// const dropdownMenu = tv({
+//   base: "h-[0] overflow-hidden transition-all bg-zinc-100",
+//   variants: {
+//     isOpen: {
+//       true: "h-[130px]",
+//     },
+//   },
+// });
 
-export const MobileMenu = ({ isOpen }: VariantProps<typeof mobileMenu>) => {
-  const [showDropdown, setShowDropdown] = useState(false);
+interface MobileMenuProps extends VariantProps<typeof mobileMenu> {
+  onClose: () => void;
+}
 
-  const handleToggleDropdown = () => setShowDropdown((prevState) => !prevState);
-
+export const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
   return (
     <div className={mobileMenu({ isOpen })}>
       <nav>
         <ul className="flex flex-col">
           <li>
             <a
+              onClick={onClose}
               href="/"
               className="p-5 text-center border-b border-zinc-200 w-full block"
             >
@@ -38,6 +38,7 @@ export const MobileMenu = ({ isOpen }: VariantProps<typeof mobileMenu>) => {
           </li>
           <li>
             <a
+              onClick={onClose}
               href="#whoAreWe"
               className="p-5 text-center border-b border-zinc-200 w-full block"
             >
@@ -46,6 +47,7 @@ export const MobileMenu = ({ isOpen }: VariantProps<typeof mobileMenu>) => {
           </li>
           <li>
             <a
+              onClick={onClose}
               href="/#services"
               className="p-5 text-center border-b border-zinc-200 w-full block"
             >
@@ -72,6 +74,7 @@ export const MobileMenu = ({ isOpen }: VariantProps<typeof mobileMenu>) => {
           </li> */}
           <li>
             <a
+              onClick={onClose}
               href="/where-are-we"
               className="p-5 text-center border-b border-zinc-200 w-full block"
             >
@@ -80,6 +83,7 @@ export const MobileMenu = ({ isOpen }: VariantProps<typeof mobileMenu>) => {
           </li>
           <li>
             <a
+              onClick={onClose}
               href="/franchise"
               className="p-5 text-center border-b border-zinc-200 w-full block"
             >
@@ -87,6 +91,15 @@ export const MobileMenu = ({ isOpen }: VariantProps<typeof mobileMenu>) => {
             </a>
           </li>
           <li>
+            <a
+              onClick={onClose}
+              href="/work-with-us"
+              className="p-5 text-center border-b border-zinc-200 w-full block"
+            >
+              Franquia
+            </a>
+          </li>
+          {/* <li>
             <button
               type="button"
               onClick={handleToggleDropdown}
@@ -108,7 +121,7 @@ export const MobileMenu = ({ isOpen }: VariantProps<typeof mobileMenu>) => {
                 {"(00) 0000-0000"}
               </a>
             </div>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </div>

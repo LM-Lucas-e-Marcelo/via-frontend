@@ -43,7 +43,7 @@ export const ServiceCard = ({
       <span className="w-24 h-24 bg-white rounded-full flex items-center justify-center p-4 text-[#2a4c7f] z-60 absolute top-[60px]">
         <Icon size={80} />
       </span>
-      <p className="text-white text-lg mt-16 absolute">{title}</p>
+      <p className="text-white text-lg mt-20 absolute text-center">{title}</p>
       <button className="absolute bottom-0 bg-gradient-to-b from-black to-zinc-600 w-full p-2 text-white text-lg hover:opacity-90">
         + Saiba mais
       </button>

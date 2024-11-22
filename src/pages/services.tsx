@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { services } from "../constants/services";
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { IconType } from "react-icons";
 import { precautionaryServices } from "../constants/precautionary-services";
 
@@ -12,6 +12,10 @@ interface ISelectedService {
   img: string;
   thumb: string;
   documents: string[];
+  services?: Array<{
+    title: string;
+    description: string;
+  }>;
 }
 
 export function Services() {
@@ -57,11 +61,40 @@ export function Services() {
         <h1 className="text-3xl">Saiba mais sobre {selectedService?.title}</h1>
         <div className="w-[100%] md:w-[50%]">
           <span className="mb-10 block">
-            <h1 className="text-4xl font-bold mb-2">O que é</h1>
-            <p className="text-xl">{selectedService?.description}</p>
+            <h1 className="text-3xl font-bold mb-2">O que é</h1>
+            <p
+              className="text-xl"
+              dangerouslySetInnerHTML={{ __html: selectedService?.description }}
+            />
           </span>
+          {!!selectedService.services?.length && (
+            <span className="mb-10 block">
+              <h1 className="text-3xl font-bold mb-5">
+                Itens examinados na {selectedService.title}:
+              </h1>
+              {selectedService.services.map((service) => (
+                <Fragment key={service.title}>
+                  <div className="mb-5">
+                    <p
+                      className="text-xl font-semibold"
+                      dangerouslySetInnerHTML={{
+                        __html: service.title,
+                      }}
+                    />
+                    <p
+                      className="text-xl"
+                      dangerouslySetInnerHTML={{
+                        __html: service.description,
+                      }}
+                    />
+                  </div>
+                </Fragment>
+              ))}
+            </span>
+          )}
+
           <span>
-            <h1 className="text-4xl font-bold mb-2">Documentação necessária</h1>
+            <h1 className="text-3xl font-bold mb-2">Documentação necessária</h1>
             <p className="text-xl">
               <ul className="list-disc">
                 {selectedService?.documents.map((document) => (
