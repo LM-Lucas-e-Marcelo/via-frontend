@@ -34,7 +34,7 @@ export const PrecautionaryInspection = () => {
           histórico, procedência e estado atual do veículo.
         </p>
 
-        <strong className="text-md">
+        <strong className="text-md text-center">
           NA VIA VOCÊ ENCONTRA QUATRO TIPOS DE VISTORIA CAUTELAR
         </strong>
         <p className="text-md text-center mb-10">
