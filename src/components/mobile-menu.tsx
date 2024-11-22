@@ -96,7 +96,7 @@ export const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
               href="/work-with-us"
               className="p-5 text-center border-b border-zinc-200 w-full block"
             >
-              Franquia
+              Trabalhe conosco
             </a>
           </li>
           {/* <li>
