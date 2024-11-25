@@ -5,10 +5,15 @@ export {
   PiIdentificationCard,
   PiCurrencyCircleDollar,
 } from "react-icons/pi";
-export { MdOutlineLocalCarWash, MdEmail } from "react-icons/md";
+export {
+  MdOutlineLocalCarWash,
+  MdEmail,
+  MdLocalCarWash,
+  MdOutlineCarCrash,
+} from "react-icons/md";
 export { LiaCarCrashSolid, LiaChalkboardTeacherSolid } from "react-icons/lia";
 export { FaWhatsapp } from "react-icons/fa";
-export { FaLocationDot } from "react-icons/fa6";
+export { FaLocationDot, FaCarBurst } from "react-icons/fa6";
 export { GrLocation, GrChatOption } from "react-icons/gr";
 export { HiOutlineChatBubbleLeftRight } from "react-icons/hi2";
 export { FiPhone, FiTwitter, FiX } from "react-icons/fi";

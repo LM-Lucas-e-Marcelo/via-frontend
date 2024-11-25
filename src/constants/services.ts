@@ -39,7 +39,7 @@ export const services = [
   },
   {
     id: 3,
-    title: "Vistoria Alteraçao Característica",
+    title: "Vistoria Alteração Característica",
     description:
       "É necessária quando um proprietário modifica aspectos do veículo, como cor, motorização, suspensão ou outros que mudem suas especificações originais registradas. Essa vistoria garante que as alterações estão em conformidade com as normas de segurança e regulamentações do DETRAN",
     icon: PiFireTruckLight,

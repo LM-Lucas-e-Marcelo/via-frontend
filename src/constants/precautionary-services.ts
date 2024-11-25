@@ -1,17 +1,23 @@
-import { LiaCarCrashSolid } from "../assets/icons";
+import { MdLocalCarWash, FaCarBurst, MdOutlineCarCrash } from "../assets/icons";
 
-import cautelar from "/cautelar.webp";
-import miniCautelar from "/mini-cautelar.webp";
+import cautelarPintura from "/cautelar-pintura.webp";
+import miniCautelarPintura from "/mini-cautelar-pintura.webp";
+
+import cautelarVia from "/cautelar-via.webp";
+import miniCautelarVia from "/mini-cautelar-via.webp";
+
+import cautelarCadastramento from "/cautelar-cadastramento.webp";
+import miniCautelarCadastramento from "/mini-cautelar-cadastramento.webp";
 
 export const precautionaryServices = [
   {
     id: 5,
     title: "Vistoria Cautelar Via Cadastramento",
     description:
-      "Este tipo de vistoria cautelar é básico e serve para situações simples, como por exemplo veículos antigos poderem voltar a circular regularizados, como, por exemplo, os veículos que ostentam placas amarela. <br /> Nesta cautelar serão analisados a autenticidade dos sinais identificadores do veículo, seu estado de conservação, possíveis danos ou deformações.",
-    icon: LiaCarCrashSolid,
-    img: cautelar,
-    thumb: miniCautelar,
+      "Neste tipo de vistoria cautelar será analisada a autenticidade dos sinais identificadores do veículo, seu estado de conservação e possíveis danos ou deformações.",
+    icon: MdOutlineCarCrash,
+    img: cautelarCadastramento,
+    thumb: miniCautelarCadastramento,
     services: [
       {
         title: "- Chassi/Motor/ identificação veicular",
@@ -29,14 +35,14 @@ export const precautionaryServices = [
     title: "Vistoria Cautelar Via",
     description:
       "A Vistoria Cautelar Via proporciona uma análise histórica, documental, estrutural e de originalidade dos itens identificadores do veículo. Com essa vistoria, você conhecerá o histórico e procedência do veículo, além de uma minuciosa análise estrutural, que apontará se o veículo já sofreu reparos significativos.",
-    icon: LiaCarCrashSolid,
-    img: cautelar,
-    thumb: miniCautelar,
+    icon: FaCarBurst,
+    img: cautelarVia,
+    thumb: miniCautelarVia,
     services: [
       {
         title: "- Histórico/Leilão",
         description:
-          "Exame feito com base na placa do carro, apresentando histórico de leilão, sinistro, roubo e furto, restrições, infrações e outros",
+          "Exame feito com base na placa do carro, apresentando histórico de leilão, sinistro, roubo e furto, restrições, infrações e outros.",
       },
       {
         title: "- Chassi/Motor identificação veicular",
@@ -56,17 +62,17 @@ export const precautionaryServices = [
   },
   {
     id: 7,
-    title: "Vistoria Cautelar Via Total",
+    title: "Vistoria Cautelar Via com Pintura",
     description:
-      "A Cautelar Via Total é o produto mais completo para garantir a sua segurança ao comprar ou vender seu carro usado. A Cautelar Via Total registra o histórico, a originalidade, a estrutura, a condição da pintura e também examina os componentes fundamentais para o funcionamento do veículo.<br/> Com a Cautelar Via Total, nada passa despercebido, é o sua via para garantir a segurança na compra de um seminovo.",
-    icon: LiaCarCrashSolid,
-    img: cautelar,
-    thumb: miniCautelar,
+      "A Cautelar Via com Pintura é um produto completo para garantir a sua segurança ao comprar ou vender seu carro usado. Esse processo registra o histórico, a originalidade, a estrutura e também a condição da pintura do veículo. <br/> Com a Cautelar Via com Pintura, nada passa despercebido, é a sua via para garantir a segurança na compra de um seminovo.",
+    icon: MdLocalCarWash,
+    img: cautelarPintura,
+    thumb: miniCautelarPintura,
     services: [
       {
         title: "- Histórico/Leilão",
         description:
-          "Exame feito com base na placa do carro, apresentando histórico de leilão, sinistro, roubo e furto, restrições, infrações e outros",
+          "Consulta feita com base na placa do carro, fornecendo informações sobre: leilão, sinistro, roubo, furto, restrições, infrações, entre outras coisas.",
       },
       {
         title: "- Chassi/Motor identificação veicular",
@@ -81,32 +87,7 @@ export const precautionaryServices = [
       {
         title: "- Análise de pintura",
         description:
-          "Nesta avaliação o profissional emprega métodos de inspeção visual, juntamente com testes de medição, para obter conclusões sobre acabamentos, presença de falhas e espessura da pintura, comparando-as com os padrões originais do fabricante.",
-      },
-      {
-        title: "- Verificação de itens",
-        description:
-          "É registrado o funcionamento de diversos componentes do veículo, tais como o câmbio, vidros elétricos e ar condicionado.",
-      },
-    ],
-    documents: [
-      "⁠Certificado de Registro e Licenciamento CRLV ou Certificado de Registro de Veículo CRV",
-      "⁠Documento de identificação com foto do proprietário ou requerente. ⁠CNH/RG",
-    ],
-  },
-  {
-    id: 8,
-    title: "Via Análise de Pintura",
-    description:
-      "A Via Análise de Pintura é um exame destinado a quem apenas deseja confirmar a autenticidade e o estado de conservação da pintura do carro.",
-    icon: LiaCarCrashSolid,
-    img: cautelar,
-    thumb: miniCautelar,
-    services: [
-      {
-        title: "- Análise da pintura do veículo",
-        description:
-          "Nesta avaliação o profissional emprega métodos de inspeção visual, juntamente com testes de medição, para obter conclusões sobre acabamentos, presença de falhas e espessura da pintura, comparando-as com os padrões originais do fabricante.",
+          "Nesta avaliação o profissional emprega métodos de inspeção visual, juntamente com equipamentos de medição, para obter conclusões sobre acabamentos, presença de falhas e espessura da pintura, comparando-as com os padrões originais do fabricante.",
       },
     ],
     documents: [

@@ -26,12 +26,12 @@ export const PrecautionaryInspection = () => {
       >
         <strong className="text-primary text-xl">VISTORIA CAUTELAR</strong>
         <p className="text-xl text-center mb-10">
-          Aqui você tem serviços de qualidade e segurança! A vistoria cautelar
-          serve para documentar o estado do veículo, relatando potenciais
-          problemas, adulterações ou irregularidades que poderiam passar
-          despercebidas. Para a segurança na negociação de veículos seminovos, é
-          primordial a análise realizada na vistoria cautelar para assegurar o
-          histórico, procedência e estado atual do veículo.
+          A vistoria cautelar serve para documentar o estado do veículo,
+          relatando potenciais problemas, adulterações ou irregularidades que
+          poderiam passar despercebidas. Para a segurança na negociação de
+          veículos seminovos, é primordial a análise realizada na vistoria
+          cautelar para assegurar o histórico, procedência e estado atual do
+          veículo.
         </p>
 
         <strong className="text-md text-center">
@@ -46,6 +46,7 @@ export const PrecautionaryInspection = () => {
             ({ id, title, description, icon, thumb }) => {
               return (
                 <ServiceCard
+                  isPrecautionary
                   id={id}
                   key={id}
                   title={title}
