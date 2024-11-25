@@ -35,7 +35,7 @@ export const PrecautionaryInspection = () => {
         </p>
 
         <strong className="text-md text-center">
-          NA VIA VOCÊ ENCONTRA QUATRO TIPOS DE VISTORIA CAUTELAR
+          NA VIA VOCÊ ENCONTRA TRÊS TIPOS DE VISTORIA CAUTELAR
         </strong>
         <p className="text-md text-center mb-10">
           Escolha a que mais se adequa à sua necessidade:
