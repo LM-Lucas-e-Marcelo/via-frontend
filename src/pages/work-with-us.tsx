@@ -41,6 +41,10 @@ export const WorkWithUs = () => {
           </p>
 
           <WorkWithUsForm />
+          <p className="mt-5">
+            Envie seus dados para que possamos entrar em contato com você em
+            breve!
+          </p>
         </motion.div>
       </div>
     </div>

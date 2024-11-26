@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export const Hero = () => {
   const handleRedirect = () => {
-    window.open("/services/5", "_self");
+    window.open("/services/7", "_self");
   };
   return (
     <div className="w-full bg-[url(/banner-hero.svg)] p-10 pb-0 bg-cover bg-center flex items-center justify-center">

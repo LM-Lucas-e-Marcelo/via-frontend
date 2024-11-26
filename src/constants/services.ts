@@ -15,26 +15,26 @@ export const services = [
     id: 1,
     title: "Vistoria de Transferência",
     description:
-      "A vistoria para Transferência é um procedimento obrigatório realizado durante mudança de propriedade de um veículo. Esse serviço assegura que o veículo cumpre todos os requisitos legais e está em condições seguras para circular.",
+      "A vistoria para transferência é um procedimento obrigatório realizado durante mudança de propriedade de um veículo. Esse serviço assegura que o veículo cumpre todos os requisitos legais e está em condições seguras para circular.",
     icon: TbArrowsTransferDown,
     img: cardPurchase,
     thumb: miniCardPurchase,
     documents: [
       "⁠Certificado de Registro e Licenciamento CRLV ou ⁠Certificado de Registro de Veículo CRV",
-      "⁠Documento de identificação com foto do proprietário ou requerente. ⁠CNH/RG",
+      "Documento de identificação com foto (CNH/RG) do proprietário ou requerente.",
     ],
   },
   {
     id: 2,
     title: "Vistoria 2º Via de Recibo",
     description:
-      "A Vistoria para Emissão da segunda via do recibo é necessária quando o proprietário do veiculo precisa obter um novo certificado de registro de veículo (CRV), devido á perde, roubo, extravio ou danificação do documento original",
+      "A Vistoria para Emissão da segunda via do recibo é necessária quando o proprietário do veículo precisa obter um novo certificado de registro de veículo (CRV), devido à perde, roubo, extravio ou danificação do documento original",
     icon: PiNewspaperClipping,
     img: second,
     thumb: miniSecond,
     documents: [
       "⁠Certificado de Registro e Licenciamento CRLV ou Certificado de Registro de Veículo CRV",
-      "⁠Documento de identificação com foto do proprietário ou requerente. ⁠CNH/RG",
+      "Documento de identificação com foto (CNH/RG) do proprietário ou requerente.",
     ],
   },
   {
@@ -47,7 +47,7 @@ export const services = [
     thumb: miniChange,
     documents: [
       "Certificado de Registro e Licenciamento CRLV ou Certificado de Registro de Veículo CRV",
-      "⁠Documento de identificação com foto do proprietário ou requerente. CNH/RG",
+      "Documento de identificação com foto (CNH/RG) do proprietário ou requerente.",
       "⁠Autorização do DETRAN",
       "⁠Laudo do INMETRO",
     ],

@@ -7,7 +7,7 @@ export const addresses = [
   {
     cityAndNeigh: "VIA VISTORIA BIGUAÇU",
     street:
-      "R. Cônego Rodolfo Machado, 1000 - Rio Caveiras, Biguaçu/SC - Centro Comercial BIG MIX",
+      "R. Cônego Rodolfo Machado, 1000 - Rio Caveiras, Biguaçu - SC - Centro Comercial BIG MIX",
     phoneNumber: "(48) 99149-4123",
     whatsappNumber: "48991494123",
     mapUrl:
@@ -17,7 +17,7 @@ export const addresses = [
   {
     cityAndNeigh: "VIA VISTORIA COCAL DO SUL",
     street:
-      "Rua São Marcos, 813 - B. Cristo Rei Cocal do Sul - Em frente ao mercado São Pedro.",
+      "Rua São Marcos, 813 - B. Cristo Rei Cocal do Sul - SC - Em frente ao mercado São Pedro.",
     phoneNumber: "(48) 99176-3476",
     whatsappNumber: "48991763476",
     mapUrl:
@@ -35,7 +35,7 @@ export const addresses = [
   },
   {
     cityAndNeigh: "VIA VISTORIA CRICIÚMA",
-    street: "Rua Coronel Marcos Rovaris, 755, Centro - Criciúma",
+    street: "Rua Coronel Marcos Rovaris, 755, Centro - Criciúma - SC",
     phoneNumber: "(48) 3433-3107",
     whatsappNumber: "4834333107",
     mapUrl:

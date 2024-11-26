@@ -24,7 +24,7 @@ export const PrecautionaryInspection = () => {
         initial="hidden"
         animate="visible"
       >
-        <strong className="text-primary text-xl">VISTORIA CAUTELAR</strong>
+        <strong className="text-wherePrimary text-xl">VISTORIA CAUTELAR</strong>
         <p className="text-xl text-center mb-10">
           A vistoria cautelar serve para documentar o estado do veículo,
           relatando potenciais problemas, adulterações ou irregularidades que

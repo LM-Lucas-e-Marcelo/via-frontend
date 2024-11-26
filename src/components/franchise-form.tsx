@@ -132,20 +132,12 @@ export function FranchiseForm() {
 
   const howYouFindUsOptions = [
     {
-      name: "Facebook",
-      value: "Facebook",
+      name: "Google",
+      value: "Google",
     },
     {
       name: "Instagram",
       value: "Instagram",
-    },
-    {
-      name: "Linkedin",
-      value: "Linkedin",
-    },
-    {
-      name: "Youtube",
-      value: "Youtube",
     },
     {
       name: "Indicação",

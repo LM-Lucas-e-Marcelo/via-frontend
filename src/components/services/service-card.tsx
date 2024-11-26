@@ -16,8 +16,8 @@ const cardStyles = tv({
   variants: {
     isPrecautionary: {
       true: {
-        overlay: "bg-zinc-500",
-        iconStyle: "text-zinc-600",
+        overlay: "bg-wherePrimary",
+        iconStyle: "text-wherePrimary",
       },
     },
   },

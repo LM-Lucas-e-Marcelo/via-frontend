@@ -25,6 +25,7 @@ export function WorkWithUsForm() {
     phone: "",
     state: "",
     city: "",
+    how: "",
   });
   const formRef = useRef<HTMLFormElement | null>(null);
 
@@ -86,7 +87,7 @@ export function WorkWithUsForm() {
       )
       .then(
         () => {
-          toast("Solicitação enviada com sucesso!", {
+          toast("Seus dados foram enviados com sucesso!", {
             type: "success",
           });
           e.currentTarget?.reset();
@@ -104,10 +105,34 @@ export function WorkWithUsForm() {
           phone: "",
           state: "",
           city: "",
+          how: "",
         });
         setLoading(false);
       });
   };
+
+  const howYouFindUsOptions = [
+    {
+      name: "Google",
+      value: "Google",
+    },
+    {
+      name: "Instagram",
+      value: "Instagram",
+    },
+    {
+      name: "Indicação",
+      value: "Indicação",
+    },
+    {
+      name: "Site da marca",
+      value: "Site da marca",
+    },
+    {
+      name: "Outros",
+      value: "Outros",
+    },
+  ];
 
   const handleChange = (
     event: FormEvent<HTMLInputElement | HTMLSelectElement>
@@ -168,6 +193,13 @@ export function WorkWithUsForm() {
           onChange={handleChange}
           options={citiesOptions}
           value={formData.city}
+        />
+        <Select
+          label="Como nos conheceu?*"
+          name="how"
+          options={howYouFindUsOptions}
+          onChange={handleChange}
+          value={formData.how}
         />
       </div>
       <button

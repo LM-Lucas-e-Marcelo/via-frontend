@@ -1,5 +1,4 @@
 import viaSticky from "../assets/sticky-via.png";
-import detranLogo from "../assets/detran-logo.png";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
@@ -22,14 +21,6 @@ export function Security() {
             Seguimos todas as normas de <br /> qualidade determinadas pelos{" "}
             <br /> órgãos competentes.
           </p>
-          <span className="flex gap-3 mt-4 text-zinc-500 items-center">
-            Vistoria veicular credenciada pelo{" "}
-            <img
-              alt="logo detran"
-              src={detranLogo}
-              className="shrink-0 w-[60px] h-[15px] md:w-[100px] md:h-[auto]"
-            />
-          </span>
         </motion.div>
         <motion.img
           src={viaSticky}

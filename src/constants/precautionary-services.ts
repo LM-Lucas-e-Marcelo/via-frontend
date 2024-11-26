@@ -20,14 +20,14 @@ export const precautionaryServices = [
     thumb: miniCautelarCadastramento,
     services: [
       {
-        title: "- Chassi/Motor/ identificação veicular",
+        title: "- Chassi/Motor/Identificação veicular",
         description:
           "Realização de uma vistoria física, coletando imagens e confrontando os sinais identificadores primários e secundários do veículo com um banco de dados, tendo assim uma conclusão se os mesmos são únicos, legítimos e se encontram em bom estado de conservação.",
       },
     ],
     documents: [
       "⁠Certificado de Registro e Licenciamento CRLV ou Certificado de Registro de Veículo CRV",
-      "⁠Documento de identificação com foto do proprietário ou requerente. ⁠CNH/RG",
+      "Documento de identificação com foto (CNH/RG) do proprietário ou requerente.",
     ],
   },
   {
@@ -45,7 +45,7 @@ export const precautionaryServices = [
           "Exame feito com base na placa do carro, apresentando histórico de leilão, sinistro, roubo e furto, restrições, infrações e outros.",
       },
       {
-        title: "- Chassi/Motor identificação veicular",
+        title: "- Chassi/Motor/Identificação veicular",
         description:
           "Realização de uma vistoria física, coletando imagens e confrontando os sinais identificadores primários e secundários do veículo com um banco de dados, tendo assim uma conclusão se os mesmos são únicos, legítimos e se encontram em bom estado de conservação.",
       },
@@ -57,7 +57,7 @@ export const precautionaryServices = [
     ],
     documents: [
       "⁠Certificado de Registro e Licenciamento CRLV ou Certificado de Registro de Veículo CRV",
-      "⁠Documento de identificação com foto do proprietário ou requerente. ⁠CNH/RG",
+      "Documento de identificação com foto (CNH/RG) do proprietário ou requerente.",
     ],
   },
   {
@@ -75,7 +75,7 @@ export const precautionaryServices = [
           "Consulta feita com base na placa do carro, fornecendo informações sobre: leilão, sinistro, roubo, furto, restrições, infrações, entre outras coisas.",
       },
       {
-        title: "- Chassi/Motor identificação veicular",
+        title: "- Chassi/Motor/Identificação veicular",
         description:
           "Realização de uma inspeção física, coletando imagens e confrontando os sinais identificadores primários e secundários do veículo com um banco de dados, tendo assim uma conclusão se os mesmos são únicos, legítimos e encontram-se em bom estado de conservação.",
       },
@@ -92,7 +92,7 @@ export const precautionaryServices = [
     ],
     documents: [
       "⁠Certificado de Registro e Licenciamento CRLV ou Certificado de Registro de Veículo CRV",
-      "⁠Documento de identificação com foto do proprietário ou requerente. ⁠CNH/RG",
+      "Documento de identificação com foto (CNH/RG) do proprietário ou requerente.",
     ],
   },
 ];
