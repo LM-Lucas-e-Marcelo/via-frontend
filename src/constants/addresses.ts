@@ -1,6 +1,7 @@
 import biguacu from "../assets/biguacu.png";
 import ilhota from "../assets/ilhota.png";
-import criciuma from "../assets/criciuma.png";
+import criciumaCentro from "../assets/criciuma_centro.png";
+import criciumaVila from "../assets/criciuma_vila.png";
 import cocal from "../assets/cocal.png";
 import meleiro from "../assets/meleiro.png";
 import pomerode from "../assets/pomerode.png";
@@ -39,13 +40,24 @@ export const addresses = [
     image: ilhota,
   },
   {
-    cityAndNeigh: "VIA VISTORIA CRICIÚMA",
+    cityAndNeigh: "VIA VISTORIA CRICIÚMA - CENTRO",
     street: "Rua Coronel Marcos Rovaris, 755, Centro - Criciúma - SC",
     phoneNumber: "(48) 3433-3107",
     whatsappNumber: "4834333107",
     mapUrl:
       "https://www.google.com/maps/place/R.+Cel.+Marcos+Rovaris,+755+-+Centro,+Crici%C3%BAma+-+SC,+88801-100/@-28.6784133,-49.3609924,17z/data=!3m1!4b1!4m6!3m5!1s0x95217880b8449b49:0x10ddd29e46fcfd!8m2!3d-28.6784133!4d-49.3609924!16s%2Fg%2F11c5dfqlcv?entry=ttu&g_ep=EgoyMDI0MDgyMy4wIKXMDSoASAFQAw%3D%3D",
-    image: criciuma,
+    image: criciumaCentro,
+  },
+
+  {
+    cityAndNeigh: "VIA VISTORIA CRICIÚMA - VILA FLORESTA",
+    street:
+      "Rua Lourenço Zanette, 2111 - Sala 02 - Vila Floresta II - Criciúma - SC",
+    phoneNumber: "(48) 99117-8955",
+    whatsappNumber: "48991178955",
+    mapUrl:
+      "https://www.google.com/maps?sca_esv=da71dabda52a3bb7&output=search&q=RUA+LOURENCO+ZANETTE,+2111+-+SALA+02+-+VILA+FLORESTA+II+-+CRICI%C3%9AMA+-+SC&source=lnms&fbs=ABzOT_BYhiZpMrUAF0c9tORwPGlssxTeO7BMOlalbdyQXag72t9gqHh-513MhadK60-5S3Q1AUveOKhRET8frzX92ux-vnXnkpqzO1Kej_z9IwTU4LRN1MaNtoZacaKs6stl55SKIJ6T5lP7qlPHoUSulqC-nUDOcBOGYD73JSYd-bS9Nc8dsV233JkQeokpMDekA2xYg6LnaUdHNlg_8TEsBBMDxJJzrA&entry=mc&ved=1t:200715&ictx=111",
+    image: criciumaVila,
   },
   {
     cityAndNeigh: "VIA VISTORIA MELEIRO",
