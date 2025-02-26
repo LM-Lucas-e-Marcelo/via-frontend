@@ -7,7 +7,7 @@ const dropdownMenu = tv({
   base: "h-[0] overflow-hidden transition-all flex flex-col gap-2 sm:min-h-[285px]",
   variants: {
     isOpen: {
-      true: "h-[130px]",
+      true: "h-[290px]",
     },
   },
 });
