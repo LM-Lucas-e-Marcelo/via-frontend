@@ -4,7 +4,7 @@ import { useState } from "react";
 import { IoIosArrowDown } from "../../assets/icons";
 
 const dropdownMenu = tv({
-  base: "h-[0] overflow-hidden transition-all flex flex-col gap-2 sm:min-h-[120px]",
+  base: "h-[0] overflow-hidden transition-all flex flex-col gap-2 sm:min-h-[285px]",
   variants: {
     isOpen: {
       true: "h-[130px]",
@@ -42,6 +42,7 @@ export const FooterUnits = () => {
       <div className={dropdownMenu({ isOpen: openDropdown })}>
         {addresses.map((addr) => (
           <a
+            className="hover:underline"
             key={addr.cityAndNeigh}
             href={`https://wa.me/${addr.whatsappNumber}`}
           >

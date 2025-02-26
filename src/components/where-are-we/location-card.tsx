@@ -28,7 +28,7 @@ export const LocationCard = ({
   street,
   whatsappNumber,
   image,
-  phoneNumber
+  phoneNumber,
 }: LocationCardProps) => {
   const item = {
     hidden: { y: 20, opacity: 0 },
@@ -45,10 +45,17 @@ export const LocationCard = ({
         <strong className="text-xl">{cityAndNeigh}</strong>
 
         <a className={infoItem()} target="_blank" href={mapUrl}>
-          <FaLocationDot size={24} className="text-primary flex-shrink-0" />{" "}
+          <FaLocationDot
+            size={24}
+            className="text-primary flex-shrink-0 capitalize"
+          />{" "}
           {street}
         </a>
-        <a className={infoItem()} target="_blank" href={`https://wa.me/${whatsappNumber}`}>
+        <a
+          className={infoItem()}
+          target="_blank"
+          href={`https://wa.me/${whatsappNumber}`}
+        >
           <IoLogoWhatsapp size={24} className="text-primary flex-shrink-0" />{" "}
           {phoneNumber}
         </a>

@@ -2,6 +2,11 @@ import biguacu from "../assets/biguacu.png";
 import ilhota from "../assets/ilhota.png";
 import criciuma from "../assets/criciuma.png";
 import cocal from "../assets/cocal.png";
+import meleiro from "../assets/meleiro.png";
+import pomerode from "../assets/pomerode.png";
+import arroio from "../assets/arroio.png";
+import icara from "../assets/icara.png";
+import porto from "../assets/porto_uniao.png";
 
 export const addresses = [
   {
@@ -41,5 +46,53 @@ export const addresses = [
     mapUrl:
       "https://www.google.com/maps/place/R.+Cel.+Marcos+Rovaris,+755+-+Centro,+Crici%C3%BAma+-+SC,+88801-100/@-28.6784133,-49.3609924,17z/data=!3m1!4b1!4m6!3m5!1s0x95217880b8449b49:0x10ddd29e46fcfd!8m2!3d-28.6784133!4d-49.3609924!16s%2Fg%2F11c5dfqlcv?entry=ttu&g_ep=EgoyMDI0MDgyMy4wIKXMDSoASAFQAw%3D%3D",
     image: criciuma,
+  },
+  {
+    cityAndNeigh: "VIA VISTORIA MELEIRO",
+    street:
+      "Rua Vicinal Dos Imigrantes, 51, Zanette - Meleiro - SC - No Trevo De Meleiro",
+    phoneNumber: "(48) 99198-1883",
+    whatsappNumber: "48991981883",
+    mapUrl:
+      "https://www.google.com/maps/search/Rua+Vicinal+Dos+Imigrantes,+51,+Zanette+-+Meleiro/@-28.8383595,-49.6266355,17.78z?entry=ttu&g_ep=EgoyMDI1MDIyMy4xIKXMDSoASAFQAw%3D%3D",
+    image: meleiro,
+  },
+  {
+    cityAndNeigh: "VIA VISTORIA POMERODE",
+    street: "Rua Hermann Weege, 1474 - Box 01 E 02 - Centro - Pomerode - SC",
+    phoneNumber: "(47) 3387-1883",
+    whatsappNumber: "4733871883",
+    mapUrl:
+      "https://www.google.com/maps/place/R.+Hermann+Weege,+1474+-+Centro,+Pomerode+-+SC,+89107-000/@-26.725803,-49.1732076,17z/data=!3m1!4b1!4m6!3m5!1s0x94dee50d189f8d19:0xd7d3c954647eba3f!8m2!3d-26.7258078!4d-49.1706273!16s%2Fg%2F11f53pn_rs?entry=ttu&g_ep=EgoyMDI1MDIyMy4xIKXMDSoASAFQAw%3D%3D",
+    image: pomerode,
+  },
+  {
+    cityAndNeigh: "VIA VISTORIA ARROIO",
+    street:
+      "Av. Barriga Verde, 1044, Socopas - Balneário Arroio Do Silva - Próximo Ao Cartório De Arroio Do Silva",
+    phoneNumber: "(48) 99136-3461",
+    whatsappNumber: "48991363461",
+    mapUrl:
+      "https://www.google.com/maps/place/ARROIO+DO+SILVA+VISTORIA+VEICULAR+LTDA/@-28.9824593,-49.423285,17z/data=!3m1!4b1!4m6!3m5!1s0x952233404492fc41:0x15faa6c93799dd16!8m2!3d-28.9824593!4d-49.4207101!16s%2Fg%2F11tcv6msjv?entry=ttu&g_ep=EgoyMDI1MDIyMy4xIKXMDSoASAFQAw%3D%3D",
+    image: arroio,
+  },
+  {
+    cityAndNeigh: "VIA VISTORIA IÇARA",
+    street: "Rua Leoberto Leal, 390 - Centro - Içara - SC",
+    phoneNumber: "(48) 3432-2019",
+    whatsappNumber: "4834322019",
+    mapUrl:
+      "https://www.google.com/maps?sca_esv=5d466d0b992978df&output=search&q=RUA+LEOBERTO+LEAL,+390+-+CENTRO+-+I%C3%87ARA+-+SC&source=lnms&fbs=ABzOT_BYhiZpMrUAF0c9tORwPGlssxTeO7BMOlalbdyQXag72r1qnNd-MghSp-MLF7ZupKLNJpA1I8VZ0HfUeA-4UgdXtgv7KrhqJbSrd3iVRkvoRefjirRX85Ua6jyKigAgdGNZLoTsXF1dgDzkTCPA3WycVLPKGYG1JdVrCz0AvP3iYc3SfqU5KeIbbHtuwymECMvVnTxVsIiBeGEaQRwplqnuL5N-5A&entry=mc&ved=1t:200715&ictx=111",
+    image: icara,
+  },
+  {
+    cityAndNeigh: "VIA VISTORIA PORTO UNIÃO",
+    street:
+      "Av. Expedicionário Edmundo Arrabar, 1733 - Santa Rosa - Porto União - SC - Ao Lado Do Mercado Reviwer",
+    phoneNumber: "(42) 99144-2738",
+    whatsappNumber: "42991442738",
+    mapUrl:
+      "https://www.google.com/maps?sca_esv=5d466d0b992978df&output=search&q=AV.+EXPEDICIONARIO+EDMUNDO+ARRABAR,+1733+-+SANTA+ROSA+-+PORTO+UNI%C3%83O+-+SC&source=lnms&fbs=ABzOT_BYhiZpMrUAF0c9tORwPGlssxTeO7BMOlalbdyQXag72r1qnNd-MghSp-MLF7ZupKLNJpA1I8VZ0HfUeA-4UgdXtgv7KrhqJbSrd3iVRkvoRefjirRX85Ua6jyKigAgdGNZLoTsXF1dgDzkTCPA3WycVLPKGYG1JdVrCz0AvP3iYc3SfqU5KeIbbHtuwymECMvVnTxVsIiBeGEaQRwplqnuL5N-5A&entry=mc&ved=1t:200715&ictx=111",
+    image: porto,
   },
 ];
