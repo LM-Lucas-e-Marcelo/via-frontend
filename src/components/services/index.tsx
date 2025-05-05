@@ -23,7 +23,7 @@ export const Services = () => {
       initial="hidden"
       animate="visible"
     >
-      <strong className="text-primary text-xl">SERVIÇOS VIA VISTORIA</strong>
+      <strong className="text-primary text-xl">VISTORIAS DETRAN</strong>
       <p className="text-xl text-center mb-10">
         Aqui você tem serviços de qualidade e segurança!
       </p>
