@@ -10,8 +10,8 @@ export function Home() {
   return (
     <>
       <Hero />
-      <Services />
       <PrecautionaryInspection />
+      <Services />
       <WhereAreWe />
       <Security />
       <Rating />
