@@ -5,10 +5,10 @@ import { tv } from "tailwind-variants";
 import { IoIosArrowDown } from "../../assets/icons";
 
 const dropdownMenu = tv({
-  base: "h-[0] overflow-hidden transition-all flex flex-col gap-2 sm:min-h-[180px]",
+  base: "h-[0] overflow-hidden transition-all flex flex-col gap-2 sm:min-h-[260px]",
   variants: {
     isOpen: {
-      true: "h-[180px]",
+      true: "h-[260px]",
     },
   },
 });
@@ -34,13 +34,14 @@ export const FooterServices = () => {
         className="text-left sm:hidden flex items-center gap-2"
         onClick={handleToggleDropdown}
       >
-        <strong className="text-lg ">Serviços</strong>
+        <strong className="text-lg">Serviços</strong>
         <IoIosArrowDown
           className={arrowIcon({ isOpen: openDropdown })}
           size={20}
         />
       </button>
       <div className={dropdownMenu({ isOpen: openDropdown })}>
+        <h1 className="font-bold">Vistoria Detran</h1>
         {services.map((service) => (
           <a
             key={service.title}
@@ -50,6 +51,8 @@ export const FooterServices = () => {
             {service.title}
           </a>
         ))}
+        <div />
+        <h1 className="font-bold">Vistoria Cautelar</h1>
         {precautionaryServices.map((service) => (
           <a
             key={service.title}
