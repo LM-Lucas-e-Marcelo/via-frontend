@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const locationCard = tv({
   slots: {
-    card: "flex flex-col overflow-hidden rounded-md w-[350px] gap-2 border border-zinc-400 shadow-zinc-300 shadow-md relative h-[400px]",
+    card: "flex flex-col overflow-hidden rounded-md w-[350px] gap-2 border border-zinc-400 shadow-zinc-300 shadow-md relative h-[430px]",
     img: "w-full object-contain",
     infos: "flex flex-col gap-4 p-4",
     infoItem: "flex gap-2 items-center",
