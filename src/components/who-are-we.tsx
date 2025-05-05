@@ -11,13 +11,10 @@ export const WhoAreWe = () => {
           Quem Somos
         </strong>
         <p>
-          Com experiência de mais de 400 mil laudos emitidos ao longo de 10
-          anos, nossa trajetória é marcada pela excelência na prestação dos
-          serviços, garantindo segurança e tranquilidade aos clientes em cada
-          negociação de veículo.
-          <br /> <br /> Em 2024 nasceu a Franqueadora Via Vistoria Veicular, com
-          o compromisso de proporcionar um serviço de vistoria veicular
-          confiável em todo o estado.
+          Com experiência de mais 400 mil laudos emitidos ao longo de 12 anos, a
+          Via Franqueadora nasceu em 2024, com o compromisso de oferecer um
+          serviço confiável e padronizado em todo estado, garantindo segurança e
+          tranquilidade aos clientes em cada negociação de veículo.
         </p>
       </div>
       <img src={image} width={400} alt="sobre nós" />
