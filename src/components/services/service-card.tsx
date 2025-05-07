@@ -25,10 +25,11 @@ const cardStyles = tv({
 
 interface ServiceCardProps extends VariantProps<typeof cardStyles> {
   id: number;
-  icon: IconType;
+  icon: IconType | string;
   title: string;
   description: string;
   img?: string;
+  isPngIcon: boolean;
 }
 
 const item = {
@@ -47,6 +48,7 @@ export const ServiceCard = ({
   id,
   img,
   isPrecautionary,
+  isPngIcon,
 }: ServiceCardProps) => {
   const handleRedirect = (id: number) => {
     window.open(`/services/${id}`, "_self");
@@ -61,7 +63,11 @@ export const ServiceCard = ({
       <img src={img} alt={title} className={image()} loading="lazy" />
       <div className={overlay({ isPrecautionary })} />
       <span className={iconStyle({ isPrecautionary })}>
-        <Icon size={80} />
+        {isPngIcon ? (
+          <img src={Icon as string} alt="icone" className="mr-[-5px]" />
+        ) : (
+          <Icon size={80} />
+        )}
       </span>
       <p className={titleStyle()}>{title}</p>
       <button className={button()}>+ Saiba mais</button>
