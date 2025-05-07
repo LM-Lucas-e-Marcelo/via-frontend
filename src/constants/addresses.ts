@@ -12,7 +12,7 @@ import forquilhinha from "../assets/forquilhinha.png";
 
 export const addresses = [
   {
-    cityAndNeigh: "VIA VISTORIA BALNEÁRIO ARROIO DO SILVA",
+    cityAndNeigh: "VIA VISTORIA BALN. ARROIO DO SILVA",
     street:
       "Av. Barriga Verde, 1044, Socopas - Balneário Arroio Do Silva - Próximo Ao Cartório De Arroio Do Silva",
     phoneNumber: "(48) 99136-3461",
@@ -42,7 +42,7 @@ export const addresses = [
     image: cocal,
   },
   {
-    cityAndNeigh: "VIA VISTORIA CRICIÚMA - CENTRO",
+    cityAndNeigh: "VIA VISTORIA CRICIÚMA",
     street: "Rua Coronel Marcos Rovaris, 755, Centro - Criciúma - SC",
     phoneNumber: "(48) 3433-3107",
     whatsappNumber: "4834333107",
@@ -51,7 +51,7 @@ export const addresses = [
     image: criciumaCentro,
   },
   {
-    cityAndNeigh: "VIA VISTORIA CRICIÚMA - VILA FLORESTA",
+    cityAndNeigh: "VIA VISTORIA - RIO MAINA",
     street:
       "Rua Lourenço Zanette, 2111 - Sala 02 - Vila Floresta II - Criciúma - SC",
     phoneNumber: "(48) 99117-8955",
@@ -61,7 +61,7 @@ export const addresses = [
     image: criciumaVila,
   },
   {
-    cityAndNeigh: "VIA FORQUILHINHA",
+    cityAndNeigh: "VIA VISTORIA FORQUILHINHA",
     street: "R. Nereu Belolli, 35 Sala 02 - Ouro Negro, Forquilhinha - SC",
     phoneNumber: "(48) 99143-6778",
     whatsappNumber: "48991436778",
