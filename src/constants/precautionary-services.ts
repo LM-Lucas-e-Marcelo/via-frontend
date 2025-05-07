@@ -1,13 +1,13 @@
 import { MdLocalCarWash, FaCarBurst, MdOutlineCarCrash } from "../assets/icons";
 
 import cautelarPintura from "/cautelar-pintura.webp";
-import miniCautelarPintura from "/mini-cautelar-pintura.webp";
+import miniCautelarPintura from "/mini-cautelar-pintura.png";
 
-import cautelarVia from "/cautelar-via.webp";
-import miniCautelarVia from "/mini-cautelar-via.webp";
+import cautelarVia from "/via-cautelar.webp";
+import miniCautelarVia from "/mini-via-cautelar.png";
 
 import cautelarCadastramento from "/cautelar-cadastramento.webp";
-import miniCautelarCadastramento from "/mini-cautelar-cadastramento.webp";
+import miniCautelarCadastramento from "/mini-cautelar-cadastramento.png";
 
 export const precautionaryServices = [
   {
