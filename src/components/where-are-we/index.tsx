@@ -20,17 +20,17 @@ export const WhereAreWe = () => {
           animate={{ opacity: 1, x: isInView ? 0 : -100 }}
           transition={{ duration: 1 }}
         >
-          <h1 className="text-3xl text-white font-bold md:text-5xl">
+          <h1 className="text-3xl text-white font-bold md:text-5xl text-center">
             Sua via para a confiança <br /> tem endereço certo!
           </h1>
-          <p className="text-white text-xl mt-4 text-wra ">
+          <p className="text-white text-xl mt-4 text-wra text-center">
             Estamos presentes em diversas cidades de{" "}
             <strong>Santa Catarina.</strong>
           </p>
           <div className="flex items-center justify-center">
             <button
               onClick={handleRedirect}
-              className="mt-5 bg-primary text-white px-5 py-2 hover:opacity-90"
+              className="mt-5 bg-[#3266b2] rounded-full text-white px-5 py-2 hover:opacity-90"
             >
               Encontre uma unidade perto de você
             </button>
