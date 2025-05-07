@@ -22,6 +22,7 @@ interface ISelectedService {
   img: string;
   thumb: string;
   documents: string[];
+  isPngIcon?: boolean;
   services?: Array<{
     title: string;
     description: string;
@@ -50,7 +51,7 @@ export function Services() {
       );
 
       if (selectedPrecautionary) {
-        setSelectedService(selectedPrecautionary);
+        setSelectedService(selectedPrecautionary as never);
       }
     }
 
