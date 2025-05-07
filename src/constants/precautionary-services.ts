@@ -1,4 +1,5 @@
-import { MdLocalCarWash, FaCarBurst, MdOutlineCarCrash } from "../assets/icons";
+import { FaCarBurst, MdOutlineCarCrash } from "../assets/icons";
+import paintPngIcon from "../assets/icons/paint-icon.png";
 
 import cautelarPintura from "/cautelar-pintura.webp";
 import miniCautelarPintura from "/mini-cautelar-pintura.png";
@@ -18,6 +19,7 @@ export const precautionaryServices = [
     icon: MdOutlineCarCrash,
     img: cautelarCadastramento,
     thumb: miniCautelarCadastramento,
+    isPngIcon: false,
     services: [
       {
         title: "- Chassi/Motor/Identificação veicular",
@@ -38,6 +40,7 @@ export const precautionaryServices = [
     icon: FaCarBurst,
     img: cautelarVia,
     thumb: miniCautelarVia,
+    isPngIcon: false,
     services: [
       {
         title: "- Histórico/Leilão",
@@ -65,9 +68,10 @@ export const precautionaryServices = [
     title: "Vistoria Cautelar Via com Pintura",
     description:
       "A Cautelar Via com Pintura é um produto completo para garantir a sua segurança ao comprar ou vender seu carro usado. Esse processo registra o histórico, a originalidade, a estrutura e também a condição da pintura do veículo. <br/> Com a Cautelar Via com Pintura, nada passa despercebido, é a sua via para garantir a segurança na compra de um seminovo.",
-    icon: MdLocalCarWash,
+    icon: paintPngIcon,
     img: cautelarPintura,
     thumb: miniCautelarPintura,
+    isPngIcon: true,
     services: [
       {
         title: "- Histórico/Leilão",
