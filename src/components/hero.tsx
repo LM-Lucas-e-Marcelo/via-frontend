@@ -1,4 +1,4 @@
-import whiteCar from "../assets/white-car.png";
+import modelCar from "../assets/model-car.png";
 import { Button } from "./button";
 import { motion } from "framer-motion";
 
@@ -15,11 +15,11 @@ export const Hero = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          <h1 className="sm:text-3xl text-2xl font-bold uppercase">
+          <h1 className="sm:text-3xl text-2xl font-bold uppercase text-white">
             Antes de investir no carro dos seus sonhos, deixe a VIA analisar
             cada detalhe.
           </h1>
-          <h2 className="text-lg sm:text-xl">
+          <h2 className="text-lg sm:text-xl text-white">
             Com a nossa análise completa, você faz a escolha certa. A VIA te
             ajuda a enxergar além do óbvio!
           </h2>
@@ -29,7 +29,7 @@ export const Hero = () => {
         </motion.div>
         <motion.img
           className="w-[350px]"
-          src={whiteCar}
+          src={modelCar}
           alt="a white car"
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
