@@ -4,10 +4,10 @@ import { useState } from "react";
 import { IoIosArrowDown } from "../../assets/icons";
 
 const dropdownMenu = tv({
-  base: "h-[0] overflow-hidden transition-all flex flex-col gap-2 sm:min-h-[310px]",
+  base: "h-[0] overflow-hidden transition-all flex flex-col gap-2 sm:min-h-[360px]",
   variants: {
     isOpen: {
-      true: "h-[340px]",
+      true: "h-[390px]",
     },
   },
 });
