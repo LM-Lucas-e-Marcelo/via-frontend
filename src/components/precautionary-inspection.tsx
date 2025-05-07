@@ -43,7 +43,7 @@ export const PrecautionaryInspection = () => {
 
         <div className="flex flex-wrap gap-6 justify-center">
           {precautionaryServices.map(
-            ({ id, title, description, icon, thumb }) => {
+            ({ id, title, description, icon, thumb, isPngIcon }) => {
               return (
                 <ServiceCard
                   isPrecautionary
@@ -52,6 +52,7 @@ export const PrecautionaryInspection = () => {
                   title={title}
                   description={description}
                   icon={icon}
+                  isPngIcon={isPngIcon}
                   img={thumb}
                 />
               );
