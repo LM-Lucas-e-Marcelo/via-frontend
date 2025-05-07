@@ -29,7 +29,7 @@ interface ServiceCardProps extends VariantProps<typeof cardStyles> {
   title: string;
   description: string;
   img?: string;
-  isPngIcon: boolean;
+  isPngIcon?: boolean;
 }
 
 const item = {
