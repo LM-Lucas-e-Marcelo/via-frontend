@@ -1,6 +1,7 @@
 import logo from "../../assets/logo_via.png";
 import google from "../../assets/footer/google.png";
 import norton from "../../assets/footer/norton.png";
+import certified from "../../assets/footer/certified.png";
 import { FooterServices } from "./services";
 import { FooterUnits } from "./units";
 
@@ -37,6 +38,11 @@ export const Footer = () => {
             >
               <img width={100} src={google} alt="logo google" />
             </a>
+            <img
+              className="w-[50px] mt-[-10px]"
+              src={certified}
+              alt="certificado 9001"
+            />
           </div>
         </section>
       </div>
