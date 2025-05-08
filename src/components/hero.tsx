@@ -28,7 +28,7 @@ export const Hero = () => {
           </Button>
         </motion.div>
         <motion.img
-          className="w-[350px]"
+          className="md:w-[350px] w-[200px]"
           src={modelCar}
           alt="a white car"
           initial={{ opacity: 0, x: 100 }}
