@@ -1,4 +1,4 @@
-import modelCar from "../assets/model-car.png";
+import modelCar from "../assets/model-car.svg";
 import { Button } from "./button";
 import { motion } from "framer-motion";
 
