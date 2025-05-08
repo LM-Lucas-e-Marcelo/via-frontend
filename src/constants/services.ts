@@ -4,10 +4,10 @@ import {
   TbArrowsTransferDown,
 } from "../assets/icons";
 import second from "/second.webp";
-import miniSecond from "/mini-second.webp";
+import miniSecond from "/mini-second.png";
 import change from "/change.webp";
-import miniChange from "/mini-change.webp";
-import miniCardPurchase from "/mini-card-purchase.webp";
+import miniChange from "/mini-change.png";
+import miniCardPurchase from "/mini-card-purchase.png";
 import cardPurchase from "/card-purchase.webp";
 
 export const services = [
