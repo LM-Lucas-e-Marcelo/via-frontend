@@ -51,7 +51,7 @@ export const addresses = [
     image: criciumaCentro,
   },
   {
-    cityAndNeigh: "VIA VISTORIA - RIO MAINA",
+    cityAndNeigh: "VIA VISTORIA CRICIÚMA - RIO MAINA",
     street:
       "Rua Lourenço Zanette, 2111 - Sala 02 - Vila Floresta II - Criciúma - SC",
     phoneNumber: "(48) 99117-8955",
