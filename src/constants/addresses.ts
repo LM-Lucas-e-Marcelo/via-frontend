@@ -42,7 +42,7 @@ export const addresses = [
     image: cocal,
   },
   {
-    cityAndNeigh: "VIA VISTORIA CRICIÚMA",
+    cityAndNeigh: "VIA VISTORIA CRICIÚMA - CENTRO",
     street: "Rua Coronel Marcos Rovaris, 755, Centro - Criciúma - SC",
     phoneNumber: "(48) 3433-3107",
     whatsappNumber: "4834333107",
