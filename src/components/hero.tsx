@@ -1,4 +1,3 @@
-import modelCar from "../assets/model-car.svg";
 import modelCarMobile from "../assets/model-car.png";
 import { Button } from "./button";
 import { motion } from "framer-motion";
@@ -28,16 +27,9 @@ export const Hero = () => {
             Saiba mais
           </Button>
         </motion.div>
+
         <motion.img
-          className="md:w-[350px] hidden md:block"
-          src={modelCar}
-          alt="a white car"
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-        />
-        <motion.img
-          className="w-[350px] md:hidden block"
+          className="w-[350px]"
           src={modelCarMobile}
           alt="a white car"
           initial={{ opacity: 0, x: 100 }}
