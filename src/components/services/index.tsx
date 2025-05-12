@@ -23,7 +23,7 @@ export const Services = () => {
       initial="hidden"
       animate="visible"
     >
-      <strong className="text-primary text-xl">VISTORIAS DETRAN</strong>
+      <strong className="text-wherePrimary text-xl">VISTORIAS DETRAN</strong>
       <p className="text-xl text-center mb-10">
         Aqui você tem serviços de qualidade e segurança!
       </p>
@@ -31,6 +31,7 @@ export const Services = () => {
         {services.map(({ id, title, description, icon, thumb }) => {
           return (
             <ServiceCard
+              isPrecautionary
               id={id}
               key={id}
               title={title}
