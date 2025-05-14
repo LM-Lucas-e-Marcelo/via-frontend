@@ -15,11 +15,11 @@ export const Hero = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          <h1 className="sm:text-3xl text-2xl font-bold uppercase text-white">
+          <h1 className="sm:text-3xl text-2xl font-bold uppercase text-zinc-900">
             Antes de investir no carro dos seus sonhos, deixe a VIA analisar
             cada detalhe.
           </h1>
-          <h2 className="text-lg sm:text-xl text-white">
+          <h2 className="text-lg sm:text-xl text-zinc-900">
             Com a nossa análise completa, você faz a escolha certa. A VIA te
             ajuda a enxergar além do óbvio!
           </h2>
