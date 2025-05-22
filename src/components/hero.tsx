@@ -20,8 +20,8 @@ export const Hero = () => {
             cada detalhe.
           </h1>
           <h2 className="text-lg sm:text-xl text-zinc-900">
-            Com a nossa análise completa, você faz a escolha certa. A VIA te
-            ajuda a enxergar além do óbvio!
+            Com a nossa análise completa, você faz a escolha certa. <br /> A VIA
+            te ajuda a enxergar além do óbvio!
           </h2>
           <Button onClick={handleRedirect} isSmall>
             Saiba mais
