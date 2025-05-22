@@ -28,7 +28,7 @@ export const FooterServices = () => {
   const handleToggleDropdown = () => setOpenDropdown((prevState) => !prevState);
 
   return (
-    <section className="flex flex-col gap-3 min-w-[260px]">
+    <section className="flex flex-col gap-3 min-w-[260px] w-full md:w-[260px] pl-2 md:pl-0">
       <strong className="text-lg hidden sm:block">Serviços</strong>
       <button
         className="text-left sm:hidden flex items-center gap-2"
