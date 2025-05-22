@@ -1,21 +1,14 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
+import { FormEvent, useRef, useState } from "react";
 import { Input } from "./input";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import { CgSpinner } from "../assets/icons";
 import { Select } from "./select";
-import axios from "axios";
-
-interface IStates {
-  states: Array<{
-    name: string;
-  }>;
-}
+import { STATES } from "../constants/states";
+import { CITIES } from "../constants/cities";
 
 export function WorkWithUsForm() {
-  const [cities, setCities] = useState<string[]>([]);
-  const [states, setStates] = useState<IStates>();
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -28,38 +21,6 @@ export function WorkWithUsForm() {
     how: "",
   });
   const formRef = useRef<HTMLFormElement | null>(null);
-
-  useEffect(() => {
-    axios
-      .post("https://countriesnow.space/api/v0.1/countries/cities", {
-        country: "brazil",
-      })
-      .then(({ data }) => setCities(data?.data));
-
-    axios
-      .post("https://countriesnow.space/api/v0.1/countries/states", {
-        country: "brazil",
-      })
-      .then(({ data }) => setStates(data?.data));
-  }, []);
-
-  const citiesOptions = useMemo(
-    () =>
-      cities?.map((city) => ({
-        name: city,
-        value: city,
-      })),
-    [cities]
-  );
-
-  const stateOptions = useMemo(
-    () =>
-      states?.states?.map((state) => ({
-        name: state.name,
-        value: state.name,
-      })),
-    [states?.states]
-  );
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     setLoading(true);
@@ -184,14 +145,14 @@ export function WorkWithUsForm() {
           label="Estado*"
           name="state"
           onChange={handleChange}
-          options={stateOptions}
+          options={STATES}
           value={formData.state}
         />
         <Select
           label="Cidade*"
           name="city"
           onChange={handleChange}
-          options={citiesOptions}
+          options={CITIES}
           value={formData.city}
         />
         <Select
