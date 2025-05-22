@@ -20,7 +20,7 @@ export function FranchiseForm() {
     name: "",
     email: "",
     phone: "",
-    state: "",
+    state: "Santa Catarina",
     city: "",
     finance: "",
     how: "",
