@@ -16,7 +16,7 @@ export function WorkWithUsForm() {
     education: "",
     email: "",
     phone: "",
-    state: "",
+    state: "Santa Catarina",
     city: "",
     how: "",
   });

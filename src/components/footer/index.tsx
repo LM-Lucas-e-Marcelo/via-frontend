@@ -47,7 +47,8 @@ export const Footer = () => {
         </section>
       </div>
       <div className="flex items-center justify-center p-6 border-t border-zinc-100">
-        ©2024 Via. Todos os direitos reservados.
+        ©️2025 Via Vistoria Veicular Ltda – CNPJ 31.382.101/0001-06. Todos os
+        direitos reservados.
       </div>
     </div>
   );
