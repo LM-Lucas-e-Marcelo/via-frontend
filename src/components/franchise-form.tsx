@@ -1,21 +1,15 @@
-import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
+import { FormEvent, useRef, useState } from "react";
 import { Input } from "./input";
 import { Select } from "./select";
-import axios from "axios";
+
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import { CgSpinner } from "../assets/icons";
-
-interface IStates {
-  states: Array<{
-    name: string;
-  }>;
-}
+import { STATES } from "../constants/states";
+import { CITIES } from "../constants/cities";
 
 export function FranchiseForm() {
   const [loading, setLoading] = useState(false);
-  const [cities, setCities] = useState<string[]>([]);
-  const [states, setStates] = useState<IStates>();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -74,38 +68,6 @@ export function FranchiseForm() {
         setLoading(false);
       });
   };
-
-  useEffect(() => {
-    axios
-      .post("https://countriesnow.space/api/v0.1/countries/cities", {
-        country: "brazil",
-      })
-      .then(({ data }) => setCities(data?.data));
-
-    axios
-      .post("https://countriesnow.space/api/v0.1/countries/states", {
-        country: "brazil",
-      })
-      .then(({ data }) => setStates(data?.data));
-  }, []);
-
-  const citiesOptions = useMemo(
-    () =>
-      cities?.map((city) => ({
-        name: city,
-        value: city,
-      })),
-    [cities]
-  );
-
-  const stateOptions = useMemo(
-    () =>
-      states?.states?.map((state) => ({
-        name: state.name,
-        value: state.name,
-      })),
-    [states?.states]
-  );
 
   const budgetOptions = [
     {
@@ -195,14 +157,14 @@ export function FranchiseForm() {
           label="Estado*"
           name="state"
           onChange={handleChange}
-          options={stateOptions}
+          options={STATES}
           value={formData.state}
         />
         <Select
           label="Cidade*"
           name="city"
           onChange={handleChange}
-          options={citiesOptions}
+          options={CITIES}
           value={formData.city}
         />
         <Select
