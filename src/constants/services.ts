@@ -28,7 +28,7 @@ export const services = [
     id: 2,
     title: "Vistoria 2º Via de Recibo",
     description:
-      "A Vistoria para Emissão da segunda via do recibo é necessária quando o proprietário do veículo precisa obter um novo certificado de registro de veículo (CRV), devido à perda, roubo, extravio ou danificação do documento original",
+      "A Vistoria para Emissão da segunda via do recibo é necessária quando o proprietário do veículo precisa obter um novo certificado de registro de veículo (CRV), devido à perda, roubo, extravio ou danificação do documento original.",
     icon: PiNewspaperClipping,
     img: second,
     thumb: miniSecond,
@@ -41,7 +41,7 @@ export const services = [
     id: 3,
     title: "Vistoria Alteração Característica",
     description:
-      "É necessária quando um proprietário modifica aspectos do veículo, como cor, motorização, suspensão ou outros que mudem suas especificações originais registradas. Essa vistoria garante que as alterações estão em conformidade com as normas de segurança e regulamentações do DETRAN",
+      "É necessária quando um proprietário modifica aspectos do veículo, como cor, motorização, suspensão ou outros que mudem suas especificações originais registradas. Essa vistoria garante que as alterações estão em conformidade com as normas de segurança e regulamentações do DETRAN.",
     icon: PiFireTruckLight,
     img: change,
     thumb: miniChange,
