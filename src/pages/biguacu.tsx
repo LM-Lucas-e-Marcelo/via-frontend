@@ -24,7 +24,7 @@ export const ViaVistoriaBiguacu = () => {
             className="rounded-xl w-[100%] sm:w-[90%] m-auto hover:scale-110 transition-all"
           />
         </a>
-        <a href="/services/5">
+        <a href="https://wa.me/48991920452">
           <img
             src={cautelar}
             alt="banner preto com uma chamada para revisão cautelar"
