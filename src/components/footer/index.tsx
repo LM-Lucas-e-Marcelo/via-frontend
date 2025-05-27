@@ -47,12 +47,10 @@ export const Footer = () => {
         </section>
       </div>
       <div className="md:hidden flex items-center justify-center p-6 border-t border-zinc-100 text-center">
-        Via Vistoria Veicular Ltda <br /> CNPJ 31.382.101/0001-06 <br /> Todos
-        os direitos reservados.
+        ©️2025 Via Vistoria Veicular Ltda <br /> Todos os direitos reservados.
       </div>
       <div className="md:flex hidden items-center justify-center p-6 border-t border-zinc-100 text-center">
-        Via Vistoria Veicular Ltda - CNPJ 31.382.101/0001-06. Todos os direitos
-        reservados.
+        ©️2025 Via Vistoria Veicular Ltda – Todos os direitos reservados.
       </div>
     </div>
   );
