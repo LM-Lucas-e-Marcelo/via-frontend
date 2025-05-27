@@ -34,10 +34,7 @@ export const ViaVistoriaBiguacu = () => {
       </div>
       <footer className="flex bg-zinc-900 flex-col items-center text-white justify-center text-center sm:p-10 py-10 px-2">
         <img src={logo} alt="logo via" width={150} className="mb-5" />
-        <p>
-          ©2024 Via Vistoria. Todos os direitos reservados.
-          <br /> CNPJ: 31.639.682/0001-00
-        </p>
+        <p>©️2025 – Todos os direitos reservados.</p>
       </footer>
     </div>
   );
