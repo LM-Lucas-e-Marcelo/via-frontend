@@ -4,8 +4,9 @@ import { Services } from "./pages/services";
 import { Franchise } from "./pages/franchise";
 import { WhereAreWe } from "./pages/wherearewe";
 import { Layout } from "./layout";
-import { ViaVistoriaBiguacu } from "./pages/biguacu";
+import { ViaVistorias } from "./pages/via-vistorias";
 import { WorkWithUs } from "./pages/work-with-us";
+import { franchisesPages } from "./constants/franchisesPages";
 
 export const AppRoutes = () => {
   return (
@@ -18,7 +19,13 @@ export const AppRoutes = () => {
           <Route path="/where-are-we" Component={WhereAreWe} />
           <Route path="/work-with-us" Component={WorkWithUs} />
         </Route>
-        <Route path="/biguacu" Component={ViaVistoriaBiguacu} />
+        {franchisesPages.map(({ route, ...rest }) => (
+          <Route
+            key={route}
+            path={route}
+            element={<ViaVistorias {...rest} />}
+          />
+        ))}
       </Routes>
     </BrowserRouter>
   );
