@@ -29,7 +29,7 @@ export const franchisesPages = [
       "https://www.google.com/maps/search/Rua+Vicinal+Dos+Imigrantes,+51,+Zanette+-+Meleiro/@-28.8383595,-49.6266355,17.78z?entry=ttu&g_ep=EgoyMDI1MDIyMy4xIKXMDSoASAFQAw%3D%3D",
   },
   {
-    route: "/porto-uniao",
+    route: "/portouniao",
     whatsapp: whatsappPortoUniao,
     localization: localizationPortoUniao,
     whatsappNumber: "42991442738",
@@ -45,7 +45,7 @@ export const franchisesPages = [
       "https://www.google.com/maps?sca_esv=5d466d0b992978df&output=search&q=RUA+LEOBERTO+LEAL,+390+-+CENTRO+-+I%C3%87ARA+-+SC&source=lnms&fbs=ABzOT_BYhiZpMrUAF0c9tORwPGlssxTeO7BMOlalbdyQXag72r1qnNd-MghSp-MLF7ZupKLNJpA1I8VZ0HfUeA-4UgdXtgv7KrhqJbSrd3iVRkvoRefjirRX85Ua6jyKigAgdGNZLoTsXF1dgDzkTCPA3WycVLPKGYG1JdVrCz0AvP3iYc3SfqU5KeIbbHtuwymECMvVnTxVsIiBeGEaQRwplqnuL5N-5A&entry=mc&ved=1t:200715&ictx=111",
   },
   {
-    route: "/criciuma-centro",
+    route: "/criciuma",
     whatsapp: whatsappCriciuma,
     localization: localizationCriciuma,
     whatsappNumber: "4834333107",
