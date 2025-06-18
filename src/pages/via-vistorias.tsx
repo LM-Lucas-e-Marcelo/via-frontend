@@ -35,7 +35,7 @@ export const ViaVistorias = ({
             className="rounded-xl w-[100%] sm:w-[90%] m-auto hover:scale-110 transition-all"
           />
         </a>
-        <a href="https://wa.me/48991920452">
+        <a href={`https://wa.me/${whatsappNumber}`}>
           <img
             src={cautelar}
             alt="banner preto com uma chamada para revisão cautelar"
