@@ -32,7 +32,7 @@ export const franchisesPages = [
     route: "/portouniao",
     whatsapp: whatsappPortoUniao,
     localization: localizationPortoUniao,
-    whatsappNumber: "42991442738",
+    whatsappNumber: "5542991442738",
     mapAddress:
       "https://www.google.com/maps?sca_esv=5d466d0b992978df&output=search&q=AV.+EXPEDICIONARIO+EDMUNDO+ARRABAR,+1733+-+SANTA+ROSA+-+PORTO+UNI%C3%83O+-+SC&source=lnms&fbs=ABzOT_BYhiZpMrUAF0c9tORwPGlssxTeO7BMOlalbdyQXag72r1qnNd-MghSp-MLF7ZupKLNJpA1I8VZ0HfUeA-4UgdXtgv7KrhqJbSrd3iVRkvoRefjirRX85Ua6jyKigAgdGNZLoTsXF1dgDzkTCPA3WycVLPKGYG1JdVrCz0AvP3iYc3SfqU5KeIbbHtuwymECMvVnTxVsIiBeGEaQRwplqnuL5N-5A&entry=mc&ved=1t:200715&ictx=111",
   },
