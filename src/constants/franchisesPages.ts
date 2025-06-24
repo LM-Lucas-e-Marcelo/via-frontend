@@ -28,7 +28,7 @@ export const franchisesPages = [
     localization: localizationMeleiro,
     whatsappNumber: "48991981883",
     mapAddress:
-      "https://www.google.com/maps/search/Rua+Vicinal+Dos+Imigrantes,+51,+Zanette+-+Meleiro/@-28.8383595,-49.6266355,17.78z?entry=ttu&g_ep=EgoyMDI1MDIyMy4xIKXMDSoASAFQAw%3D%3D",
+      "https://www.google.com/maps/place/VIA+VISTORIA+MELEIRO+-+VISTORIA+VEICULAR/@-28.8378742,-49.6303329,17z/data=!4m10!1m2!2m1!1svia+vistoria+Rua+Vicinal+Dos+Imigrantes,+51,+Zanette+-+Meleiro+-+SC+-+No+Trevo+De+Meleiro!3m6!1s0x95218b1354af4451:0xf7da874b775df9fe!8m2!3d-28.8378789!4d-49.627758!15sCll2aWEgdmlzdG9yaWEgUnVhIFZpY2luYWwgRG9zIEltaWdyYW50ZXMsIDUxLCBaYW5ldHRlIC0gTWVsZWlybyAtIFNDIC0gTm8gVHJldm8gRGUgTWVsZWlyb5IBEnZlaGljbGVfaW5zcGVjdGlvbuABAA!16s%2Fg%2F11wx4v4_wq?entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D",
   },
   {
     route: "/portouniao",
