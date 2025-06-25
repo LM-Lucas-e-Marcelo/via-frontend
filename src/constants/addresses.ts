@@ -28,7 +28,7 @@ export const addresses = [
     phoneNumber: "(48) 99192-0452",
     whatsappNumber: "48991920452",
     mapUrl:
-      "https://www.google.com/maps/place/R.+C%C3%B4nego+Rodolfo+Machado,+1000+-+Rio+Caveiras,+Bigua%C3%A7u+-+SC,+88161-732/@-27.5064736,-48.6670961,14.58z/data=!4m6!3m5!1s0x95274c3bc4256687:0xd8aa1ff4adcd8118!8m2!3d-27.5055183!4d-48.6530734!16s%2Fg%2F11gdg5j99v?entry=ttu",
+      "https://www.google.com/maps/place/VIA+VISTORIA+VEICULAR+BIGUA%C3%87U/@-27.5054199,-48.655416,17z/data=!3m1!4b1!4m6!3m5!1s0x95274ded8a17d7a7:0xc148a7f7e4388a21!8m2!3d-27.5054247!4d-48.6528411!16s%2Fg%2F11hf6rmdkx?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D",
     image: biguacu,
   },
   {
@@ -38,7 +38,7 @@ export const addresses = [
     phoneNumber: "(48) 99176-3476",
     whatsappNumber: "48991763476",
     mapUrl:
-      "https://www.google.com/maps/place/R.+S%C3%A3o+Marcos,+813+-+b+-+Cristo+Rei,+Cocal+do+Sul+-+SC,+88845-000/@-28.5913825,-49.3248125,17z/data=!3m1!4b1!4m5!3m4!1s0x95217707277827b3:0x5f7687fe69e770e5!8m2!3d-28.5913872!4d-49.3222376?entry=ttu",
+      "https://www.google.com/maps/place/VIA+Vistoria+Veicular/@-28.5913825,-49.3248125,17z/data=!3m1!4b1!4m6!3m5!1s0x9521779b4c3d8fb9:0x138b1f93e0ed6c46!8m2!3d-28.5913872!4d-49.3222376!16s%2Fg%2F11rgzvz75f?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D",
     image: cocal,
   },
   {
@@ -47,7 +47,7 @@ export const addresses = [
     phoneNumber: "(48) 3433-3107",
     whatsappNumber: "4834333107",
     mapUrl:
-      "https://www.google.com/maps/place/R.+Cel.+Marcos+Rovaris,+755+-+Centro,+Crici%C3%BAma+-+SC,+88801-100/@-28.6784133,-49.3609924,17z/data=!3m1!4b1!4m6!3m5!1s0x95217880b8449b49:0x10ddd29e46fcfd!8m2!3d-28.6784133!4d-49.3609924!16s%2Fg%2F11c5dfqlcv?entry=ttu&g_ep=EgoyMDI0MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+      "https://www.google.com/maps/place/VIA+CRICI%C3%9AMA+-+VISTORIA+VEICULAR+E+LAUDO+CAUTELAR/@-28.6785,-49.3633492,17z/data=!3m1!4b1!4m6!3m5!1s0x9521788f630feccb:0xad54e5b60f0b6a05!8m2!3d-28.6785047!4d-49.3607743!16s%2Fg%2F11bw21j0sl?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D",
     image: criciumaCentro,
   },
   {
@@ -57,7 +57,7 @@ export const addresses = [
     phoneNumber: "(48) 99117-8955",
     whatsappNumber: "48991178955",
     mapUrl:
-      "https://www.google.com/maps?sca_esv=da71dabda52a3bb7&output=search&q=RUA+LOURENCO+ZANETTE,+2111+-+SALA+02+-+VILA+FLORESTA+II+-+CRICI%C3%9AMA+-+SC&source=lnms&fbs=ABzOT_BYhiZpMrUAF0c9tORwPGlssxTeO7BMOlalbdyQXag72t9gqHh-513MhadK60-5S3Q1AUveOKhRET8frzX92ux-vnXnkpqzO1Kej_z9IwTU4LRN1MaNtoZacaKs6stl55SKIJ6T5lP7qlPHoUSulqC-nUDOcBOGYD73JSYd-bS9Nc8dsV233JkQeokpMDekA2xYg6LnaUdHNlg_8TEsBBMDxJJzrA&entry=mc&ved=1t:200715&ictx=111",
+      "https://www.google.com/maps/place/VIA+RIO+MAINA+-+VISTORIA+VEICULAR+E+LAUDO+CAUTELAR/@-28.6752638,-49.4110622,14z/data=!4m10!1m2!2m1!1svia+vistoria+R.+Louren%C3%A7o+Zanette,+2111+-+02+-+Vila+Zuleima!3m6!1s0x95218302ab5d348b:0xbe185e0bdefe8f58!8m2!3d-28.6760342!4d-49.4076182!15sCjt2aWEgdmlzdG9yaWEgUi4gTG91cmVuw6dvIFphbmV0dGUsIDIxMTEgLSAwMiAtIFZpbGEgWnVsZWltYVo3IjV2aWEgdmlzdG9yaWEgciBsb3VyZW7Dp28gemFuZXR0ZSAyMTExIDAyIHZpbGEgenVsZWltYZIBFmNhcl9pbnNwZWN0aW9uX3N0YXRpb26aASRDaGREU1VoTk1HOW5TMFZKUTBGblNVUjJaMjlVY1RWUlJSQUKqAW8QASoQIgx2aWEgdmlzdG9yaWEoDDIeEAEiGkk2NAEUwSjgl1ROlHAVb0FZVcaaBCZwQBLCMjkQAiI1dmlhIHZpc3RvcmlhIHIgbG91cmVuw6dvIHphbmV0dGUgMjExMSAwMiB2aWxhIHp1bGVpbWHgAQD6AQQIABBF!16s%2Fg%2F11j3444ndp?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D",
     image: criciumaVila,
   },
   {
@@ -66,7 +66,7 @@ export const addresses = [
     phoneNumber: "(48) 99143-6778",
     whatsappNumber: "48991436778",
     mapUrl:
-      "https://www.google.com/maps/place/R.+Nereu+Belolli,+35+-+Ouro+Negro,+Forquilhinha+-+SC,+88850-000/@-28.7499724,-49.4490255,17z/data=!3m1!4b1!4m6!3m5!1s0x952181548a31358f:0x55aea3fe153d2601!8m2!3d-28.7499772!4d-49.44416!16s%2Fg%2F11y6hhwcgh?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoASAFQAw%3D%3D",
+      "https://www.google.com/maps/place/VIA+VISTORIA+VEICULAR+-+FORQUILHINHA/@-28.7499772,-49.44416,17z/data=!4m15!1m8!3m7!1s0x952181548a31358f:0x55aea3fe153d2601!2sR.+Nereu+Belolli,+35+-+Ouro+Negro,+Forquilhinha+-+SC,+88850-000!3b1!8m2!3d-28.7499772!4d-49.44416!16s%2Fg%2F11y6hhwcgh!3m5!1s0x952185b2e254f53d:0x21cc7bf075c6a3aa!8m2!3d-28.7499772!4d-49.44416!16s%2Fg%2F11rp0ywdh8?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D",
     image: forquilhinha,
   },
   {
@@ -75,7 +75,7 @@ export const addresses = [
     phoneNumber: "(48) 3432-2019",
     whatsappNumber: "4834322019",
     mapUrl:
-      "https://www.google.com/maps?sca_esv=5d466d0b992978df&output=search&q=RUA+LEOBERTO+LEAL,+390+-+CENTRO+-+I%C3%87ARA+-+SC&source=lnms&fbs=ABzOT_BYhiZpMrUAF0c9tORwPGlssxTeO7BMOlalbdyQXag72r1qnNd-MghSp-MLF7ZupKLNJpA1I8VZ0HfUeA-4UgdXtgv7KrhqJbSrd3iVRkvoRefjirRX85Ua6jyKigAgdGNZLoTsXF1dgDzkTCPA3WycVLPKGYG1JdVrCz0AvP3iYc3SfqU5KeIbbHtuwymECMvVnTxVsIiBeGEaQRwplqnuL5N-5A&entry=mc&ved=1t:200715&ictx=111",
+      "https://www.google.com/maps/place/VIA+I%C3%87ARA+-+VISTORIA+VEICULAR+E+LAUDO+CAUTELAR/@-28.7079921,-49.3013941,17z/data=!3m1!4b1!4m6!3m5!1s0x95217ec84ae848df:0x6711118c817493e7!8m2!3d-28.7079968!4d-49.2988192!16s%2Fg%2F11cr_qpx8r?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D",
     image: icara,
   },
   {
@@ -84,7 +84,7 @@ export const addresses = [
     phoneNumber: "(47) 99256-5690",
     whatsappNumber: "47992565690",
     mapUrl:
-      "https://www.google.com/maps/place/R.+Izidoro+Maes,+115,+Ilhota+-+SC,+88320-000/@-26.9022203,-48.8283115,16.85z/data=!4m6!3m5!1s0x94df31dbd8842667:0xab4a1aa15280764!8m2!3d-26.9006539!4d-48.8263997!16s%2Fg%2F11c28zs7bh?entry=ttu",
+      "https://www.google.com/maps/place/VIA+ILHOTA+-+VISTORIA+VEICULAR/@-26.9007369,-48.8290981,17z/data=!3m1!4b1!4m6!3m5!1s0x94df3118d1c34051:0xc0f78656bdf5fb90!8m2!3d-26.9007417!4d-48.8265232!16s%2Fg%2F11lmhpng9r?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D",
     image: ilhota,
   },
   {
@@ -103,7 +103,7 @@ export const addresses = [
     phoneNumber: "(47) 3387-1883",
     whatsappNumber: "4733871883",
     mapUrl:
-      "https://www.google.com/maps/place/R.+Hermann+Weege,+1474+-+Centro,+Pomerode+-+SC,+89107-000/@-26.725803,-49.1732076,17z/data=!3m1!4b1!4m6!3m5!1s0x94dee50d189f8d19:0xd7d3c954647eba3f!8m2!3d-26.7258078!4d-49.1706273!16s%2Fg%2F11f53pn_rs?entry=ttu&g_ep=EgoyMDI1MDIyMy4xIKXMDSoASAFQAw%3D%3D",
+      "https://www.google.com/maps/place/VIA+VISTORIA+VEICULAR+-+POMERODE/@-26.7257623,-49.1731183,17z/data=!3m1!4b1!4m6!3m5!1s0x94dee50600cee8bb:0xfd18115318de2ffc!8m2!3d-26.7257671!4d-49.1705434!16s%2Fg%2F11hdq9y0y_?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D",
     image: pomerode,
   },
   {
@@ -113,7 +113,7 @@ export const addresses = [
     phoneNumber: "(42) 99144-2738",
     whatsappNumber: "42991442738",
     mapUrl:
-      "https://www.google.com/maps?sca_esv=5d466d0b992978df&output=search&q=AV.+EXPEDICIONARIO+EDMUNDO+ARRABAR,+1733+-+SANTA+ROSA+-+PORTO+UNI%C3%83O+-+SC&source=lnms&fbs=ABzOT_BYhiZpMrUAF0c9tORwPGlssxTeO7BMOlalbdyQXag72r1qnNd-MghSp-MLF7ZupKLNJpA1I8VZ0HfUeA-4UgdXtgv7KrhqJbSrd3iVRkvoRefjirRX85Ua6jyKigAgdGNZLoTsXF1dgDzkTCPA3WycVLPKGYG1JdVrCz0AvP3iYc3SfqU5KeIbbHtuwymECMvVnTxVsIiBeGEaQRwplqnuL5N-5A&entry=mc&ved=1t:200715&ictx=111",
+      "https://www.google.com/maps/place/VIA+PORTO+UNI%C3%83O+-+VISTORIA+VEICULAR+E+LAUDO+CAUTELAR/@-26.2531853,-51.0723227,17z/data=!3m1!4b1!4m6!3m5!1s0x94e68b273c399cfb:0xa87aedb73afe21fd!8m2!3d-26.2531901!4d-51.0697478!16s%2Fg%2F11rqs6ct4b?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D",
     image: porto,
   },
 ];
