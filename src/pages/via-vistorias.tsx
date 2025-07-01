@@ -7,6 +7,7 @@ interface ViaVistoriasProps {
   localization: string;
   mapAddress?: string;
   whatsappNumber?: string;
+  hasPrecautionary: boolean;
 }
 
 export const ViaVistorias = ({
@@ -14,6 +15,7 @@ export const ViaVistorias = ({
   whatsapp,
   mapAddress,
   whatsappNumber,
+  hasPrecautionary,
 }: ViaVistoriasProps) => {
   return (
     <div className="w-full bg-gradient-to-b from-black to-zinc-600 h-full flex flex-col justify-between">
@@ -35,13 +37,15 @@ export const ViaVistorias = ({
             className="rounded-xl w-[100%] sm:w-[90%] m-auto hover:scale-110 transition-all"
           />
         </a>
-        <a href={`https://wa.me/${whatsappNumber}`}>
-          <img
-            src={cautelar}
-            alt="banner preto com uma chamada para revisão cautelar"
-            className="rounded-xl w-[100%] sm:w-[90%] m-auto hover:scale-110 transition-all"
-          />
-        </a>
+        {hasPrecautionary && (
+          <a href={`https://wa.me/${whatsappNumber}`}>
+            <img
+              src={cautelar}
+              alt="banner preto com uma chamada para revisão cautelar"
+              className="rounded-xl w-[100%] sm:w-[90%] m-auto hover:scale-110 transition-all"
+            />
+          </a>
+        )}
         <a href="https://viavistoria.com.br/">
           <img
             src={site}
