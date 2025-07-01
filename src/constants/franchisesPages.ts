@@ -90,7 +90,7 @@ export const franchisesPages = [
     whatsappNumber: "5548991363461",
     mapAddress:
       "https://www.google.com/maps/place/ARROIO+DO+SILVA+VISTORIA+VEICULAR+LTDA/@-28.9824593,-49.423285,17z/data=!3m1!4b1!4m6!3m5!1s0x952233404492fc41:0x15faa6c93799dd16!8m2!3d-28.9824593!4d-49.4207101!16s%2Fg%2F11tcv6msjv?entry=ttu&g_ep=EgoyMDI1MDIyMy4xIKXMDSoASAFQAw%3D%3D",
-    hasPrecautionary: false,
+    hasPrecautionary: true,
   },
   {
     route: "/pomerode",
@@ -99,7 +99,7 @@ export const franchisesPages = [
     whatsappNumber: "554733871883",
     mapAddress:
       "https://www.google.com/maps/place/VIA+VISTORIA+VEICULAR+-+POMERODE/@-26.7257623,-49.1731183,17z/data=!3m1!4b1!4m6!3m5!1s0x94dee50600cee8bb:0xfd18115318de2ffc!8m2!3d-26.7257671!4d-49.1705434!16s%2Fg%2F11hdq9y0y_?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D",
-    hasPrecautionary: true,
+    hasPrecautionary: false,
   },
   {
     route: "/ilhota",
