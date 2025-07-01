@@ -12,6 +12,12 @@ import whatsappForquilhinha from "../assets/franchises/forquilhinha/whatsapp.web
 import localizationForquilhinha from "../assets/franchises/forquilhinha/localization.webp";
 import whatsappRioMaina from "../assets/franchises/riomaina/whatsapp.webp";
 import localizationRioMaina from "../assets/franchises/riomaina/localization.webp";
+import whatsappArroio from "../assets/franchises/arroio/whatsapp.webp";
+import localizationArroio from "../assets/franchises/arroio/localization.webp";
+import whatsappPomerode from "../assets/franchises/pomerode/whatsapp.webp";
+import localizationPomerode from "../assets/franchises/pomerode/localization.webp";
+import whatsappIlhota from "../assets/franchises/ilhota/whatsapp.webp";
+import localizationIlhota from "../assets/franchises/ilhota/localization.webp";
 
 export const franchisesPages = [
   {
@@ -72,24 +78,24 @@ export const franchisesPages = [
   },
   {
     route: "/arroiodosilva",
-    whatsapp: whatsappRioMaina,
-    localization: localizationRioMaina,
+    whatsapp: whatsappArroio,
+    localization: localizationArroio,
     whatsappNumber: "5548991363461",
     mapAddress:
       "https://www.google.com/maps/place/ARROIO+DO+SILVA+VISTORIA+VEICULAR+LTDA/@-28.9824593,-49.423285,17z/data=!3m1!4b1!4m6!3m5!1s0x952233404492fc41:0x15faa6c93799dd16!8m2!3d-28.9824593!4d-49.4207101!16s%2Fg%2F11tcv6msjv?entry=ttu&g_ep=EgoyMDI1MDIyMy4xIKXMDSoASAFQAw%3D%3D",
   },
   {
     route: "/pomerode",
-    whatsapp: whatsappRioMaina,
-    localization: localizationRioMaina,
+    whatsapp: whatsappPomerode,
+    localization: localizationPomerode,
     whatsappNumber: "554733871883",
     mapAddress:
       "https://www.google.com/maps/place/VIA+VISTORIA+VEICULAR+-+POMERODE/@-26.7257623,-49.1731183,17z/data=!3m1!4b1!4m6!3m5!1s0x94dee50600cee8bb:0xfd18115318de2ffc!8m2!3d-26.7257671!4d-49.1705434!16s%2Fg%2F11hdq9y0y_?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D",
   },
   {
     route: "/ilhota",
-    whatsapp: whatsappRioMaina,
-    localization: localizationRioMaina,
+    whatsapp: whatsappIlhota,
+    localization: localizationIlhota,
     whatsappNumber: "5547992565690",
     mapAddress:
       "https://www.google.com/maps/place/VIA+ILHOTA+-+VISTORIA+VEICULAR/@-26.9007369,-48.8290981,17z/data=!3m1!4b1!4m6!3m5!1s0x94df3118d1c34051:0xc0f78656bdf5fb90!8m2!3d-26.9007417!4d-48.8265232!16s%2Fg%2F11lmhpng9r?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D",
