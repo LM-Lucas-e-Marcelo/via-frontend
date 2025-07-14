@@ -27,7 +27,7 @@ export const ViaVistorias = ({
           <img
             src={whatsapp}
             alt="Banner verde com o número de whatsapp"
-            className="rounded-xl w-[100%] sm:w-[90%] m-auto hover:scale-110 transition-all"
+            className="rounded-xl w-[100%] max-w-[1022px] sm:w-[90%] m-auto hover:scale-110 transition-all"
           />
         </a>
         <a href={mapAddress}>
