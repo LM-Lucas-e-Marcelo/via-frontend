@@ -1,6 +1,7 @@
 import cautelar from "../assets/franchises/cautelar.webp";
 import logo from "../assets/franchises/logo.png";
 import site from "../assets/franchises/site.webp";
+import { WhatsappButton } from "../components/whatsapp-button";
 
 interface ViaVistoriasProps {
   whatsapp: string;
@@ -8,6 +9,7 @@ interface ViaVistoriasProps {
   mapAddress?: string;
   whatsappNumber?: string;
   hasPrecautionary: boolean;
+  route: string;
 }
 
 export const ViaVistorias = ({
@@ -16,6 +18,7 @@ export const ViaVistorias = ({
   mapAddress,
   whatsappNumber,
   hasPrecautionary,
+  route,
 }: ViaVistoriasProps) => {
   return (
     <div className="w-full bg-gradient-to-b from-black to-zinc-600 h-full flex flex-col justify-between">
@@ -58,6 +61,9 @@ export const ViaVistorias = ({
         <img src={logo} alt="logo via" width={150} className="mb-5" />
         <p>©️2025 – Todos os direitos reservados.</p>
       </footer>
+      {route === "/criciuma" && (
+        <WhatsappButton whatsappNumber={whatsappNumber} />
+      )}
     </div>
   );
 };
