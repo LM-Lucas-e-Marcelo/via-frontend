@@ -62,12 +62,14 @@ export const ViaVistorias = ({
         <img src={logo} alt="logo via" width={150} className="mb-5" />
         {isCriciumaRoute ? (
           <>
-            <p>VIA VISTORIA VEICULAR - CNPJ: 24.876.973/0001-57</p>
-            <p className="mt-2">
-              Rua Coronel Marcos Rovaris, 755, Pio Corrêa, Criciúma/SC CEP:
-              88811-532
+            <strong className="sm:text-lg">
+              VIA VISTORIA VEICULAR - CNPJ: 24.876.973/0001-57
+            </strong>
+            <p className="mt-2 sm:text-base text-xs">
+              Rua Coronel Marcos Rovaris, 755, Pio Corrêa, Criciúma/SC{" "}
+              <br className="sm:hidden" /> CEP: 88811-532
             </p>
-            <p className="mt-2">
+            <p className="mt-2 sm:text-base text-xs">
               Telefone / Whatsapp:{" "}
               <a href={`https://wa.me/${whatsappNumber}`}>(48) 3433-3107</a>
             </p>
