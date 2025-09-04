@@ -20,6 +20,7 @@ export const ViaVistorias = ({
   hasPrecautionary,
   route,
 }: ViaVistoriasProps) => {
+  const isCriciumaRoute = route === "/criciuma";
   return (
     <div className="w-full bg-gradient-to-b from-black to-zinc-600 h-full flex flex-col justify-between">
       <header className="pt-10 pb-0 flex items-center justify-center">
@@ -57,13 +58,28 @@ export const ViaVistorias = ({
           />
         </a>
       </div>
-      <footer className="flex bg-zinc-900 flex-col items-center text-white justify-center text-center sm:p-10 py-10 px-2">
+      <footer className="flex bg-zinc-900 flex-col items-center text-white justify-center text-center sm:p-10 py-10 px-2 text-sm p-2 sm:text-md">
         <img src={logo} alt="logo via" width={150} className="mb-5" />
-        <p>©️2025 – Todos os direitos reservados.</p>
+        {isCriciumaRoute ? (
+          <>
+            <p>VIA VISTORIA VEICULAR - CNPJ: 24.876.973/0001-57</p>
+            <p className="mt-2">
+              Rua Coronel Marcos Rovaris, 755, Pio Corrêa, Criciúma/SC CEP:
+              88811-532
+            </p>
+            <p className="mt-2">
+              Telefone / Whatsapp:{" "}
+              <a href={`https://wa.me/${whatsappNumber}`}>(48) 3433-3107</a>
+            </p>
+            <p className="mt-10 border-t border-zinc-700 w-full pt-5">
+              ©️2025 – Todos os direitos reservados.
+            </p>
+          </>
+        ) : (
+          <p>©️2025 – Todos os direitos reservados.</p>
+        )}
       </footer>
-      {route === "/criciuma" && (
-        <WhatsappButton whatsappNumber={whatsappNumber} />
-      )}
+      {isCriciumaRoute && <WhatsappButton whatsappNumber={whatsappNumber} />}
     </div>
   );
 };
