@@ -23,7 +23,7 @@ export const AppRoutes = () => {
           <Route
             key={route}
             path={route}
-            element={<ViaVistorias route={route} {...rest} />}
+            element={<ViaVistorias {...rest} />}
           />
         ))}
       </Routes>

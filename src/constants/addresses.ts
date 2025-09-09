@@ -12,6 +12,7 @@ import forquilhinha from "../assets/forquilhinha.png";
 
 export const addresses = [
   {
+    id: "arroio",
     cityAndNeigh: "VIA VISTORIA BALN. ARROIO DO SILVA",
     street:
       "Av. Barriga Verde, 1044, Socopas - Balneário Arroio Do Silva - Próximo Ao Cartório De Arroio Do Silva",
@@ -22,6 +23,7 @@ export const addresses = [
     image: arroio,
   },
   {
+    id: "biguacu",
     cityAndNeigh: "VIA VISTORIA BIGUAÇU",
     street:
       "R. Cônego Rodolfo Machado, 1000 - Rio Caveiras, Biguaçu - SC - Centro Comercial BIG MIX",
@@ -32,6 +34,7 @@ export const addresses = [
     image: biguacu,
   },
   {
+    id: "cocaldosul",
     cityAndNeigh: "VIA VISTORIA COCAL DO SUL",
     street:
       "Rua São Marcos, 813 - B. Cristo Rei Cocal do Sul - SC - Em frente ao mercado São Pedro.",
@@ -42,6 +45,7 @@ export const addresses = [
     image: cocal,
   },
   {
+    id: "criciuma",
     cityAndNeigh: "VIA VISTORIA CRICIÚMA - CENTRO",
     street: "Rua Coronel Marcos Rovaris, 755, Centro - Criciúma - SC",
     phoneNumber: "(48) 3433-3107",
@@ -51,6 +55,7 @@ export const addresses = [
     image: criciumaCentro,
   },
   {
+    id: "criciumavilamain",
     cityAndNeigh: "VIA VISTORIA CRICIÚMA - RIO MAINA",
     street:
       "Rua Lourenço Zanette, 2111 - Sala 02 - Vila Floresta II - Criciúma - SC",
@@ -61,6 +66,7 @@ export const addresses = [
     image: criciumaVila,
   },
   {
+    id: "forquilhinha",
     cityAndNeigh: "VIA VISTORIA FORQUILHINHA",
     street: "R. Nereu Belolli, 35 Sala 02 - Ouro Negro, Forquilhinha - SC",
     phoneNumber: "(48) 99143-6778",
@@ -70,6 +76,7 @@ export const addresses = [
     image: forquilhinha,
   },
   {
+    id: "icara",
     cityAndNeigh: "VIA VISTORIA IÇARA",
     street: "Rua Leoberto Leal, 390 - Centro - Içara - SC",
     phoneNumber: "(48) 3432-2019",
@@ -79,6 +86,7 @@ export const addresses = [
     image: icara,
   },
   {
+    id: "ilhota",
     cityAndNeigh: "VIA VISTORIA ILHOTA",
     street: "R. Izidoro Maes, 115, Centro, Ilhota - SC",
     phoneNumber: "(47) 99256-5690",
@@ -88,6 +96,7 @@ export const addresses = [
     image: ilhota,
   },
   {
+    id: "meleiro",
     cityAndNeigh: "VIA VISTORIA MELEIRO",
     street:
       "Rua Vicinal Dos Imigrantes, 51, Zanette - Meleiro - SC - No Trevo De Meleiro",
@@ -98,6 +107,7 @@ export const addresses = [
     image: meleiro,
   },
   {
+    id: "pomerode",
     cityAndNeigh: "VIA VISTORIA POMERODE",
     street: "Rua Hermann Weege, 1474 - Box 01 E 02 - Centro - Pomerode - SC",
     phoneNumber: "(47) 3387-1883",
@@ -107,6 +117,7 @@ export const addresses = [
     image: pomerode,
   },
   {
+    id: "portouniao",
     cityAndNeigh: "VIA VISTORIA PORTO UNIÃO",
     street:
       "Av. Expedicionário Edmundo Arrabar, 1733 - Santa Rosa - Porto União - SC - Ao Lado Do Mercado Reviwer",

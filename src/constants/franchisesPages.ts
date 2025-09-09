@@ -21,6 +21,8 @@ import localizationIlhota from "../assets/franchises/ilhota/localization.webp";
 
 export const franchisesPages = [
   {
+    id: "biguacu",
+    cnpj: "31.639.682/0001-00",
     route: "/biguacu",
     whatsapp: whatsappBiguacu,
     localization: localizationBiguacu,
@@ -30,6 +32,8 @@ export const franchisesPages = [
     hasPrecautionary: true,
   },
   {
+    id: "meleiro",
+    cnpj: "57.847.259/0001-90",
     route: "/meleiro",
     whatsapp: whatsappMeleiro,
     localization: localizationMeleiro,
@@ -39,6 +43,8 @@ export const franchisesPages = [
       "https://www.google.com/maps/place/VIA+VISTORIA+MELEIRO+-+VISTORIA+VEICULAR/@-28.8378742,-49.6303329,17z/data=!4m10!1m2!2m1!1svia+vistoria+Rua+Vicinal+Dos+Imigrantes,+51,+Zanette+-+Meleiro+-+SC+-+No+Trevo+De+Meleiro!3m6!1s0x95218b1354af4451:0xf7da874b775df9fe!8m2!3d-28.8378789!4d-49.627758!15sCll2aWEgdmlzdG9yaWEgUnVhIFZpY2luYWwgRG9zIEltaWdyYW50ZXMsIDUxLCBaYW5ldHRlIC0gTWVsZWlybyAtIFNDIC0gTm8gVHJldm8gRGUgTWVsZWlyb5IBEnZlaGljbGVfaW5zcGVjdGlvbuABAA!16s%2Fg%2F11wx4v4_wq?entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D",
   },
   {
+    id: "portouniao",
+    cnpj: "43.792.919/0001-78",
     route: "/portouniao",
     whatsapp: whatsappPortoUniao,
     localization: localizationPortoUniao,
@@ -48,6 +54,8 @@ export const franchisesPages = [
     hasPrecautionary: true,
   },
   {
+    id: "icara",
+    cnpj: "23.530.233/0001-00",
     route: "/icara",
     whatsapp: whatsappIcara,
     localization: localizationIcara,
@@ -57,6 +65,8 @@ export const franchisesPages = [
     hasPrecautionary: true,
   },
   {
+    id: "criciuma",
+    cnpj: "24.876.973/0001-57",
     route: "/criciuma",
     whatsapp: whatsappCriciuma,
     localization: localizationCriciuma,
@@ -66,6 +76,8 @@ export const franchisesPages = [
     hasPrecautionary: true,
   },
   {
+    id: "forquilhinha",
+    cnpj: "41.467.362/0001-74",
     route: "/forquilhinha",
     whatsapp: whatsappForquilhinha,
     localization: localizationForquilhinha,
@@ -75,6 +87,8 @@ export const franchisesPages = [
     hasPrecautionary: true,
   },
   {
+    id: "riomaina",
+    cnpj: "35.200.725/0001-08",
     route: "/riomaina",
     whatsapp: whatsappRioMaina,
     localization: localizationRioMaina,
@@ -84,6 +98,8 @@ export const franchisesPages = [
     hasPrecautionary: true,
   },
   {
+    id: "arroiodosilva",
+    cnpj: "45.617.211/0001-06",
     route: "/arroiodosilva",
     whatsapp: whatsappArroio,
     localization: localizationArroio,
@@ -93,6 +109,8 @@ export const franchisesPages = [
     hasPrecautionary: true,
   },
   {
+    id: "pomerode",
+    cnpj: "31.375.156/0001-80",
     route: "/pomerode",
     whatsapp: whatsappPomerode,
     localization: localizationPomerode,
@@ -102,6 +120,8 @@ export const franchisesPages = [
     hasPrecautionary: false,
   },
   {
+    id: "ilhota",
+    cnpj: "50.218.258/0001-37",
     route: "/ilhota",
     whatsapp: whatsappIlhota,
     localization: localizationIlhota,
@@ -110,13 +130,14 @@ export const franchisesPages = [
       "https://www.google.com/maps/place/VIA+ILHOTA+-+VISTORIA+VEICULAR/@-26.9007369,-48.8290981,17z/data=!3m1!4b1!4m6!3m5!1s0x94df3118d1c34051:0xc0f78656bdf5fb90!8m2!3d-26.9007417!4d-48.8265232!16s%2Fg%2F11lmhpng9r?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D",
     hasPrecautionary: false,
   },
-  {
-    route: "/cocaldosul",
-    whatsapp: whatsappRioMaina,
-    localization: localizationRioMaina,
-    whatsappNumber: "5548991763476",
-    mapAddress:
-      "https://www.google.com/maps/place/VIA+Vistoria+Veicular/@-28.5913825,-49.3248125,17z/data=!3m1!4b1!4m6!3m5!1s0x9521779b4c3d8fb9:0x138b1f93e0ed6c46!8m2!3d-28.5913872!4d-49.3222376!16s%2Fg%2F11rgzvz75f?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D",
-    hasPrecautionary: true,
-  },
+  // {
+  //   id: "cocaldosul",
+  //   route: "/cocaldosul",
+  //   whatsapp: whatsappRioMaina,
+  //   localization: localizationRioMaina,
+  //   whatsappNumber: "5548991763476",
+  //   mapAddress:
+  //     "https://www.google.com/maps/place/VIA+Vistoria+Veicular/@-28.5913825,-49.3248125,17z/data=!3m1!4b1!4m6!3m5!1s0x9521779b4c3d8fb9:0x138b1f93e0ed6c46!8m2!3d-28.5913872!4d-49.3222376!16s%2Fg%2F11rgzvz75f?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D",
+  //   hasPrecautionary: true,
+  // },
 ];
