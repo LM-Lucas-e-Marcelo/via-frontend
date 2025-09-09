@@ -12,7 +12,7 @@ import forquilhinha from "../assets/forquilhinha.png";
 
 export const addresses = [
   {
-    id: "arroio",
+    id: "arroiodosilva",
     cityAndNeigh: "VIA VISTORIA BALN. ARROIO DO SILVA",
     street:
       "Av. Barriga Verde, 1044, Socopas - Balneário Arroio Do Silva - Próximo Ao Cartório De Arroio Do Silva",
@@ -55,7 +55,7 @@ export const addresses = [
     image: criciumaCentro,
   },
   {
-    id: "criciumavilamain",
+    id: "riomaina",
     cityAndNeigh: "VIA VISTORIA CRICIÚMA - RIO MAINA",
     street:
       "Rua Lourenço Zanette, 2111 - Sala 02 - Vila Floresta II - Criciúma - SC",
