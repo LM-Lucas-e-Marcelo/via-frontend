@@ -1,10 +1,9 @@
-import { useMemo } from "react";
+import { useMemo, useEffect } from "react";
 import cautelar from "../assets/franchises/cautelar.webp";
 import logo from "../assets/franchises/logo.png";
 import site from "../assets/franchises/site.webp";
 import { WhatsappButton } from "../components/whatsapp-button";
 import { addresses } from "../constants/addresses";
-
 interface ViaVistoriasProps {
   whatsapp: string;
   localization: string;
@@ -13,6 +12,7 @@ interface ViaVistoriasProps {
   hasPrecautionary: boolean;
   id: string;
   cnpj: string;
+  route: string
 }
 
 export const ViaVistorias = ({
@@ -23,11 +23,46 @@ export const ViaVistorias = ({
   hasPrecautionary,
   id,
   cnpj,
+  route
 }: ViaVistoriasProps) => {
+
   const currentFranchise = useMemo(
     () => addresses.find((adress) => adress.id === id),
     [id]
   );
+
+  useEffect(() => {
+    if (route === '/riomaina') {
+      // Adiciona o script do Google Tag Manager
+      const script1 = document.createElement('script');
+      script1.async = true;
+      script1.src = 'https://www.googletagmanager.com/gtag/js?id=AW-16990081302';
+      document.head.appendChild(script1);
+
+      // Adiciona o script de configuração do gtag
+      const script2 = document.createElement('script');
+      script2.innerHTML = `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-16990081302');
+      `;
+      document.head.appendChild(script2);
+
+      // Cleanup function para remover os scripts quando o componente for desmontado
+      return () => {
+        const scripts = document.querySelectorAll('script[src*="googletagmanager.com"]');
+        scripts.forEach(script => script.remove());
+        
+        const gtagScripts = document.querySelectorAll('script');
+        gtagScripts.forEach(script => {
+          if (script.innerHTML.includes('gtag(')) {
+            script.remove();
+          }
+        });
+      };
+    }
+  }, [route]);
   return (
     <div className="w-full bg-gradient-to-b from-black to-zinc-600 h-full flex flex-col justify-between">
       <header className="pt-10 pb-0 flex items-center justify-center">
