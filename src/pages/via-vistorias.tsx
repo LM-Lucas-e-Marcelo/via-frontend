@@ -12,7 +12,7 @@ interface ViaVistoriasProps {
   hasPrecautionary: boolean;
   id: string;
   cnpj: string;
-  route: string
+  route: string;
 }
 
 export const ViaVistorias = ({
@@ -23,24 +23,24 @@ export const ViaVistorias = ({
   hasPrecautionary,
   id,
   cnpj,
-  route
+  route,
 }: ViaVistoriasProps) => {
-
   const currentFranchise = useMemo(
     () => addresses.find((adress) => adress.id === id),
     [id]
   );
 
   useEffect(() => {
-    if (route === '/riomaina') {
+    if (route === "/riomaina") {
       // Adiciona o script do Google Tag Manager
-      const script1 = document.createElement('script');
+      const script1 = document.createElement("script");
       script1.async = true;
-      script1.src = 'https://www.googletagmanager.com/gtag/js?id=AW-16990081302';
+      script1.src =
+        "https://www.googletagmanager.com/gtag/js?id=AW-16990081302";
       document.head.appendChild(script1);
 
       // Adiciona o script de configuração do gtag
-      const script2 = document.createElement('script');
+      const script2 = document.createElement("script");
       script2.innerHTML = `
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -51,12 +51,48 @@ export const ViaVistorias = ({
 
       // Cleanup function para remover os scripts quando o componente for desmontado
       return () => {
-        const scripts = document.querySelectorAll('script[src*="googletagmanager.com"]');
-        scripts.forEach(script => script.remove());
-        
-        const gtagScripts = document.querySelectorAll('script');
-        gtagScripts.forEach(script => {
-          if (script.innerHTML.includes('gtag(')) {
+        const scripts = document.querySelectorAll(
+          'script[src*="googletagmanager.com"]'
+        );
+        scripts.forEach((script) => script.remove());
+
+        const gtagScripts = document.querySelectorAll("script");
+        gtagScripts.forEach((script) => {
+          if (script.innerHTML.includes("gtag(")) {
+            script.remove();
+          }
+        });
+      };
+    }
+
+    if (route === "/biguacu") {
+      // Adiciona o script do Google Tag Manager
+      const script1 = document.createElement("script");
+      script1.async = true;
+      script1.src =
+        "https://www.googletagmanager.com/gtag/js?id=AW-17026678908";
+      document.head.appendChild(script1);
+
+      // Adiciona o script de configuração do gtag
+      const script2 = document.createElement("script");
+      script2.innerHTML = `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-17026678908');
+      `;
+      document.head.appendChild(script2);
+
+      // Cleanup function para remover os scripts quando o componente for desmontado
+      return () => {
+        const scripts = document.querySelectorAll(
+          'script[src*="googletagmanager.com"]'
+        );
+        scripts.forEach((script) => script.remove());
+
+        const gtagScripts = document.querySelectorAll("script");
+        gtagScripts.forEach((script) => {
+          if (script.innerHTML.includes("gtag(")) {
             script.remove();
           }
         });
