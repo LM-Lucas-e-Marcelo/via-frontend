@@ -47,10 +47,10 @@ export const Footer = () => {
         </section>
       </div>
       <div className="md:hidden flex items-center justify-center p-6 border-t border-zinc-100 text-center">
-        ©️2025 Via Vistoria Veicular Ltda <br /> Todos os direitos reservados.
+        ©️2026 Via Vistoria Veicular Ltda <br /> Todos os direitos reservados.
       </div>
       <div className="md:flex hidden items-center justify-center p-6 border-t border-zinc-100 text-center">
-        ©️2025 Via Vistoria Veicular Ltda – Todos os direitos reservados.
+        ©️2026 Via Vistoria Veicular Ltda – Todos os direitos reservados.
       </div>
     </div>
   );
