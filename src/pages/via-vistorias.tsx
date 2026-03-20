@@ -154,7 +154,7 @@ export const ViaVistorias = ({
             </a>
           </p>
           <p className="mt-10 border-t border-zinc-700 w-full pt-5">
-            ©️2025 – Todos os direitos reservados.
+            ©️2026 – Todos os direitos reservados.
           </p>
         </>
       </footer>
