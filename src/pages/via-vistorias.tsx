@@ -27,7 +27,7 @@ export const ViaVistorias = ({
 }: ViaVistoriasProps) => {
   const currentFranchise = useMemo(
     () => addresses.find((adress) => adress.id === id),
-    [id]
+    [id],
   );
 
   useEffect(() => {
@@ -52,7 +52,7 @@ export const ViaVistorias = ({
       // Cleanup function para remover os scripts quando o componente for desmontado
       return () => {
         const scripts = document.querySelectorAll(
-          'script[src*="googletagmanager.com"]'
+          'script[src*="googletagmanager.com"]',
         );
         scripts.forEach((script) => script.remove());
 
@@ -86,7 +86,7 @@ export const ViaVistorias = ({
       // Cleanup function para remover os scripts quando o componente for desmontado
       return () => {
         const scripts = document.querySelectorAll(
-          'script[src*="googletagmanager.com"]'
+          'script[src*="googletagmanager.com"]',
         );
         scripts.forEach((script) => script.remove());
 
@@ -99,6 +99,7 @@ export const ViaVistorias = ({
       };
     }
   }, [route]);
+
   return (
     <div className="w-full bg-gradient-to-b from-black to-zinc-600 h-full flex flex-col justify-between">
       <header className="pt-10 pb-0 flex items-center justify-center">

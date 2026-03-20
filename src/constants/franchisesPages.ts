@@ -18,6 +18,8 @@ import whatsappPomerode from "../assets/franchises/pomerode/whatsapp.webp";
 import localizationPomerode from "../assets/franchises/pomerode/localization.webp";
 import whatsappIlhota from "../assets/franchises/ilhota/whatsapp.webp";
 import localizationIlhota from "../assets/franchises/ilhota/localization.webp";
+import whatsappLages from "../assets/franchises/lages/whatsapp.webp";
+import localizationLages from "../assets/franchises/lages/localization.webp";
 
 export const franchisesPages = [
   {
@@ -130,14 +132,15 @@ export const franchisesPages = [
       "https://www.google.com/maps/place/VIA+ILHOTA+-+VISTORIA+VEICULAR/@-26.9007369,-48.8290981,17z/data=!3m1!4b1!4m6!3m5!1s0x94df3118d1c34051:0xc0f78656bdf5fb90!8m2!3d-26.9007417!4d-48.8265232!16s%2Fg%2F11lmhpng9r?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D",
     hasPrecautionary: false,
   },
-  // {
-  //   id: "cocaldosul",
-  //   route: "/cocaldosul",
-  //   whatsapp: whatsappRioMaina,
-  //   localization: localizationRioMaina,
-  //   whatsappNumber: "5548991763476",
-  //   mapAddress:
-  //     "https://www.google.com/maps/place/VIA+Vistoria+Veicular/@-28.5913825,-49.3248125,17z/data=!3m1!4b1!4m6!3m5!1s0x9521779b4c3d8fb9:0x138b1f93e0ed6c46!8m2!3d-28.5913872!4d-49.3222376!16s%2Fg%2F11rgzvz75f?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D",
-  //   hasPrecautionary: true,
-  // },
+  {
+    id: "lages",
+    cnpj: "24.897.617/0001-10",
+    route: "/lages",
+    whatsapp: whatsappLages,
+    localization: localizationLages,
+    whatsappNumber: "554930190018",
+    mapAddress:
+      "https://www.google.com/maps/place/VIA+VISTORIA+VEICULAR+-+LAGES/@-27.8244138,-50.3267171,17z/data=!3m1!4b1!4m6!3m5!1s0x94e01fcf1a8d88b7:0x141d67897981cc80!8m2!3d-27.8244138!4d-50.3241368!16s%2Fg%2F11fnrdbwbm?entry=ttu&g_ep=EgoyMDI2MDIyMi4wIKXMDSoASAFQAw%3D%3D",
+    hasPrecautionary: true,
+  },
 ];
