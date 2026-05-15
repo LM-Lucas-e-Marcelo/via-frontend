@@ -17,7 +17,8 @@ import gravatal from "../assets/via_gravatal.png";
 export const addresses = [
   {
     id: "arroiodosilva",
-    cityAndNeigh: "VIA VISTORIA BALN. ARROIO DO SILVA",
+    city: "Arroio do Silva",
+    cityAndNeigh: "BALN. ARROIO DO SILVA",
     street:
       "Av. Barriga Verde, 1044, Socopas - Balneário Arroio Do Silva - Próximo Ao Cartório De Arroio Do Silva",
     phoneNumber: "(48) 99136-3461",
@@ -28,7 +29,8 @@ export const addresses = [
   },
   {
     id: "biguacu",
-    cityAndNeigh: "VIA VISTORIA BIGUAÇU",
+    city: "Biguaçu",
+    cityAndNeigh: "BIGUAÇU",
     street:
       "R. Cônego Rodolfo Machado, 1000 - Rio Caveiras, Biguaçu - SC - Centro Comercial BIG MIX",
     phoneNumber: "(48) 99192-0452",
@@ -39,7 +41,8 @@ export const addresses = [
   },
   {
     id: "cocaldosul",
-    cityAndNeigh: "VIA VISTORIA COCAL DO SUL",
+    city: "Cocal do Sul",
+    cityAndNeigh: "COCAL DO SUL",
     street:
       "Rua São Marcos, 813 - B. Cristo Rei Cocal do Sul - SC - Em frente ao mercado São Pedro.",
     phoneNumber: "(48) 99176-3476",
@@ -50,7 +53,8 @@ export const addresses = [
   },
   {
     id: "criciuma",
-    cityAndNeigh: "VIA VISTORIA CRICIÚMA - CENTRO",
+    city: "Criciúma",
+    cityAndNeigh: "CRICIÚMA - CENTRO",
     street: "Rua Coronel Marcos Rovaris, 755, Centro - Criciúma - SC",
     phoneNumber: "(48) 3433-3107",
     whatsappNumber: "4834333107",
@@ -60,7 +64,8 @@ export const addresses = [
   },
   {
     id: "riomaina",
-    cityAndNeigh: "VIA VISTORIA CRICIÚMA - RIO MAINA",
+    city: "Criciúma",
+    cityAndNeigh: "CRICIÚMA - RIO MAINA",
     street:
       "Rua Lourenço Zanette, 2111 - Sala 02 - Vila Floresta II - Criciúma - SC",
     phoneNumber: "(48) 99117-8955",
@@ -71,7 +76,8 @@ export const addresses = [
   },
   {
     id: "forquilhinha",
-    cityAndNeigh: "VIA VISTORIA FORQUILHINHA",
+    city: "Forquilhinha",
+    cityAndNeigh: "FORQUILHINHA",
     street: "R. Nereu Belolli, 35 Sala 02 - Ouro Negro, Forquilhinha - SC",
     phoneNumber: "(48) 99143-6778",
     whatsappNumber: "48991436778",
@@ -81,16 +87,19 @@ export const addresses = [
   },
   {
     id: "gravatal",
-    cityAndNeigh: "VIA VISTORIA GRAVATAL",
+    city: "Gravatal",
+    cityAndNeigh: "GRAVATAL",
     street: "Rua Manoel João Moraes Coop, 42 - Gravatal - SC",
     phoneNumber: "(48) 99206-1021",
     whatsappNumber: "48992061021",
-    mapUrl: "https://www.google.com/maps?client=firefox-b-d&hs=muPp&sca_esv=ee81a51e8e25352b&output=search&q=VIA+VISTORIA+GRAVATAL++Rua+Manoel+Jo%C3%A3o+Moraes+Coop,+42+,+Gravatal,+SC&source=lnms&fbs=ADc_l-acAb_3MMOAUx0zmbUpgBqRNDksEaVrhivIH8sZJpxqoTq330TkReHURF1S6FtwdammcHPDe6If4FraTj_toiqY-xHXveAh4UJjqD_uJ2JX2moRD-n82wdkbNrajL5mdkwhNlKtZpwUc2umLj-KRs77W1_bOefe6PXy9s0-96CTvyIOo9BCMIvG47QRFBNiCgpXnhVOYmay99qB8QagmbvvMly9tg&entry=mc&ved=1t:200715&ictx=111",
+    mapUrl:
+      "https://www.google.com/maps?client=firefox-b-d&hs=muPp&sca_esv=ee81a51e8e25352b&output=search&q=VIA+VISTORIA+GRAVATAL++Rua+Manoel+Jo%C3%A3o+Moraes+Coop,+42+,+Gravatal,+SC&source=lnms&fbs=ADc_l-acAb_3MMOAUx0zmbUpgBqRNDksEaVrhivIH8sZJpxqoTq330TkReHURF1S6FtwdammcHPDe6If4FraTj_toiqY-xHXveAh4UJjqD_uJ2JX2moRD-n82wdkbNrajL5mdkwhNlKtZpwUc2umLj-KRs77W1_bOefe6PXy9s0-96CTvyIOo9BCMIvG47QRFBNiCgpXnhVOYmay99qB8QagmbvvMly9tg&entry=mc&ved=1t:200715&ictx=111",
     image: gravatal,
   },
   {
     id: "icara",
-    cityAndNeigh: "VIA VISTORIA IÇARA",
+    city: "Içara",
+    cityAndNeigh: "IÇARA",
     street: "Rua Leoberto Leal, 390 - Centro - Içara - SC",
     phoneNumber: "(48) 3432-2019",
     whatsappNumber: "4834322019",
@@ -100,7 +109,8 @@ export const addresses = [
   },
   {
     id: "icara_liri",
-    cityAndNeigh: "VIA VISTORIA IÇARA LIRI",
+    city: "Içara",
+    cityAndNeigh: "IÇARA LIRI",
     street: "ROD SC 445, 3100 SALA 11,12 e 13 - Liri - Içara - SC",
     phoneNumber: "(48) 99144-4935",
     whatsappNumber: "48991444935",
@@ -110,7 +120,8 @@ export const addresses = [
   },
   {
     id: "ilhota",
-    cityAndNeigh: "VIA VISTORIA ILHOTA",
+    city: "Ilhota",
+    cityAndNeigh: "ILHOTA",
     street: "R. Izidoro Maes, 115, Centro, Ilhota - SC",
     phoneNumber: "(47) 99256-5690",
     whatsappNumber: "47992565690",
@@ -120,7 +131,8 @@ export const addresses = [
   },
   {
     id: "lages",
-    cityAndNeigh: "VIA VISTORIA LAGES",
+    city: "Lages",
+    cityAndNeigh: "LAGES",
     street: "Av. Dom Pedro II, 2288 - Centro - Lages - SC",
     phoneNumber: "(49) 3019-0018",
     whatsappNumber: "554930190018",
@@ -130,7 +142,8 @@ export const addresses = [
   },
   {
     id: "meleiro",
-    cityAndNeigh: "VIA VISTORIA MELEIRO",
+    city: "Meleiro",
+    cityAndNeigh: "MELEIRO",
     street:
       "Rua Vicinal Dos Imigrantes, 51, Zanette - Meleiro - SC - No Trevo De Meleiro",
     phoneNumber: "(48) 99198-1883",
@@ -141,7 +154,8 @@ export const addresses = [
   },
   {
     id: "pomerode",
-    cityAndNeigh: "VIA VISTORIA POMERODE",
+    city: "Pomerode",
+    cityAndNeigh: "POMERODE",
     street: "Rua Hermann Weege, 1474 - Box 01 E 02 - Centro - Pomerode - SC",
     phoneNumber: "(47) 3387-1883",
     whatsappNumber: "4733871883",
@@ -151,7 +165,8 @@ export const addresses = [
   },
   {
     id: "portouniao",
-    cityAndNeigh: "VIA VISTORIA PORTO UNIÃO",
+    city: "Porto União",
+    cityAndNeigh: "PORTO UNIÃO",
     street:
       "Av. Expedicionário Edmundo Arrabar, 1733 - Santa Rosa - Porto União - SC - Ao Lado Do Mercado Reviwer",
     phoneNumber: "(42) 99144-2738",
@@ -162,8 +177,10 @@ export const addresses = [
   },
   {
     id: "santa_rosa_do_sul",
-    cityAndNeigh: "VIA VISTORIA SANTA ROSA DO SUL",
-    street: "R. Raul José dos Santos, 51 - sala 03 - Centro - Santa Rosa do Sul - SC",
+    city: "Santa Rosa do Sul",
+    cityAndNeigh: "SANTA ROSA DO SUL",
+    street:
+      "R. Raul José dos Santos, 51 - sala 03 - Centro - Santa Rosa do Sul - SC",
     phoneNumber: "(48) 99161-0799",
     whatsappNumber: "48991610799",
     mapUrl:

@@ -3,7 +3,6 @@ import google from "../../assets/footer/google.png";
 import norton from "../../assets/footer/norton.png";
 import certified from "../../assets/footer/certified.png";
 import { FooterServices } from "./services";
-import { FooterUnits } from "./units";
 
 export const Footer = () => {
   return (
@@ -23,7 +22,13 @@ export const Footer = () => {
             <strong>Fale conosco</strong>
             <a href="mailto:via@viavistoria.com.br">via@viavistoria.com.br</a>
           </div>
-          <FooterUnits />
+          <div className="flex flex-col w-full">
+            <strong>Unidades</strong>
+            <a href="/where-are-we">
+              Clique aqui e encontre a Via Vistoria mais próxima de você
+            </a>
+          </div>
+          {/*<FooterUnits />*/}
         </section>
         <FooterServices />
         <section className="flex flex-col gap-2 p-5 rounded-md mt-[50px]">

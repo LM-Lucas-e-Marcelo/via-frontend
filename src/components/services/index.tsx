@@ -17,7 +17,7 @@ const container = {
 export const Services = () => {
   return (
     <motion.div
-      className="w-full max-w-[1440px] flex flex-col items-center p-10"
+      className="w-full max-w-[1440px] flex flex-col items-center p-10 bg"
       id="services"
       variants={container}
       initial="hidden"
