@@ -5,10 +5,10 @@ import { tv } from "tailwind-variants";
 import { IoIosArrowDown } from "../../assets/icons";
 
 const dropdownMenu = tv({
-  base: "h-[0] overflow-hidden transition-all flex flex-col gap-2 sm:min-h-[260px]",
+  base: "h-[0] overflow-hidden transition-all flex flex-col gap-2 sm:h-auto sm:overflow-visible",
   variants: {
     isOpen: {
-      true: "h-[260px]",
+      true: "h-[380px]",
     },
   },
 });
@@ -62,6 +62,16 @@ export const FooterServices = () => {
             {service.title}
           </a>
         ))}
+        <div />
+        <h1 className="font-bold">Políticas</h1>
+        <a
+          href="/politica%20de%20privacidade.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline"
+        >
+          Política de privacidade
+        </a>
       </div>
     </section>
   );
