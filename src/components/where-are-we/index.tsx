@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import mapImage from "../../assets/map.png";
 import { motion, useInView } from "framer-motion";
-import buttonIcon from '../../assets/icons/button-icon.png'
+import buttonIcon from "../../assets/icons/button-icon.png";
 
 export const WhereAreWe = () => {
   const ref = useRef(null);
@@ -25,18 +25,18 @@ export const WhereAreWe = () => {
             Quando o assunto é <br /> confiança, o caminho <br /> leva à VIA!
           </h1>
           <p className="text-white text-2xl mt-4 text-wra">
-            Estamos em diversas cidades de <br/>
-            <strong className="text-[#83caff]">Santa Catarina</strong> para te atender.
+            Estamos em diversas cidades de <br />
+            <strong className="text-[#83caff]">Santa Catarina</strong> para te
+            atender.
           </p>
 
-            <button
-              onClick={handleRedirect}
-              className="mt-10 bg-white rounded-full text-zinc-900 py-1 pr-3 pl-2 hover:opacity-90 flex items-center gap-2 md:text-lg text-md"
-            >
-              <img src={buttonIcon} alt="icon" className="w-8 h-6" />
-              Encontre uma unidade <strong>perto de você.</strong>
-            </button>
-
+          <button
+            onClick={handleRedirect}
+            className="mt-10 bg-white rounded-full text-zinc-900 py-1 pr-3 pl-2 hover:opacity-90 flex items-center gap-2 md:text-lg text-md"
+          >
+            <img src={buttonIcon} alt="icon" className="w-8 h-6" />
+            Encontre uma unidade <strong>perto de você.</strong>
+          </button>
         </motion.div>
         <motion.img
           src={mapImage}

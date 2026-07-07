@@ -13,8 +13,22 @@ import icaraLiri from "../assets/icara_liri.png";
 import santaRosaDoSul from "../assets/via_santa_rosa_do_sul.png";
 import lages from "../assets/via_lages.png";
 import gravatal from "../assets/via_gravatal.png";
-
+import rincao from "../assets/rincao.png";
+import antonioCarlos from "../assets/antonio_carlos.png";
+import urussanga from "../assets/urussanga.png";
 export const addresses = [
+  {
+    id: "antonio_carlos",
+    city: "Antônio Carlos",
+    cityAndNeigh: "ANTÔNIO CARLOS",
+    street:
+      "R. João Henrique Pauli, 568 - Sl 2 - Centro - Antônio Carlos - SC, 88180-071",
+    phoneNumber: "(48) 99113-9724",
+    whatsappNumber: "48991139724",
+    mapUrl:
+      "https://www.google.com/maps?client=firefox-b-d&hs=YODq&sca_esv=d7a897ae2fa4bc83&output=search&q=R.+Jo%C3%A3o+Henrique+Pauli,+568+-+Sl+2+-+Centro,+Ant%C3%B4nio+Carlos+-+SC,+88180-071+via+vistoria&source=lnms&fbs=ABfTbFVGaQeaqnsRPI5sOMG32KszjzN4g3YOmrBeWW1F-m8tPgnzKxLxr3nZIcZpr1Oa9JyMX7dTJh6X9MktrFyyA-CZCL8bNOmdCvMjTZCAApo4DIpXM5HHcF8y4ZUkFsZxdNKPy6mFtXPWx_2NIfjxRDJ8ytnOiXT9mAnAwGe7EkopCLiP_u4Rk-RRl6DHkZmzo9MCL21Ge1QvcuQltM_NAVeTIl2Rcg&entry=mc&ved=1t:200715&ictx=111",
+    image: antonioCarlos,
+  },
   {
     id: "arroiodosilva",
     city: "Arroio do Silva",
@@ -26,6 +40,17 @@ export const addresses = [
     mapUrl:
       "https://www.google.com/maps/place/ARROIO+DO+SILVA+VISTORIA+VEICULAR+LTDA/@-28.9824593,-49.423285,17z/data=!3m1!4b1!4m6!3m5!1s0x952233404492fc41:0x15faa6c93799dd16!8m2!3d-28.9824593!4d-49.4207101!16s%2Fg%2F11tcv6msjv?entry=ttu&g_ep=EgoyMDI1MDIyMy4xIKXMDSoASAFQAw%3D%3D",
     image: arroio,
+  },
+  {
+    id: "balneario_rincao",
+    city: "Balneário Rincão",
+    cityAndNeigh: "BALNEÁRIO RINCÃO",
+    street: "R. Jaguaruna, 69 - Centro - Balneário Rincão - SC, 88836-000",
+    phoneNumber: "(48) 99163-3340",
+    whatsappNumber: "48991633340",
+    mapUrl:
+      "https://www.google.com/maps/place/Via+Rinc%C3%A3o+-+Vistoria+Veicular+e+Vistoria+Cautelar/@-28.8203406,-49.2241308,17z/data=!3m1!4b1!4m6!3m5!1s0x9523d15e462f420d:0xd3f0fa1e5e6fdc4c!8m2!3d-28.8203406!4d-49.2215559!16s%2Fg%2F11z4bf8sfl?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D",
+    image: rincao,
   },
   {
     id: "biguacu",
@@ -186,5 +211,16 @@ export const addresses = [
     mapUrl:
       "https://www.google.com/maps/place/VIA+VISTORIA+-+SANTA+ROSA+DO+SUL/@-29.1347427,-49.717151,17z/data=!3m1!4b1!4m6!3m5!1s0x9522176d0c71eb91:0xb76f955b2b130c7d!8m2!3d-29.1347427!4d-49.7145707!16s%2Fg%2F11s_v9rth5?entry=ttu&g_ep=EgoyMDI2MDIyMi4wIKXMDSoASAFQAw%3D%3D",
     image: santaRosaDoSul,
+  },
+  {
+    id: "urussanga",
+    city: "Urussanga",
+    cityAndNeigh: "URUSSANGA",
+    street: "Av. Ivo Silveira, 1514 - Centro Urussanga - SC - 88840-000",
+    phoneNumber: "(48) 3465-4705",
+    whatsappNumber: "4834654705",
+    mapUrl:
+      "https://www.google.com/maps/place/Vistoria+Veicular+e+Vistoria+Cautelar+-+VIA+Urussanga/@-28.5224552,-49.3204496,17z/data=!3m1!4b1!4m6!3m5!1s0x952174493d7cd809:0x27d2a7ca551836ac!8m2!3d-28.5224552!4d-49.3178747!16s%2Fg%2F11fxymcnkq?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D",
+    image: urussanga,
   },
 ];
