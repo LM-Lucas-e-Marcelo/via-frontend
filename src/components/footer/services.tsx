@@ -3,6 +3,7 @@ import { precautionaryServices } from "../../constants/precautionary-services";
 import { services } from "../../constants/services";
 import { tv } from "tailwind-variants";
 import { IoIosArrowDown } from "../../assets/icons";
+import { Link } from "react-router-dom";
 
 const dropdownMenu = tv({
   base: "h-[0] overflow-hidden transition-all flex flex-col gap-2 sm:h-auto sm:overflow-visible",
@@ -64,14 +65,14 @@ export const FooterServices = () => {
         ))}
       </div>
       <h1 className="font-bold text-lg">Políticas</h1>
-      <a
-        href="/politica%20de%20privacidade.pdf"
+      <Link
+        to="/privacy-policy"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:underline"
       >
         Política de privacidade
-      </a>
+      </Link>
     </section>
   );
 };

@@ -6,6 +6,7 @@ import { WhereAreWe } from "./pages/wherearewe";
 import { Layout } from "./layout";
 import { ViaVistorias } from "./pages/via-vistorias";
 import { WorkWithUs } from "./pages/work-with-us";
+import { PrivacyPolicy } from "./pages/privacy-policy";
 import { franchisesPages } from "./constants/franchisesPages";
 
 export const AppRoutes = () => {
@@ -18,6 +19,7 @@ export const AppRoutes = () => {
           <Route path="/franchise" Component={Franchise} />
           <Route path="/where-are-we" Component={WhereAreWe} />
           <Route path="/work-with-us" Component={WorkWithUs} />
+          <Route path="/privacy-policy" Component={PrivacyPolicy} />
         </Route>
         {franchisesPages.map(({ route, ...rest }) => (
           <Route

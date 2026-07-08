@@ -3,6 +3,7 @@ import google from "../../assets/footer/google.png";
 import norton from "../../assets/footer/norton.png";
 import certified from "../../assets/footer/certified.png";
 import { FooterServices } from "./services";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -16,6 +17,11 @@ export const Footer = () => {
           <div className="flex flex-col w-full">
             <strong>
               <a href="/work-with-us">Trabalhe conosco</a>
+            </strong>
+          </div>
+          <div className="flex flex-col w-full">
+            <strong>
+              <Link to="/privacy-policy">Política de Privacidade</Link>
             </strong>
           </div>
           <div className="flex flex-col w-full">
